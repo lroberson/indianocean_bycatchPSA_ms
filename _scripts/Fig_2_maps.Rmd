@@ -7,9 +7,8 @@ output: html_document
 
 ## Fig 2 maps
 
-Make rasters for Susceptibility maps 
+Make rasters for Susceptibility maps (maps made in ArcGIS/ formatted in Illustrator)
 Availability per cell weighted by the geomean of Encounterability x Selectivity x PCM, summed over all species, for each gear
-Formatting done in Illustrator
 
 ```{r setup, include=FALSE}
 
@@ -70,7 +69,7 @@ fwrite(allgears.cells.summ, here("_results/Susceptibility/allgears_cells_S.csv")
 ##<>>< Make rasters
 
 ## check iotc rast dims
-iotc.rast <- raster::raster(here("_data/Spatial/iotc_rast_3_copy/iotc_rast_3.tif"))
+iotc.rast <- raster::raster(here("_data/spatial/iotc_rast_3_copy/iotc_rast_3.tif"))
 iotc.rast
 
 glimpse(allgears.cells.summ)
@@ -81,10 +80,10 @@ allgears.cells.summ <- allgears.cells.summ %>% mutate(gear=factor(gear, levels=c
 for(i in levels(allgears.cells.summ$gear)){
   nspp.df <- allgears.cells.summ %>% filter(gear==i) %>% dplyr::select(c(x,y,nspp_S_cell))
   rast.nspp <- rasterFromXYZ(nspp.df, res=c(0.5,0.5), crs="+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0")
-  writeRaster(rast.nspp,  file=paste0("_rasters/S_maps/", i, "_nspp_rast.tiff", sep=""), overwrite=TRUE)
+  writeRaster(rast.nspp,  file=paste0("_results/Susceptibility/S_rasters/", i, "_nspp_rast.tiff", sep=""), overwrite=TRUE)
   S.df <- allgears.cells.summ %>% filter(gear==i) %>% dplyr::select(c(x,y,S_sum_cell))
   rast.S <- rasterFromXYZ(S.df, res=c(0.5,0.5), crs="+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0")
-  writeRaster(rast.S,  file=paste0("_rasters/S_maps/", i, "_S_rast.tiff", sep=""))
+  writeRaster(rast.S,  file=paste0("_results/Susceptibility/S_rasters/", i, "_S_rast.tiff", sep=""))
 }
 
 ```
