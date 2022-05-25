@@ -1,0 +1,922 @@
+species_id,class,common_name,sciname,grp_code,depth_m_min_adj,depth_m_max_adj,gear,gear_min,gear_max,ol_length,gear_range,spp_range,encount_prob,overlap_prop,encount123
+ITS-Mam-180471,Mammalia,Irrawaddy dolphin,Orcaella brevirostris,IDP,0,15,GND,0,20,15,20,15,0.75,1,3
+ITS-Mam-180471,Mammalia,Irrawaddy dolphin,Orcaella brevirostris,IDP,0,15,PST,0,280,15,280,15,0.05357142857142857,1,3
+ITS-Mam-180471,Mammalia,Irrawaddy dolphin,Orcaella brevirostris,IDP,0,15,LLT,0,400,15,400,15,0.0375,1,3
+ITS-Mam-771132,Mammalia,Australian snubfin dolphin,Orcaella heinsohni,IDP,0,20,GND,0,20,20,20,20,1,1,3
+ITS-Mam-771132,Mammalia,Australian snubfin dolphin,Orcaella heinsohni,IDP,0,20,PST,0,280,20,280,20,0.07142857142857142,1,3
+ITS-Mam-771132,Mammalia,Australian snubfin dolphin,Orcaella heinsohni,IDP,0,20,LLT,0,400,20,400,20,0.05,1,3
+ITS-Mam-180419,Mammalia,Pacific humpback dolphin,Sousa chinensis,IDP,0,25,GND,0,20,20,20,25,0.8,0.8,3
+ITS-Mam-180419,Mammalia,Pacific humpback dolphin,Sousa chinensis,IDP,0,25,PST,0,280,25,280,25,0.08928571428571429,1,3
+ITS-Mam-180419,Mammalia,Pacific humpback dolphin,Sousa chinensis,IDP,0,25,LLT,0,400,25,400,25,0.0625,1,3
+Rep-2666,Reptilia,loggerhead turtle,Caretta caretta,ST,0,40,GND,0,20,20,20,40,0.5,0.5,2
+Rep-2666,Reptilia,loggerhead turtle,Caretta caretta,ST,0,40,PST,0,280,40,280,40,0.14285714285714285,1,3
+Rep-2666,Reptilia,loggerhead turtle,Caretta caretta,ST,0,40,LLT,0,400,40,400,40,0.1,1,3
+ITS-Mam-180451,Mammalia,Heaviside's dolphin,Cephalorhynchus heavisidii,IDP,0,50,GND,0,20,20,20,50,0.4,0.4,2
+ITS-Mam-180451,Mammalia,Heaviside's dolphin,Cephalorhynchus heavisidii,IDP,0,50,PST,0,280,50,280,50,0.17857142857142858,1,3
+ITS-Mam-180451,Mammalia,Heaviside's dolphin,Cephalorhynchus heavisidii,IDP,0,50,LLT,0,400,50,400,50,0.125,1,3
+ITS-Mam-180478,Mammalia,finless porpoise,Neophocaena phocaenoides,IDP,0,50,GND,0,20,20,20,50,0.4,0.4,2
+ITS-Mam-180478,Mammalia,finless porpoise,Neophocaena phocaenoides,IDP,0,50,PST,0,280,50,280,50,0.17857142857142858,1,3
+ITS-Mam-180478,Mammalia,finless porpoise,Neophocaena phocaenoides,IDP,0,50,LLT,0,400,50,400,50,0.125,1,3
+ITS-Mam-612596,Mammalia,Indian Ocean bottlenose dolphin,Tursiops aduncus,IDP,0,50,GND,0,20,20,20,50,0.4,0.4,2
+ITS-Mam-612596,Mammalia,Indian Ocean bottlenose dolphin,Tursiops aduncus,IDP,0,50,PST,0,280,50,280,50,0.17857142857142858,1,3
+ITS-Mam-612596,Mammalia,Indian Ocean bottlenose dolphin,Tursiops aduncus,IDP,0,50,LLT,0,400,50,400,50,0.125,1,3
+ITS-Mam-180449,Mammalia,Commerson's dolphin,Cephalorhynchus commersonii,SOCD,0,50,GND,0,20,20,20,50,0.4,0.4,2
+ITS-Mam-180449,Mammalia,Commerson's dolphin,Cephalorhynchus commersonii,SOCD,0,50,PST,0,280,50,280,50,0.17857142857142858,1,3
+ITS-Mam-180449,Mammalia,Commerson's dolphin,Cephalorhynchus commersonii,SOCD,0,50,LLT,0,400,50,400,50,0.125,1,3
+Fis-32599,Elasmobranchii,Longcomb sawfish,Pristis zijsron,IE,1,70,GND,0,20,19,20,69,0.26159420289855073,0.2753623188405797,2
+Fis-32599,Elasmobranchii,Longcomb sawfish,Pristis zijsron,IE,1,70,PST,0,280,69,280,69,0.24642857142857144,1,3
+Fis-32599,Elasmobranchii,Longcomb sawfish,Pristis zijsron,IE,1,70,LLT,0,400,69,400,69,0.1725,1,3
+Rep-2941,Reptilia,green sea turtle,Chelonia mydas,ST,0,95,GND,0,20,20,20,95,0.21052631578947367,0.21052631578947367,1
+Rep-2941,Reptilia,green sea turtle,Chelonia mydas,ST,0,95,PST,0,280,95,280,95,0.3392857142857143,1,3
+Rep-2941,Reptilia,green sea turtle,Chelonia mydas,ST,0,95,LLT,0,400,95,400,95,0.2375,1,3
+Rep-6936,Reptilia,Olive ridley turtle,Lepidochelys olivacea,ST,0,95,GND,0,20,20,20,95,0.21052631578947367,0.21052631578947367,1
+Rep-6936,Reptilia,Olive ridley turtle,Lepidochelys olivacea,ST,0,95,PST,0,280,95,280,95,0.3392857142857143,1,3
+Rep-6936,Reptilia,Olive ridley turtle,Lepidochelys olivacea,ST,0,95,LLT,0,400,95,400,95,0.2375,1,3
+Rep-8732,Reptilia,flatback turtle,Natator depressa,ST,0,95,GND,0,20,20,20,95,0.21052631578947367,0.21052631578947367,1
+Rep-8732,Reptilia,flatback turtle,Natator depressa,ST,0,95,PST,0,280,95,280,95,0.3392857142857143,1,3
+Rep-8732,Reptilia,flatback turtle,Natator depressa,ST,0,95,LLT,0,400,95,400,95,0.2375,1,3
+ITS-Mam-612592,Mammalia,Antarctic minke whale,Balaenoptera bonaerensis,BW,0,100,GND,0,20,20,20,100,0.2,0.2,1
+ITS-Mam-612592,Mammalia,Antarctic minke whale,Balaenoptera bonaerensis,BW,0,100,PST,0,280,100,280,100,0.35714285714285715,1,3
+ITS-Mam-612592,Mammalia,Antarctic minke whale,Balaenoptera bonaerensis,BW,0,100,LLT,0,400,100,400,100,0.25,1,3
+ITS-Mam-180535,Mammalia,pygmy right whale,Caperea marginata,BW,0,100,GND,0,20,20,20,100,0.2,0.2,1
+ITS-Mam-180535,Mammalia,pygmy right whale,Caperea marginata,BW,0,100,PST,0,280,100,280,100,0.35714285714285715,1,3
+ITS-Mam-180535,Mammalia,pygmy right whale,Caperea marginata,BW,0,100,LLT,0,400,100,400,100,0.25,1,3
+Fis-23051,Elasmobranchii,Spinner shark,Carcharhinus brevipinna,SSE,3,100,GND,0,20,17,20,97,0.14896907216494845,0.17525773195876287,1
+Fis-23051,Elasmobranchii,Spinner shark,Carcharhinus brevipinna,SSE,3,100,PST,0,280,97,280,97,0.3464285714285714,1,3
+Fis-23051,Elasmobranchii,Spinner shark,Carcharhinus brevipinna,SSE,3,100,LLT,0,400,97,400,97,0.2425,1,3
+Fis-23060,Elasmobranchii,Blacktip shark,Carcharhinus limbatus,SSE,3,100,GND,0,20,17,20,97,0.14896907216494845,0.17525773195876287,1
+Fis-23060,Elasmobranchii,Blacktip shark,Carcharhinus limbatus,SSE,3,100,PST,0,280,97,280,97,0.3464285714285714,1,3
+Fis-23060,Elasmobranchii,Blacktip shark,Carcharhinus limbatus,SSE,3,100,LLT,0,400,97,400,97,0.2425,1,3
+ITS-Mam-555654,Mammalia,Indo-Pacific common dolphin,Delphinus delphis tropicalis,SOCD,0,100,GND,0,20,20,20,100,0.2,0.2,1
+ITS-Mam-555654,Mammalia,Indo-Pacific common dolphin,Delphinus delphis tropicalis,SOCD,0,100,PST,0,280,100,280,100,0.35714285714285715,1,3
+ITS-Mam-555654,Mammalia,Indo-Pacific common dolphin,Delphinus delphis tropicalis,SOCD,0,100,LLT,0,400,100,400,100,0.25,1,3
+ITS-Mam-180430,Mammalia,Pantropical spotted dolphin,Stenella attenuata,SOCD,0,100,GND,0,20,20,20,100,0.2,0.2,1
+ITS-Mam-180430,Mammalia,Pantropical spotted dolphin,Stenella attenuata,SOCD,0,100,PST,0,280,100,280,100,0.35714285714285715,1,3
+ITS-Mam-180430,Mammalia,Pantropical spotted dolphin,Stenella attenuata,SOCD,0,100,LLT,0,400,100,400,100,0.25,1,3
+ITS-Mam-180417,Mammalia,rough-toothed dolphin,Steno bredanensis,SOCD,0,100,GND,0,20,20,20,100,0.2,0.2,1
+ITS-Mam-180417,Mammalia,rough-toothed dolphin,Steno bredanensis,SOCD,0,100,PST,0,280,100,280,100,0.35714285714285715,1,3
+ITS-Mam-180417,Mammalia,rough-toothed dolphin,Steno bredanensis,SOCD,0,100,LLT,0,400,100,400,100,0.25,1,3
+Fis-159132,Elasmobranchii,Western wobbegong,Orectolobus hutchinsi,BE,5,106,GND,0,20,15,20,101,0.11138613861386136,0.1485148514851485,1
+Fis-159132,Elasmobranchii,Western wobbegong,Orectolobus hutchinsi,BE,5,106,PST,0,280,101,280,101,0.3607142857142857,1,3
+Fis-159132,Elasmobranchii,Western wobbegong,Orectolobus hutchinsi,BE,5,106,LLT,0,400,101,400,101,0.2525,1,3
+Fis-23201,Elasmobranchii,Spotted wobbegong,Orectolobus maculatus,BE,5,110,GND,0,20,15,20,105,0.10714285714285714,0.14285714285714285,1
+Fis-23201,Elasmobranchii,Spotted wobbegong,Orectolobus maculatus,BE,5,110,PST,0,280,105,280,105,0.375,1,3
+Fis-23201,Elasmobranchii,Spotted wobbegong,Orectolobus maculatus,BE,5,110,LLT,0,400,105,400,105,0.2625,1,3
+Rep-5181,Reptilia,hawksbill turtle,Eretmochelys imbricata,ST,0,140,GND,0,20,20,20,140,0.14285714285714285,0.14285714285714285,1
+Rep-5181,Reptilia,hawksbill turtle,Eretmochelys imbricata,ST,0,140,PST,0,280,140,280,140,0.5,1,3
+Rep-5181,Reptilia,hawksbill turtle,Eretmochelys imbricata,ST,0,140,LLT,0,400,140,400,140,0.35,1,3
+Fis-164471,Elasmobranchii,Thornback skate,Dentiraja lemprieri,BE,3,170,GND,0,20,17,20,167,0.08652694610778443,0.10179640718562874,1
+Fis-164471,Elasmobranchii,Thornback skate,Dentiraja lemprieri,BE,3,170,PST,0,280,167,280,167,0.5964285714285714,1,3
+Fis-164471,Elasmobranchii,Thornback skate,Dentiraja lemprieri,BE,3,170,LLT,0,400,167,400,167,0.4175,1,3
+ITS-Mam-552771,Mammalia,southern right whale,Eubalaena australis,BW,0,175,GND,0,20,20,20,175,0.11428571428571428,0.11428571428571428,1
+ITS-Mam-552771,Mammalia,southern right whale,Eubalaena australis,BW,0,175,PST,0,280,175,280,175,0.625,1,3
+ITS-Mam-552771,Mammalia,southern right whale,Eubalaena australis,BW,0,175,LLT,0,400,175,400,175,0.4375,1,3
+ITS-Mam-180530,Mammalia,humpback whale,Megaptera novaeangliae,BW,0,200,GND,0,20,20,20,200,0.1,0.1,1
+ITS-Mam-180530,Mammalia,humpback whale,Megaptera novaeangliae,BW,0,200,PST,0,280,200,280,200,0.7142857142857143,1,3
+ITS-Mam-180530,Mammalia,humpback whale,Megaptera novaeangliae,BW,0,200,LLT,0,400,200,400,200,0.5,1,3
+Fis-23277,Elasmobranchii,Smooth hammerhead,Sphyrna zygaena,SSE,5,200,GND,0,20,15,20,195,0.05769230769230769,0.07692307692307693,1
+Fis-23277,Elasmobranchii,Smooth hammerhead,Sphyrna zygaena,SSE,5,200,PST,0,280,195,280,195,0.6964285714285714,1,3
+Fis-23277,Elasmobranchii,Smooth hammerhead,Sphyrna zygaena,SSE,5,200,LLT,0,400,195,400,195,0.4875,1,3
+ITS-Mam-180438,Mammalia,common dolphin,Delphinus delphis,SOCD,0,200,GND,0,20,20,20,200,0.1,0.1,1
+ITS-Mam-180438,Mammalia,common dolphin,Delphinus delphis,SOCD,0,200,PST,0,280,200,280,200,0.7142857142857143,1,3
+ITS-Mam-180438,Mammalia,common dolphin,Delphinus delphis,SOCD,0,200,LLT,0,400,200,400,200,0.5,1,3
+ITS-Mam-180447,Mammalia,hourglass dolphin,Lagenorhynchus cruciger,SOCD,0,200,GND,0,20,20,20,200,0.1,0.1,1
+ITS-Mam-180447,Mammalia,hourglass dolphin,Lagenorhynchus cruciger,SOCD,0,200,PST,0,280,200,280,200,0.7142857142857143,1,3
+ITS-Mam-180447,Mammalia,hourglass dolphin,Lagenorhynchus cruciger,SOCD,0,200,LLT,0,400,200,400,200,0.5,1,3
+ITS-Mam-180445,Mammalia,dusky dolphin,Lagenorhynchus obscurus,SOCD,0,200,GND,0,20,20,20,200,0.1,0.1,1
+ITS-Mam-180445,Mammalia,dusky dolphin,Lagenorhynchus obscurus,SOCD,0,200,PST,0,280,200,280,200,0.7142857142857143,1,3
+ITS-Mam-180445,Mammalia,dusky dolphin,Lagenorhynchus obscurus,SOCD,0,200,LLT,0,400,200,400,200,0.5,1,3
+ITS-Mam-180455,Mammalia,Southern right whale dolphin,Lissodelphis peronii,SOCD,0,200,GND,0,20,20,20,200,0.1,0.1,1
+ITS-Mam-180455,Mammalia,Southern right whale dolphin,Lissodelphis peronii,SOCD,0,200,PST,0,280,200,280,200,0.7142857142857143,1,3
+ITS-Mam-180455,Mammalia,Southern right whale dolphin,Lissodelphis peronii,SOCD,0,200,LLT,0,400,200,400,200,0.5,1,3
+ITS-Mam-180426,Mammalia,bottlenose dolphin,Tursiops truncatus,SOCD,0,200,GND,0,20,20,20,200,0.1,0.1,1
+ITS-Mam-180426,Mammalia,bottlenose dolphin,Tursiops truncatus,SOCD,0,200,PST,0,280,200,280,200,0.7142857142857143,1,3
+ITS-Mam-180426,Mammalia,bottlenose dolphin,Tursiops truncatus,SOCD,0,200,LLT,0,400,200,400,200,0.5,1,3
+Fis-23061,Elasmobranchii,Oceanic whitetip shark,Carcharhinus longimanus,OE,1,230,GND,0,20,19,20,229,0.07882096069868995,0.08296943231441048,1
+Fis-23061,Elasmobranchii,Oceanic whitetip shark,Carcharhinus longimanus,OE,1,230,PST,0,280,229,280,229,0.8178571428571428,1,3
+Fis-23061,Elasmobranchii,Oceanic whitetip shark,Carcharhinus longimanus,OE,1,230,LLT,0,400,229,400,229,0.5725,1,3
+ITS-Mam-180528,Mammalia,blue whale,Balaenoptera musculus,BW,0,250,GND,0,20,20,20,250,0.08,0.08,1
+ITS-Mam-180528,Mammalia,blue whale,Balaenoptera musculus,BW,0,250,PST,0,280,250,280,250,0.8928571428571429,1,3
+ITS-Mam-180528,Mammalia,blue whale,Balaenoptera musculus,BW,0,250,LLT,0,400,250,400,250,0.625,1,3
+ITS-Mam-180527,Mammalia,fin whale,Balaenoptera physalus,BW,0,250,GND,0,20,20,20,250,0.08,0.08,1
+ITS-Mam-180527,Mammalia,fin whale,Balaenoptera physalus,BW,0,250,PST,0,280,250,280,250,0.8928571428571429,1,3
+ITS-Mam-180527,Mammalia,fin whale,Balaenoptera physalus,BW,0,250,LLT,0,400,250,400,250,0.625,1,3
+ITS-Mam-180429,Mammalia,spinner dolphin,Stenella longirostris,SOCD,0,250,GND,0,20,20,20,250,0.08,0.08,1
+ITS-Mam-180429,Mammalia,spinner dolphin,Stenella longirostris,SOCD,0,250,PST,0,280,250,280,250,0.8928571428571429,1,3
+ITS-Mam-180429,Mammalia,spinner dolphin,Stenella longirostris,SOCD,0,250,LLT,0,400,250,400,250,0.625,1,3
+ITS-Mam-180526,Mammalia,sei whale,Balaenoptera borealis,BW,0,300,GND,0,20,20,20,300,0.06666666666666667,0.06666666666666667,1
+ITS-Mam-180526,Mammalia,sei whale,Balaenoptera borealis,BW,0,300,PST,0,280,280,280,300,0.9333333333333332,0.9333333333333333,3
+ITS-Mam-180526,Mammalia,sei whale,Balaenoptera borealis,BW,0,300,LLT,0,400,300,400,300,0.75,1,3
+Fis-31568,Elasmobranchii,Pelagic thresher,Alopias pelagicus,OE,0,300,GND,0,20,20,20,300,0.06666666666666667,0.06666666666666667,1
+Fis-31568,Elasmobranchii,Pelagic thresher,Alopias pelagicus,OE,0,300,PST,0,280,280,280,300,0.9333333333333332,0.9333333333333333,3
+Fis-31568,Elasmobranchii,Pelagic thresher,Alopias pelagicus,OE,0,300,LLT,0,400,300,400,300,0.75,1,3
+ITS-Mam-180461,Mammalia,pygmy killer whale,Feresa attenuata,LOD,0,400,GND,0,20,20,20,400,0.05,0.05,1
+ITS-Mam-180461,Mammalia,pygmy killer whale,Feresa attenuata,LOD,0,400,PST,0,280,280,280,400,0.7,0.7,3
+ITS-Mam-180461,Mammalia,pygmy killer whale,Feresa attenuata,LOD,0,400,LLT,0,400,400,400,400,1,1,3
+ITS-Mam-552461,Mammalia,long-finned pilot whale,Globicephala melas,LOD,0,400,GND,0,20,20,20,400,0.05,0.05,1
+ITS-Mam-552461,Mammalia,long-finned pilot whale,Globicephala melas,LOD,0,400,PST,0,280,280,280,400,0.7,0.7,3
+ITS-Mam-552461,Mammalia,long-finned pilot whale,Globicephala melas,LOD,0,400,LLT,0,400,400,400,400,1,1,3
+ITS-Mam-180491,Mammalia,pygmy sperm whale,Kogia breviceps,OTW,0,400,GND,0,20,20,20,400,0.05,0.05,1
+ITS-Mam-180491,Mammalia,pygmy sperm whale,Kogia breviceps,OTW,0,400,PST,0,280,280,280,400,0.7,0.7,3
+ITS-Mam-180491,Mammalia,pygmy sperm whale,Kogia breviceps,OTW,0,400,LLT,0,400,400,400,400,1,1,3
+ITS-Mam-180469,Mammalia,killer whale,Orcinus orca,LOD,0,500,GND,0,20,20,20,500,0.04,0.04,1
+ITS-Mam-180469,Mammalia,killer whale,Orcinus orca,LOD,0,500,PST,0,280,280,280,500,0.56,0.56,3
+ITS-Mam-180469,Mammalia,killer whale,Orcinus orca,LOD,0,500,LLT,0,400,400,400,500,0.8,0.8,3
+ITS-Mam-180459,Mammalia,melon-headed whale,Peponocephala electra,LOD,0,500,GND,0,20,20,20,500,0.04,0.04,1
+ITS-Mam-180459,Mammalia,melon-headed whale,Peponocephala electra,LOD,0,500,PST,0,280,280,280,500,0.56,0.56,3
+ITS-Mam-180459,Mammalia,melon-headed whale,Peponocephala electra,LOD,0,500,LLT,0,400,400,400,500,0.8,0.8,3
+Fis-23054,Elasmobranchii,Silky shark,Carcharhinus falciformis,PGE,0,500,GND,0,20,20,20,500,0.04,0.04,1
+Fis-23054,Elasmobranchii,Silky shark,Carcharhinus falciformis,PGE,0,500,PST,0,280,280,280,500,0.56,0.56,3
+Fis-23054,Elasmobranchii,Silky shark,Carcharhinus falciformis,PGE,0,500,LLT,0,400,400,400,500,0.8,0.8,3
+Fis-25899,Elasmobranchii,Crocodile shark,Pseudocarcharias kamoharai,OE,0,590,GND,0,20,20,20,590,0.03389830508474576,0.03389830508474576,1
+Fis-25899,Elasmobranchii,Crocodile shark,Pseudocarcharias kamoharai,OE,0,590,PST,0,280,280,280,590,0.4745762711864407,0.4745762711864407,2
+Fis-25899,Elasmobranchii,Crocodile shark,Pseudocarcharias kamoharai,OE,0,590,LLT,0,400,400,400,590,0.6779661016949152,0.6779661016949152,3
+ITS-Mam-180440,Mammalia,Fraser's dolphin,Lagenodelphis hosei,SOCD,0,600,GND,0,20,20,20,600,0.03333333333333333,0.03333333333333333,1
+ITS-Mam-180440,Mammalia,Fraser's dolphin,Lagenodelphis hosei,SOCD,0,600,PST,0,280,280,280,600,0.4666666666666667,0.4666666666666667,2
+ITS-Mam-180440,Mammalia,Fraser's dolphin,Lagenodelphis hosei,SOCD,0,600,LLT,0,400,400,400,600,0.6666666666666666,0.6666666666666666,3
+Fis-23899,Elasmobranchii,Thresher,Alopias vulpinus,OE,0,650,GND,0,20,20,20,650,0.03076923076923077,0.03076923076923077,1
+Fis-23899,Elasmobranchii,Thresher,Alopias vulpinus,OE,0,650,PST,0,280,280,280,650,0.4307692307692308,0.4307692307692308,2
+Fis-23899,Elasmobranchii,Thresher,Alopias vulpinus,OE,0,650,LLT,0,400,400,400,650,0.6153846153846154,0.6153846153846154,3
+ITS-Mam-180434,Mammalia,striped dolphin,Stenella coeruleoalba,SOCD,0,700,GND,0,20,20,20,700,0.02857142857142857,0.02857142857142857,1
+ITS-Mam-180434,Mammalia,striped dolphin,Stenella coeruleoalba,SOCD,0,700,PST,0,280,280,280,700,0.4,0.4,2
+ITS-Mam-180434,Mammalia,striped dolphin,Stenella coeruleoalba,SOCD,0,700,LLT,0,400,400,400,700,0.5714285714285714,0.5714285714285714,3
+Fis-23898,Elasmobranchii,Bigeye thresher,Alopias superciliosus,OE,0,730,GND,0,20,20,20,730,0.0273972602739726,0.0273972602739726,1
+Fis-23898,Elasmobranchii,Bigeye thresher,Alopias superciliosus,OE,0,730,PST,0,280,280,280,730,0.3835616438356164,0.3835616438356164,2
+Fis-23898,Elasmobranchii,Bigeye thresher,Alopias superciliosus,OE,0,730,LLT,0,400,400,400,730,0.547945205479452,0.547945205479452,3
+ITS-Mam-180466,Mammalia,short-finned pilot whale,Globicephala macrorhynchus,LOD,0,800,GND,0,20,20,20,800,0.025,0.025,1
+ITS-Mam-180466,Mammalia,short-finned pilot whale,Globicephala macrorhynchus,LOD,0,800,PST,0,280,280,280,800,0.35,0.35,2
+ITS-Mam-180466,Mammalia,short-finned pilot whale,Globicephala macrorhynchus,LOD,0,800,LLT,0,400,400,400,800,0.5,0.5,2
+Fis-23129,Elasmobranchii,Tiger shark,Galeocerdo cuvier,PGE,1,800,GND,0,20,19,20,799,0.02259073842302878,0.023779724655819776,1
+Fis-23129,Elasmobranchii,Tiger shark,Galeocerdo cuvier,PGE,1,800,PST,0,280,279,280,799,0.34793938852136597,0.34918648310387984,2
+Fis-23129,Elasmobranchii,Tiger shark,Galeocerdo cuvier,PGE,1,800,LLT,0,400,399,400,799,0.4981257822277847,0.49937421777221525,2
+ITS-Mam-180524,Mammalia,northern minke whale,Balaenoptera acutorostrata,BW,0,1000,GND,0,20,20,20,1000,0.02,0.02,1
+ITS-Mam-180524,Mammalia,northern minke whale,Balaenoptera acutorostrata,BW,0,1000,PST,0,280,280,280,1000,0.28,0.28,2
+ITS-Mam-180524,Mammalia,northern minke whale,Balaenoptera acutorostrata,BW,0,1000,LLT,0,400,400,400,1000,0.4,0.4,2
+ITS-Mam-612597,Mammalia,Bryde's whale,Balaenoptera brydei,BW,0,1000,GND,0,20,20,20,1000,0.02,0.02,1
+ITS-Mam-612597,Mammalia,Bryde's whale,Balaenoptera brydei,BW,0,1000,PST,0,280,280,280,1000,0.28,0.28,2
+ITS-Mam-612597,Mammalia,Bryde's whale,Balaenoptera brydei,BW,0,1000,LLT,0,400,400,400,1000,0.4,0.4,2
+ITS-Mam-180525,Mammalia,Eden's whale,Balaenoptera edeni,BW,0,1000,GND,0,20,20,20,1000,0.02,0.02,1
+ITS-Mam-180525,Mammalia,Eden's whale,Balaenoptera edeni,BW,0,1000,PST,0,280,280,280,1000,0.28,0.28,2
+ITS-Mam-180525,Mammalia,Eden's whale,Balaenoptera edeni,BW,0,1000,LLT,0,400,400,400,1000,0.4,0.4,2
+ITS-Mam-180457,Mammalia,Risso's dolphin,Grampus griseus,LOD,0,1000,GND,0,20,20,20,1000,0.02,0.02,1
+ITS-Mam-180457,Mammalia,Risso's dolphin,Grampus griseus,LOD,0,1000,PST,0,280,280,280,1000,0.28,0.28,2
+ITS-Mam-180457,Mammalia,Risso's dolphin,Grampus griseus,LOD,0,1000,LLT,0,400,400,400,1000,0.4,0.4,2
+ITS-Mam-180495,Mammalia,Arnoux's beaked whale,Berardius arnuxii,OTW,0,1000,GND,0,20,20,20,1000,0.02,0.02,1
+ITS-Mam-180495,Mammalia,Arnoux's beaked whale,Berardius arnuxii,OTW,0,1000,PST,0,280,280,280,1000,0.28,0.28,2
+ITS-Mam-180495,Mammalia,Arnoux's beaked whale,Berardius arnuxii,OTW,0,1000,LLT,0,400,400,400,1000,0.4,0.4,2
+ITS-Mam-180516,Mammalia,strap-toothed whale,Mesoplodon layardii,OTW,0,1000,GND,0,20,20,20,1000,0.02,0.02,1
+ITS-Mam-180516,Mammalia,strap-toothed whale,Mesoplodon layardii,OTW,0,1000,PST,0,280,280,280,1000,0.28,0.28,2
+ITS-Mam-180516,Mammalia,strap-toothed whale,Mesoplodon layardii,OTW,0,1000,LLT,0,400,400,400,1000,0.4,0.4,2
+ITS-Mam-180500,Mammalia,Shepherd's beaked whale,Tasmacetus shepherdi,OTW,0,1000,GND,0,20,20,20,1000,0.02,0.02,1
+ITS-Mam-180500,Mammalia,Shepherd's beaked whale,Tasmacetus shepherdi,OTW,0,1000,PST,0,280,280,280,1000,0.28,0.28,2
+ITS-Mam-180500,Mammalia,Shepherd's beaked whale,Tasmacetus shepherdi,OTW,0,1000,LLT,0,400,400,400,1000,0.4,0.4,2
+Fis-23273,Elasmobranchii,Scalloped hammerhead,Sphyrna lewini,SSE,0,1000,GND,0,20,20,20,1000,0.02,0.02,1
+Fis-23273,Elasmobranchii,Scalloped hammerhead,Sphyrna lewini,SSE,0,1000,PST,0,280,280,280,1000,0.28,0.28,2
+Fis-23273,Elasmobranchii,Scalloped hammerhead,Sphyrna lewini,SSE,0,1000,LLT,0,400,400,400,1000,0.4,0.4,2
+Fis-23047,Elasmobranchii,Grey reef shark,Carcharhinus amblyrhynchos,SSE,0,1000,GND,0,20,20,20,1000,0.02,0.02,1
+Fis-23047,Elasmobranchii,Grey reef shark,Carcharhinus amblyrhynchos,SSE,0,1000,PST,0,280,280,280,1000,0.28,0.28,2
+Fis-23047,Elasmobranchii,Grey reef shark,Carcharhinus amblyrhynchos,SSE,0,1000,LLT,0,400,400,400,1000,0.4,0.4,2
+Fis-23071,Elasmobranchii,Great white shark,Carcharodon carcharias,PGE,0,1200,GND,0,20,20,20,1200,0.01666666666666666,0.016666666666666666,1
+Fis-23071,Elasmobranchii,Great white shark,Carcharodon carcharias,PGE,0,1200,PST,0,280,280,280,1200,0.23333333333333336,0.23333333333333334,1
+Fis-23071,Elasmobranchii,Great white shark,Carcharodon carcharias,PGE,0,1200,LLT,0,400,400,400,1200,0.3333333333333333,0.3333333333333333,2
+ITS-Mam-180502,Mammalia,longman's beaked whale,Indopacetus pacificus,OTW,0,1500,GND,0,20,20,20,1500,0.01333333333333333,0.013333333333333334,1
+ITS-Mam-180502,Mammalia,longman's beaked whale,Indopacetus pacificus,OTW,0,1500,PST,0,280,280,280,1500,0.18666666666666668,0.18666666666666668,1
+ITS-Mam-180502,Mammalia,longman's beaked whale,Indopacetus pacificus,OTW,0,1500,LLT,0,400,400,400,1500,0.26666666666666666,0.26666666666666666,2
+Fis-35514,Elasmobranchii,Chilean devil ray,Mobula tarapacana,FFE,0,1896,GND,0,20,20,20,1896,0.01054852320675105,0.010548523206751054,1
+Fis-35514,Elasmobranchii,Chilean devil ray,Mobula tarapacana,FFE,0,1896,PST,0,280,280,280,1896,0.14767932489451477,0.14767932489451477,1
+Fis-35514,Elasmobranchii,Chilean devil ray,Mobula tarapacana,FFE,0,1896,LLT,0,400,400,400,1896,0.2109704641350211,0.2109704641350211,1
+Fis-30583,Elasmobranchii,Whale shark,Rhincodon typus,FFE,0,1928,GND,0,20,20,20,1928,0.01037344398340249,0.01037344398340249,1
+Fis-30583,Elasmobranchii,Whale shark,Rhincodon typus,FFE,0,1928,PST,0,280,280,280,1928,0.14522821576763487,0.14522821576763487,1
+Fis-30583,Elasmobranchii,Whale shark,Rhincodon typus,FFE,0,1928,LLT,0,400,400,400,1928,0.2074688796680498,0.2074688796680498,1
+Fis-22747,Elasmobranchii,Basking shark,Cetorhinus maximus,FFE,0,2000,GND,0,20,20,20,2000,0.01,0.01,1
+Fis-22747,Elasmobranchii,Basking shark,Cetorhinus maximus,FFE,0,2000,PST,0,280,280,280,2000,0.14,0.14,1
+Fis-22747,Elasmobranchii,Basking shark,Cetorhinus maximus,FFE,0,2000,LLT,0,400,400,400,2000,0.2,0.2,1
+ITS-Mam-180475,Mammalia,spectacled porpoise,Phocoena dioptrica,IDP,0,100,GND,0,20,20,20,100,0.2,0.2,1
+ITS-Mam-180475,Mammalia,spectacled porpoise,Phocoena dioptrica,IDP,0,100,PST,0,280,100,280,100,0.35714285714285715,1,3
+ITS-Mam-180475,Mammalia,spectacled porpoise,Phocoena dioptrica,IDP,0,100,LLT,0,400,100,400,100,0.25,1,3
+ITS-Mam-180463,Mammalia,false killer whale,Pseudorca crassidens,LOD,0,1000,GND,0,20,20,20,1000,0.02,0.02,1
+ITS-Mam-180463,Mammalia,false killer whale,Pseudorca crassidens,LOD,0,1000,PST,0,280,280,280,1000,0.28,0.28,2
+ITS-Mam-180463,Mammalia,false killer whale,Pseudorca crassidens,LOD,0,1000,LLT,0,400,400,400,1000,0.4,0.4,2
+ITS-Mam-180505,Mammalia,Southern bottlenose whale,Hyperoodon planifrons,OTW,0,2000,GND,0,20,20,20,2000,0.01,0.01,1
+ITS-Mam-180505,Mammalia,Southern bottlenose whale,Hyperoodon planifrons,OTW,0,2000,PST,0,280,280,280,2000,0.14,0.14,1
+ITS-Mam-180505,Mammalia,Southern bottlenose whale,Hyperoodon planifrons,OTW,0,2000,LLT,0,400,400,400,2000,0.2,0.2,1
+ITS-Mam-180492,Mammalia,dwarf sperm whale,Kogia sima,OTW,0,2000,GND,0,20,20,20,2000,0.01,0.01,1
+ITS-Mam-180492,Mammalia,dwarf sperm whale,Kogia sima,OTW,0,2000,PST,0,280,280,280,2000,0.14,0.14,1
+ITS-Mam-180492,Mammalia,dwarf sperm whale,Kogia sima,OTW,0,2000,LLT,0,400,400,400,2000,0.2,0.2,1
+ITS-Mam-180513,Mammalia,Andrew's beaked whale,Mesoplodon bowdoini,OTW,0,2000,GND,0,20,20,20,2000,0.01,0.01,1
+ITS-Mam-180513,Mammalia,Andrew's beaked whale,Mesoplodon bowdoini,OTW,0,2000,PST,0,280,280,280,2000,0.14,0.14,1
+ITS-Mam-180513,Mammalia,Andrew's beaked whale,Mesoplodon bowdoini,OTW,0,2000,LLT,0,400,400,400,2000,0.2,0.2,1
+ITS-Mam-180517,Mammalia,Blainville's beaked whale,Mesoplodon densirostris,OTW,0,2000,GND,0,20,20,20,2000,0.01,0.01,1
+ITS-Mam-180517,Mammalia,Blainville's beaked whale,Mesoplodon densirostris,OTW,0,2000,PST,0,280,280,280,2000,0.14,0.14,1
+ITS-Mam-180517,Mammalia,Blainville's beaked whale,Mesoplodon densirostris,OTW,0,2000,LLT,0,400,400,400,2000,0.2,0.2,1
+ITS-Mam-180510,Mammalia,ginkgo-toothed beaked whale,Mesoplodon ginkgodens,OTW,0,2000,GND,0,20,20,20,2000,0.01,0.01,1
+ITS-Mam-180510,Mammalia,ginkgo-toothed beaked whale,Mesoplodon ginkgodens,OTW,0,2000,PST,0,280,280,280,2000,0.14,0.14,1
+ITS-Mam-180510,Mammalia,ginkgo-toothed beaked whale,Mesoplodon ginkgodens,OTW,0,2000,LLT,0,400,400,400,2000,0.2,0.2,1
+ITS-Mam-180511,Mammalia,Gray's beaked whale,Mesoplodon grayi,OTW,0,2000,GND,0,20,20,20,2000,0.01,0.01,1
+ITS-Mam-180511,Mammalia,Gray's beaked whale,Mesoplodon grayi,OTW,0,2000,PST,0,280,280,280,2000,0.14,0.14,1
+ITS-Mam-180511,Mammalia,Gray's beaked whale,Mesoplodon grayi,OTW,0,2000,LLT,0,400,400,400,2000,0.2,0.2,1
+ITS-Mam-180508,Mammalia,True's beaked whale,Mesoplodon mirus,OTW,0,2000,GND,0,20,20,20,2000,0.01,0.01,1
+ITS-Mam-180508,Mammalia,True's beaked whale,Mesoplodon mirus,OTW,0,2000,PST,0,280,280,280,2000,0.14,0.14,1
+ITS-Mam-180508,Mammalia,True's beaked whale,Mesoplodon mirus,OTW,0,2000,LLT,0,400,400,400,2000,0.2,0.2,1
+Rep-4381,Reptilia,leatherback turtle,Dermochelys coriacea,ST,0,2000,GND,0,20,20,20,2000,0.01,0.01,1
+Rep-4381,Reptilia,leatherback turtle,Dermochelys coriacea,ST,0,2000,PST,0,280,280,280,2000,0.14,0.14,1
+Rep-4381,Reptilia,leatherback turtle,Dermochelys coriacea,ST,0,2000,LLT,0,400,400,400,2000,0.2,0.2,1
+ITS-Mam-180488,Mammalia,sperm whale,Physeter macrocephalus,OTW,0,2500,GND,0,20,20,20,2500,0.008,0.008,1
+ITS-Mam-180488,Mammalia,sperm whale,Physeter macrocephalus,OTW,0,2500,PST,0,280,280,280,2500,0.112,0.112,1
+ITS-Mam-180488,Mammalia,sperm whale,Physeter macrocephalus,OTW,0,2500,LLT,0,400,400,400,2500,0.16,0.16,1
+ITS-Mam-180507,Mammalia,Hector's beaked whale,Mesoplodon hectori,OTW,0,2500,GND,0,20,20,20,2500,0.008,0.008,1
+ITS-Mam-180507,Mammalia,Hector's beaked whale,Mesoplodon hectori,OTW,0,2500,PST,0,280,280,280,2500,0.112,0.112,1
+ITS-Mam-180507,Mammalia,Hector's beaked whale,Mesoplodon hectori,OTW,0,2500,LLT,0,400,400,400,2500,0.16,0.16,1
+ITS-Mam-180498,Mammalia,Cuvier's beaked whale,Ziphius cavirostris,OTW,0,3000,GND,0,20,20,20,3000,0.00666666666666666,0.006666666666666667,1
+ITS-Mam-180498,Mammalia,Cuvier's beaked whale,Ziphius cavirostris,OTW,0,3000,PST,0,280,280,280,3000,0.09333333333333334,0.09333333333333334,1
+ITS-Mam-180498,Mammalia,Cuvier's beaked whale,Ziphius cavirostris,OTW,0,3000,LLT,0,400,400,400,3000,0.13333333333333333,0.13333333333333333,1
+Fis-29459,Elasmobranchii,Northern wobbegong,Orectolobus wardi,BE,3,10,GND,0,20,7,20,7,0.35,1,3
+Fis-29459,Elasmobranchii,Northern wobbegong,Orectolobus wardi,BE,3,10,PST,0,280,7,280,7,0.025,1,3
+Fis-29459,Elasmobranchii,Northern wobbegong,Orectolobus wardi,BE,3,10,LLT,0,400,7,400,7,0.0175,1,3
+Fis-161453,Elasmobranchii,Northern river shark,Glyphis garricki,IE,1,11,GND,0,20,10,20,10,0.5,1,3
+Fis-161453,Elasmobranchii,Northern river shark,Glyphis garricki,IE,1,11,PST,0,280,10,280,10,0.03571428571428571,1,3
+Fis-161453,Elasmobranchii,Northern river shark,Glyphis garricki,IE,1,11,LLT,0,400,10,400,10,0.025,1,3
+Fis-132130,Elasmobranchii,Hasselt's bambooshark,Chiloscyllium hasseltii,BE,3,12,GND,0,20,9,20,9,0.45,1,3
+Fis-132130,Elasmobranchii,Hasselt's bambooshark,Chiloscyllium hasseltii,BE,3,12,PST,0,280,9,280,9,0.03214285714285714,1,3
+Fis-132130,Elasmobranchii,Hasselt's bambooshark,Chiloscyllium hasseltii,BE,3,12,LLT,0,400,9,400,9,0.0225,1,3
+Fis-64122,Elasmobranchii,Pita skate,Raja pita,BE,3,15,GND,0,20,12,20,12,0.6,1,3
+Fis-64122,Elasmobranchii,Pita skate,Raja pita,BE,3,15,PST,0,280,12,280,12,0.04285714285714286,1,3
+Fis-64122,Elasmobranchii,Pita skate,Raja pita,BE,3,15,LLT,0,400,12,400,12,0.03,1,3
+Fis-23322,Elasmobranchii,Spotted eagle ray,Aetobatus narinari,PGE,1,80,GND,0,20,19,20,79,0.22848101265822784,0.24050632911392406,1
+Fis-23322,Elasmobranchii,Spotted eagle ray,Aetobatus narinari,PGE,1,80,PST,0,280,79,280,79,0.28214285714285714,1,3
+Fis-23322,Elasmobranchii,Spotted eagle ray,Aetobatus narinari,PGE,1,80,LLT,0,400,79,400,79,0.1975,1,3
+Fis-23070,Elasmobranchii,Spot-tail shark,Carcharhinus sorrah,SSE,1,140,GND,0,20,19,20,139,0.12985611510791367,0.1366906474820144,1
+Fis-23070,Elasmobranchii,Spot-tail shark,Carcharhinus sorrah,SSE,1,140,PST,0,280,139,280,139,0.49642857142857144,1,3
+Fis-23070,Elasmobranchii,Spot-tail shark,Carcharhinus sorrah,SSE,1,140,LLT,0,400,139,400,139,0.3475,1,3
+Fis-23059,Elasmobranchii,Bull shark,Carcharhinus leucas,SSE,1,152,GND,0,20,19,20,151,0.1195364238410596,0.12582781456953643,1
+Fis-23059,Elasmobranchii,Bull shark,Carcharhinus leucas,SSE,1,152,PST,0,280,151,280,151,0.5392857142857143,1,3
+Fis-23059,Elasmobranchii,Bull shark,Carcharhinus leucas,SSE,1,152,LLT,0,400,151,400,151,0.3775,1,3
+Fis-23274,Elasmobranchii,Great hammerhead,Sphyrna mokarran,SSE,1,300,GND,0,20,19,20,299,0.06036789297658862,0.06354515050167224,1
+Fis-23274,Elasmobranchii,Great hammerhead,Sphyrna mokarran,SSE,1,300,PST,0,280,279,280,299,0.9297778308647876,0.9331103678929766,3
+Fis-23274,Elasmobranchii,Great hammerhead,Sphyrna mokarran,SSE,1,300,LLT,0,400,299,400,299,0.7475,1,3
+Fis-20033,Elasmobranchii,Pelagic stingray,Pteroplatytrygon violacea,PGE,1,381,GND,0,20,19,20,380,0.0475,0.05,1
+Fis-20033,Elasmobranchii,Pelagic stingray,Pteroplatytrygon violacea,PGE,1,381,PST,0,280,279,280,380,0.7315883458646616,0.7342105263157894,3
+Fis-20033,Elasmobranchii,Pelagic stingray,Pteroplatytrygon violacea,PGE,1,381,LLT,0,400,380,400,380,0.95,1,3
+Fis-23222,Elasmobranchii,Blue shark,Prionace glauca,PGE,1,1000,GND,0,20,19,20,999,0.01806806806806806,0.01901901901901902,1
+Fis-23222,Elasmobranchii,Blue shark,Prionace glauca,PGE,1,1000,PST,0,280,279,280,999,0.2782818532818533,0.27927927927927926,2
+Fis-23222,Elasmobranchii,Blue shark,Prionace glauca,PGE,1,1000,LLT,0,400,399,400,999,0.3984009009009009,0.3993993993993994,2
+Fis-28560,Elasmobranchii,Mottled eagle ray,Aetomylaeus maculatus,IE,2,18,GND,0,20,16,20,16,0.8,1,3
+Fis-28560,Elasmobranchii,Mottled eagle ray,Aetomylaeus maculatus,IE,2,18,PST,0,280,16,280,16,0.05714285714285714,1,3
+Fis-28560,Elasmobranchii,Mottled eagle ray,Aetomylaeus maculatus,IE,2,18,LLT,0,400,16,400,16,0.04,1,3
+Fis-140161,Elasmobranchii,Slender weasel shark,Paragaleus randalli,SSE,2,18,GND,0,20,16,20,16,0.8,1,3
+Fis-140161,Elasmobranchii,Slender weasel shark,Paragaleus randalli,SSE,2,18,PST,0,280,16,280,16,0.05714285714285714,1,3
+Fis-140161,Elasmobranchii,Slender weasel shark,Paragaleus randalli,SSE,2,18,LLT,0,400,16,400,16,0.04,1,3
+Fis-25892,Elasmobranchii,Slender bambooshark,Chiloscyllium indicum,BE,2,20,GND,0,20,18,20,18,0.9,1,3
+Fis-25892,Elasmobranchii,Slender bambooshark,Chiloscyllium indicum,BE,2,20,PST,0,280,18,280,18,0.06428571428571428,1,3
+Fis-25892,Elasmobranchii,Slender bambooshark,Chiloscyllium indicum,BE,2,20,LLT,0,400,18,400,18,0.045,1,3
+Fis-23063,Elasmobranchii,Blacktip reef shark,Carcharhinus melanopterus,SSE,2,75,GND,0,20,18,20,73,0.2219178082191781,0.2465753424657534,1
+Fis-23063,Elasmobranchii,Blacktip reef shark,Carcharhinus melanopterus,SSE,2,75,PST,0,280,73,280,73,0.26071428571428573,1,3
+Fis-23063,Elasmobranchii,Blacktip reef shark,Carcharhinus melanopterus,SSE,2,75,LLT,0,400,73,400,73,0.1825,1,3
+Fis-25233,Elasmobranchii,Tope shark,Galeorhinus galeus,PGE,2,1100,GND,0,20,18,20,1098,0.01475409836065573,0.01639344262295082,1
+Fis-25233,Elasmobranchii,Tope shark,Galeorhinus galeus,PGE,2,1100,PST,0,280,278,280,1098,0.2513791308873276,0.25318761384335153,2
+Fis-25233,Elasmobranchii,Tope shark,Galeorhinus galeus,PGE,2,1100,LLT,0,400,398,400,1098,0.3606648451730418,0.36247723132969034,2
+Fis-25603,Elasmobranchii,Ribbontail stingray,Taeniura lymma,DGE,3,20,GND,0,20,17,20,17,0.85,1,3
+Fis-25603,Elasmobranchii,Ribbontail stingray,Taeniura lymma,DGE,3,20,PST,0,280,17,280,17,0.06071428571428571,1,3
+Fis-25603,Elasmobranchii,Ribbontail stingray,Taeniura lymma,DGE,3,20,LLT,0,400,17,400,17,0.0425,1,3
+Fis-6035,Elasmobranchii,Porcupine ray,Urogymnus asperrimus,IE,3,20,GND,0,20,17,20,17,0.85,1,3
+Fis-6035,Elasmobranchii,Porcupine ray,Urogymnus asperrimus,IE,3,20,PST,0,280,17,280,17,0.06071428571428571,1,3
+Fis-6035,Elasmobranchii,Porcupine ray,Urogymnus asperrimus,IE,3,20,LLT,0,400,17,400,17,0.0425,1,3
+Fis-23138,Elasmobranchii,Ganges shark,Glyphis gangeticus,IE,3,20,GND,0,20,17,20,17,0.85,1,3
+Fis-23138,Elasmobranchii,Ganges shark,Glyphis gangeticus,IE,3,20,PST,0,280,17,280,17,0.06071428571428571,1,3
+Fis-23138,Elasmobranchii,Ganges shark,Glyphis gangeticus,IE,3,20,LLT,0,400,17,400,17,0.0425,1,3
+Fis-26932,Elasmobranchii,Long-tailed butterfly ray,Gymnura poecilura,IE,3,25,GND,0,20,17,20,22,0.6568181818181817,0.7727272727272727,3
+Fis-26932,Elasmobranchii,Long-tailed butterfly ray,Gymnura poecilura,IE,3,25,PST,0,280,22,280,22,0.07857142857142857,1,3
+Fis-26932,Elasmobranchii,Long-tailed butterfly ray,Gymnura poecilura,IE,3,25,LLT,0,400,22,400,22,0.055,1,3
+Fis-29500,Elasmobranchii,Grey sharpnose shark,Rhizoprionodon oligolinx,SSE,3,36,GND,0,20,17,20,33,0.43787878787878787,0.5151515151515151,3
+Fis-29500,Elasmobranchii,Grey sharpnose shark,Rhizoprionodon oligolinx,SSE,3,36,PST,0,280,33,280,33,0.11785714285714284,1,3
+Fis-29500,Elasmobranchii,Grey sharpnose shark,Rhizoprionodon oligolinx,SSE,3,36,LLT,0,400,33,400,33,0.0825,1,3
+Fis-54720,Elasmobranchii,Western shovelnose ray,Aptychotrema vincentiana,BE,4,32,GND,0,20,16,20,28,0.45714285714285713,0.5714285714285714,3
+Fis-54720,Elasmobranchii,Western shovelnose ray,Aptychotrema vincentiana,BE,4,32,PST,0,280,28,280,28,0.1,1,3
+Fis-54720,Elasmobranchii,Western shovelnose ray,Aptychotrema vincentiana,BE,4,32,LLT,0,400,28,400,28,0.07,1,3
+Fis-159582,Elasmobranchii,Halavi ray,Glaucostegus halavi,BE,4,40,GND,0,20,16,20,36,0.35555555555555557,0.4444444444444444,2
+Fis-159582,Elasmobranchii,Halavi ray,Glaucostegus halavi,BE,4,40,PST,0,280,36,280,36,0.12857142857142856,1,3
+Fis-159582,Elasmobranchii,Halavi ray,Glaucostegus halavi,BE,4,40,LLT,0,400,36,400,36,0.09,1,3
+Fis-26906,Elasmobranchii,Pointed sawfish,Anoxypristis cuspidata,IE,4,40,GND,0,20,16,20,36,0.35555555555555557,0.4444444444444444,2
+Fis-26906,Elasmobranchii,Pointed sawfish,Anoxypristis cuspidata,IE,4,40,PST,0,280,36,280,36,0.12857142857142856,1,3
+Fis-26906,Elasmobranchii,Pointed sawfish,Anoxypristis cuspidata,IE,4,40,LLT,0,400,36,400,36,0.09,1,3
+Fis-23055,Elasmobranchii,Creek whaler,Carcharhinus fitzroyensis,IE,4,40,GND,0,20,16,20,36,0.35555555555555557,0.4444444444444444,2
+Fis-23055,Elasmobranchii,Creek whaler,Carcharhinus fitzroyensis,IE,4,40,PST,0,280,36,280,36,0.12857142857142856,1,3
+Fis-23055,Elasmobranchii,Creek whaler,Carcharhinus fitzroyensis,IE,4,40,LLT,0,400,36,400,36,0.09,1,3
+Fis-23068,Elasmobranchii,Blackspot shark,Carcharhinus sealei,SSE,4,40,GND,0,20,16,20,36,0.35555555555555557,0.4444444444444444,2
+Fis-23068,Elasmobranchii,Blackspot shark,Carcharhinus sealei,SSE,4,40,PST,0,280,36,280,36,0.12857142857142856,1,3
+Fis-23068,Elasmobranchii,Blackspot shark,Carcharhinus sealei,SSE,4,40,LLT,0,400,36,400,36,0.09,1,3
+Fis-24448,Elasmobranchii,Coral catshark,Atelomycterus marmoratus,DGE,5,25,GND,0,20,15,20,20,0.5625,0.75,3
+Fis-24448,Elasmobranchii,Coral catshark,Atelomycterus marmoratus,DGE,5,25,PST,0,280,20,280,20,0.07142857142857142,1,3
+Fis-24448,Elasmobranchii,Coral catshark,Atelomycterus marmoratus,DGE,5,25,LLT,0,400,20,400,20,0.05,1,3
+Fis-28559,Elasmobranchii,Zonetail butterfly ray,Gymnura zonura,IE,5,37,GND,0,20,15,20,32,0.3515625,0.46875,2
+Fis-28559,Elasmobranchii,Zonetail butterfly ray,Gymnura zonura,IE,5,37,PST,0,280,32,280,32,0.11428571428571428,1,3
+Fis-28559,Elasmobranchii,Zonetail butterfly ray,Gymnura zonura,IE,5,37,LLT,0,400,32,400,32,0.08,1,3
+Fis-23126,Elasmobranchii,Tasselled wobbegong,Eucrossorhinus dasypogon,BE,5,40,GND,0,20,15,20,35,0.3214285714285714,0.42857142857142855,2
+Fis-23126,Elasmobranchii,Tasselled wobbegong,Eucrossorhinus dasypogon,BE,5,40,PST,0,280,35,280,35,0.125,1,3
+Fis-23126,Elasmobranchii,Tasselled wobbegong,Eucrossorhinus dasypogon,BE,5,40,LLT,0,400,35,400,35,0.0875,1,3
+Fis-23292,Elasmobranchii,Cobbler wobbegong,Sutorectus tentaculatus,BE,5,50,GND,0,20,15,20,45,0.25,0.3333333333333333,2
+Fis-23292,Elasmobranchii,Cobbler wobbegong,Sutorectus tentaculatus,BE,5,50,PST,0,280,45,280,45,0.16071428571428573,1,3
+Fis-23292,Elasmobranchii,Cobbler wobbegong,Sutorectus tentaculatus,BE,5,50,LLT,0,400,45,400,45,0.1125,1,3
+Fis-25894,Elasmobranchii,Epaulette shark,Hemiscyllium ocellatum,BE,5,50,GND,0,20,15,20,45,0.25,0.3333333333333333,2
+Fis-25894,Elasmobranchii,Epaulette shark,Hemiscyllium ocellatum,BE,5,50,PST,0,280,45,280,45,0.16071428571428573,1,3
+Fis-25894,Elasmobranchii,Epaulette shark,Hemiscyllium ocellatum,BE,5,50,LLT,0,400,45,400,45,0.1125,1,3
+Fis-31576,Elasmobranchii,Speckled carpetshark,Hemiscyllium trispeculare,BE,5,50,GND,0,20,15,20,45,0.25,0.3333333333333333,2
+Fis-31576,Elasmobranchii,Speckled carpetshark,Hemiscyllium trispeculare,BE,5,50,PST,0,280,45,280,45,0.16071428571428573,1,3
+Fis-31576,Elasmobranchii,Speckled carpetshark,Hemiscyllium trispeculare,BE,5,50,LLT,0,400,45,400,45,0.1125,1,3
+Fis-47368,Elasmobranchii,Australian butterfly ray,Gymnura australis,DGE,5,50,GND,0,20,15,20,45,0.25,0.3333333333333333,2
+Fis-47368,Elasmobranchii,Australian butterfly ray,Gymnura australis,DGE,5,50,PST,0,280,45,280,45,0.16071428571428573,1,3
+Fis-47368,Elasmobranchii,Australian butterfly ray,Gymnura australis,DGE,5,50,LLT,0,400,45,400,45,0.1125,1,3
+Fis-148497,Elasmobranchii,Broadfin shark,Lamiopsis temminckii,IE,5,50,GND,0,20,15,20,45,0.25,0.3333333333333333,2
+Fis-148497,Elasmobranchii,Broadfin shark,Lamiopsis temminckii,IE,5,50,PST,0,280,45,280,45,0.16071428571428573,1,3
+Fis-148497,Elasmobranchii,Broadfin shark,Lamiopsis temminckii,IE,5,50,LLT,0,400,45,400,45,0.1125,1,3
+Fis-23046,Elasmobranchii,Graceful shark,Carcharhinus amblyrhynchoides,SSE,5,50,GND,0,20,15,20,45,0.25,0.3333333333333333,2
+Fis-23046,Elasmobranchii,Graceful shark,Carcharhinus amblyrhynchoides,SSE,5,50,PST,0,280,45,280,45,0.16071428571428573,1,3
+Fis-23046,Elasmobranchii,Graceful shark,Carcharhinus amblyrhynchoides,SSE,5,50,LLT,0,400,45,400,45,0.1125,1,3
+Fis-8339,Elasmobranchii,Zebra shark,Stegostoma fasciatum,DGE,5,63,GND,0,20,15,20,58,0.19396551724137936,0.25862068965517243,2
+Fis-8339,Elasmobranchii,Zebra shark,Stegostoma fasciatum,DGE,5,63,PST,0,280,58,280,58,0.20714285714285716,1,3
+Fis-8339,Elasmobranchii,Zebra shark,Stegostoma fasciatum,DGE,5,63,LLT,0,400,58,400,58,0.145,1,3
+Fis-25888,Elasmobranchii,Tawny nurse shark,Nebrius ferrugineus,DGE,5,70,GND,0,20,15,20,65,0.17307692307692307,0.23076923076923078,1
+Fis-25888,Elasmobranchii,Tawny nurse shark,Nebrius ferrugineus,DGE,5,70,PST,0,280,65,280,65,0.23214285714285715,1,3
+Fis-25888,Elasmobranchii,Tawny nurse shark,Nebrius ferrugineus,DGE,5,70,LLT,0,400,65,400,65,0.1625,1,3
+Fis-29298,Elasmobranchii,Australian marbled catshark,Atelomycterus macleayi,IE,5,80,GND,0,20,15,20,75,0.15000000000000002,0.2,1
+Fis-29298,Elasmobranchii,Australian marbled catshark,Atelomycterus macleayi,IE,5,80,PST,0,280,75,280,75,0.26785714285714285,1,3
+Fis-29298,Elasmobranchii,Australian marbled catshark,Atelomycterus macleayi,IE,5,80,LLT,0,400,75,400,75,0.1875,1,3
+Fis-15849,Elasmobranchii,Butterfly ray,Gymnura natalensis,IE,5,100,GND,0,20,15,20,95,0.11842105263157894,0.15789473684210525,1
+Fis-15849,Elasmobranchii,Butterfly ray,Gymnura natalensis,IE,5,100,PST,0,280,95,280,95,0.3392857142857143,1,3
+Fis-15849,Elasmobranchii,Butterfly ray,Gymnura natalensis,IE,5,100,LLT,0,400,95,400,95,0.2375,1,3
+Fis-23056,Elasmobranchii,Galapagos shark,Carcharhinus galapagensis,PGE,5,286,GND,0,20,15,20,281,0.0400355871886121,0.05338078291814947,1
+Fis-23056,Elasmobranchii,Galapagos shark,Carcharhinus galapagensis,PGE,5,286,PST,0,280,275,280,281,0.9611718352821554,0.9786476868327402,3
+Fis-23056,Elasmobranchii,Galapagos shark,Carcharhinus galapagensis,PGE,5,286,LLT,0,400,281,400,281,0.7025,1,3
+Fis-25062,Elasmobranchii,Common eagle ray,Myliobatis aquila,SSE,5,300,GND,0,20,15,20,295,0.03813559322033898,0.05084745762711865,1
+Fis-25062,Elasmobranchii,Common eagle ray,Myliobatis aquila,SSE,5,300,PST,0,280,275,280,295,0.9155569007263922,0.9322033898305084,3
+Fis-25062,Elasmobranchii,Common eagle ray,Myliobatis aquila,SSE,5,300,LLT,0,400,295,400,295,0.7375,1,3
+Fis-31602,Elasmobranchii,Gummy shark,Mustelus antarcticus,SSE,5,350,GND,0,20,15,20,345,0.03260869565217391,0.043478260869565216,1
+Fis-31602,Elasmobranchii,Gummy shark,Mustelus antarcticus,SSE,5,350,PST,0,280,275,280,345,0.7828674948240165,0.7971014492753623,3
+Fis-31602,Elasmobranchii,Gummy shark,Mustelus antarcticus,SSE,5,350,LLT,0,400,345,400,345,0.8625,1,3
+Fis-23050,Elasmobranchii,Copper shark,Carcharhinus brachyurus,SSE,5,360,GND,0,20,15,20,355,0.03169014084507042,0.04225352112676056,1
+Fis-23050,Elasmobranchii,Copper shark,Carcharhinus brachyurus,SSE,5,360,PST,0,280,275,280,355,0.760814889336016,0.7746478873239436,3
+Fis-23050,Elasmobranchii,Copper shark,Carcharhinus brachyurus,SSE,5,360,LLT,0,400,355,400,355,0.8875,1,3
+Fis-25412,Elasmobranchii,Smooth-hound,Mustelus mustelus,PGE,5,624,GND,0,20,15,20,619,0.01817447495961227,0.024232633279483037,1
+Fis-25412,Elasmobranchii,Smooth-hound,Mustelus mustelus,PGE,5,624,PST,0,280,275,280,619,0.4363316408954535,0.44426494345718903,2
+Fis-25412,Elasmobranchii,Smooth-hound,Mustelus mustelus,PGE,5,624,LLT,0,400,395,400,619,0.6301494345718902,0.6381260096930533,3
+Fis-25664,Elasmobranchii,Giant guitarfish,Rhynchobatus djiddensis,DGE,6,50,GND,0,20,14,20,44,0.22272727272727272,0.3181818181818182,2
+Fis-25664,Elasmobranchii,Giant guitarfish,Rhynchobatus djiddensis,DGE,6,50,PST,0,280,44,280,44,0.15714285714285714,1,3
+Fis-25664,Elasmobranchii,Giant guitarfish,Rhynchobatus djiddensis,DGE,6,50,LLT,0,400,44,400,44,0.11,1,3
+Fis-25905,Elasmobranchii,Sharptooth houndshark,Triakis megalopterus,IE,6,50,GND,0,20,14,20,44,0.22272727272727272,0.3181818181818182,2
+Fis-25905,Elasmobranchii,Sharptooth houndshark,Triakis megalopterus,IE,6,50,PST,0,280,44,280,44,0.15714285714285714,1,3
+Fis-25905,Elasmobranchii,Sharptooth houndshark,Triakis megalopterus,IE,6,50,LLT,0,400,44,400,44,0.11,1,3
+Fis-23057,Elasmobranchii,Pondicherry shark,Carcharhinus hemiodon,PGE,6,50,GND,0,20,14,20,44,0.22272727272727272,0.3181818181818182,2
+Fis-23057,Elasmobranchii,Pondicherry shark,Carcharhinus hemiodon,PGE,6,50,PST,0,280,44,280,44,0.15714285714285714,1,3
+Fis-23057,Elasmobranchii,Pondicherry shark,Carcharhinus hemiodon,PGE,6,50,LLT,0,400,44,400,44,0.11,1,3
+Fis-23052,Elasmobranchii,Nervous shark,Carcharhinus cautus,SSE,6,50,GND,0,20,14,20,44,0.22272727272727272,0.3181818181818182,2
+Fis-23052,Elasmobranchii,Nervous shark,Carcharhinus cautus,SSE,6,50,PST,0,280,44,280,44,0.15714285714285714,1,3
+Fis-23052,Elasmobranchii,Nervous shark,Carcharhinus cautus,SSE,6,50,LLT,0,400,44,400,44,0.11,1,3
+Fis-24046,Elasmobranchii,Smooth butterfly ray,Gymnura micrura,IE,6,55,GND,0,20,14,20,49,0.2,0.2857142857142857,2
+Fis-24046,Elasmobranchii,Smooth butterfly ray,Gymnura micrura,IE,6,55,PST,0,280,49,280,49,0.175,1,3
+Fis-24046,Elasmobranchii,Smooth butterfly ray,Gymnura micrura,IE,6,55,LLT,0,400,49,400,49,0.1225,1,3
+Fis-25889,Elasmobranchii,Hooktooth shark,Chaenogaleus macrostoma,SSE,6,59,GND,0,20,14,20,53,0.18490566037735848,0.2641509433962264,2
+Fis-25889,Elasmobranchii,Hooktooth shark,Chaenogaleus macrostoma,SSE,6,59,PST,0,280,53,280,53,0.18928571428571428,1,3
+Fis-25889,Elasmobranchii,Hooktooth shark,Chaenogaleus macrostoma,SSE,6,59,LLT,0,400,53,400,53,0.1325,1,3
+Fis-21801,Elasmobranchii,Cowtail stingray,Pastinachus sephen,DGE,6,60,GND,0,20,14,20,54,0.1814814814814815,0.25925925925925924,2
+Fis-21801,Elasmobranchii,Cowtail stingray,Pastinachus sephen,DGE,6,60,PST,0,280,54,280,54,0.1928571428571429,1,3
+Fis-21801,Elasmobranchii,Cowtail stingray,Pastinachus sephen,DGE,6,60,LLT,0,400,54,400,54,0.135,1,3
+Fis-25470,Elasmobranchii,Whitespotted bambooshark,Chiloscyllium plagiosum,BE,7,25,GND,0,20,13,20,18,0.4694444444444445,0.7222222222222222,3
+Fis-25470,Elasmobranchii,Whitespotted bambooshark,Chiloscyllium plagiosum,BE,7,25,PST,0,280,18,280,18,0.06428571428571428,1,3
+Fis-25470,Elasmobranchii,Whitespotted bambooshark,Chiloscyllium plagiosum,BE,7,25,LLT,0,400,18,400,18,0.045,1,3
+Fis-29411,Elasmobranchii,Brown shyshark,Haploblepharus fuscus,DGE,7,25,GND,0,20,13,20,18,0.4694444444444445,0.7222222222222222,3
+Fis-29411,Elasmobranchii,Brown shyshark,Haploblepharus fuscus,DGE,7,25,PST,0,280,18,280,18,0.06428571428571428,1,3
+Fis-29411,Elasmobranchii,Brown shyshark,Haploblepharus fuscus,DGE,7,25,LLT,0,400,18,400,18,0.045,1,3
+Fis-61250,Elasmobranchii,Striped stingaree,Trygonoptera ovalis,IE,8,43,GND,0,20,12,20,35,0.2057142857142857,0.34285714285714286,2
+Fis-61250,Elasmobranchii,Striped stingaree,Trygonoptera ovalis,IE,8,43,PST,0,280,35,280,35,0.125,1,3
+Fis-61250,Elasmobranchii,Striped stingaree,Trygonoptera ovalis,IE,8,43,LLT,0,400,35,400,35,0.0875,1,3
+Fis-161480,Elasmobranchii,NA,Himantura leoparda,DGE,8,70,GND,0,20,12,20,62,0.11612903225806452,0.1935483870967742,1
+Fis-161480,Elasmobranchii,NA,Himantura leoparda,DGE,8,70,PST,0,280,62,280,62,0.22142857142857145,1,3
+Fis-161480,Elasmobranchii,NA,Himantura leoparda,DGE,8,70,LLT,0,400,62,400,62,0.155,1,3
+Fis-27676,Elasmobranchii,Banded eagle ray,Aetomylaeus nichofii,PGE,8,70,GND,0,20,12,20,62,0.11612903225806452,0.1935483870967742,1
+Fis-27676,Elasmobranchii,Banded eagle ray,Aetomylaeus nichofii,PGE,8,70,PST,0,280,62,280,62,0.22142857142857145,1,3
+Fis-27676,Elasmobranchii,Banded eagle ray,Aetomylaeus nichofii,PGE,8,70,LLT,0,400,62,400,62,0.155,1,3
+Fis-31573,Elasmobranchii,Brownbanded bambooshark,Chiloscyllium punctatum,BE,8,85,GND,0,20,12,20,77,0.0935064935064935,0.15584415584415584,1
+Fis-31573,Elasmobranchii,Brownbanded bambooshark,Chiloscyllium punctatum,BE,8,85,PST,0,280,77,280,77,0.275,1,3
+Fis-31573,Elasmobranchii,Brownbanded bambooshark,Chiloscyllium punctatum,BE,8,85,LLT,0,400,77,400,77,0.1925,1,3
+Fis-23311,Elasmobranchii,Whitetip reef shark,Triaenodon obesus,SSE,8,330,GND,0,20,12,20,322,0.02236024844720497,0.037267080745341616,1
+Fis-23311,Elasmobranchii,Whitetip reef shark,Triaenodon obesus,SSE,8,330,PST,0,280,272,280,322,0.8205856255545697,0.84472049689441,3
+Fis-23311,Elasmobranchii,Whitetip reef shark,Triaenodon obesus,SSE,8,330,LLT,0,400,322,400,322,0.805,1,3
+Fis-160925,Elasmobranchii,Ornate sleeper-ray,Electrolux addisoni,BE,9,35,GND,0,20,11,20,26,0.2326923076923077,0.4230769230769231,2
+Fis-160925,Elasmobranchii,Ornate sleeper-ray,Electrolux addisoni,BE,9,35,PST,0,280,26,280,26,0.09285714285714286,1,3
+Fis-160925,Elasmobranchii,Ornate sleeper-ray,Electrolux addisoni,BE,9,35,LLT,0,400,26,400,26,0.065,1,3
+Fis-23128,Elasmobranchii,Winghead shark,Eusphyra blochii,SSE,9,50,GND,0,20,11,20,41,0.14756097560975612,0.2682926829268293,2
+Fis-23128,Elasmobranchii,Winghead shark,Eusphyra blochii,SSE,9,50,PST,0,280,41,280,41,0.14642857142857144,1,3
+Fis-23128,Elasmobranchii,Winghead shark,Eusphyra blochii,SSE,9,50,LLT,0,400,41,400,41,0.1025,1,3
+Fis-27240,Elasmobranchii,Longheaded eagle ray,Aetobatus flagellum,PGE,9,80,GND,0,20,11,20,71,0.0852112676056338,0.15492957746478872,1
+Fis-27240,Elasmobranchii,Longheaded eagle ray,Aetobatus flagellum,PGE,9,80,PST,0,280,71,280,71,0.25357142857142856,1,3
+Fis-27240,Elasmobranchii,Longheaded eagle ray,Aetobatus flagellum,PGE,9,80,LLT,0,400,71,400,71,0.1775,1,3
+Fis-28555,Elasmobranchii,Mangrove whipray,Himantura granulata,IE,9,85,GND,0,20,11,20,76,0.07960526315789475,0.14473684210526316,1
+Fis-28555,Elasmobranchii,Mangrove whipray,Himantura granulata,IE,9,85,PST,0,280,76,280,76,0.2714285714285714,1,3
+Fis-28555,Elasmobranchii,Mangrove whipray,Himantura granulata,IE,9,85,LLT,0,400,76,400,76,0.19,1,3
+Fis-23193,Elasmobranchii,Sicklefin lemon shark,Negaprion acutidens,PGE,9,92,GND,0,20,11,20,83,0.07289156626506026,0.13253012048192772,1
+Fis-23193,Elasmobranchii,Sicklefin lemon shark,Negaprion acutidens,PGE,9,92,PST,0,280,83,280,83,0.29642857142857143,1,3
+Fis-23193,Elasmobranchii,Sicklefin lemon shark,Negaprion acutidens,PGE,9,92,LLT,0,400,83,400,83,0.2075,1,3
+Fis-161494,Elasmobranchii,Blue-spotted stingray,Neotrygon kuhlii,DGE,9,170,GND,0,20,11,20,161,0.0375776397515528,0.06832298136645963,1
+Fis-161494,Elasmobranchii,Blue-spotted stingray,Neotrygon kuhlii,DGE,9,170,PST,0,280,161,280,161,0.575,1,3
+Fis-161494,Elasmobranchii,Blue-spotted stingray,Neotrygon kuhlii,DGE,9,170,LLT,0,400,161,400,161,0.4025,1,3
+Fis-29505,Elasmobranchii,Spadenose shark,Scoliodon laticaudus,IE,10,13,GND,0,20,3,20,3,0.15,1,3
+Fis-29505,Elasmobranchii,Spadenose shark,Scoliodon laticaudus,IE,10,13,PST,0,280,3,280,3,0.01071428571428571,1,3
+Fis-29505,Elasmobranchii,Spadenose shark,Scoliodon laticaudus,IE,10,13,LLT,0,400,3,400,3,0.0075,1,3
+Fis-161456,Elasmobranchii,Eyebrow wedgefish,Rhynchobatus palpebratus,DGE,10,61,GND,0,20,10,20,51,0.09803921568627452,0.19607843137254902,1
+Fis-161456,Elasmobranchii,Eyebrow wedgefish,Rhynchobatus palpebratus,DGE,10,61,PST,0,280,51,280,51,0.1821428571428571,1,3
+Fis-161456,Elasmobranchii,Eyebrow wedgefish,Rhynchobatus palpebratus,DGE,10,61,LLT,0,400,51,400,51,0.1275,1,3
+Fis-159584,Elasmobranchii,Giant shovelnose ray,Glaucostegus typus,BE,10,100,GND,0,20,10,20,90,0.05555555555555555,0.1111111111111111,1
+Fis-159584,Elasmobranchii,Giant shovelnose ray,Glaucostegus typus,BE,10,100,PST,0,280,90,280,90,0.32142857142857145,1,3
+Fis-159584,Elasmobranchii,Giant shovelnose ray,Glaucostegus typus,BE,10,100,LLT,0,400,90,400,90,0.225,1,3
+Fis-23202,Elasmobranchii,Ornate wobbegong,Orectolobus ornatus,BE,10,100,GND,0,20,10,20,90,0.05555555555555555,0.1111111111111111,1
+Fis-23202,Elasmobranchii,Ornate wobbegong,Orectolobus ornatus,BE,10,100,PST,0,280,90,280,90,0.32142857142857145,1,3
+Fis-23202,Elasmobranchii,Ornate wobbegong,Orectolobus ornatus,BE,10,100,LLT,0,400,90,400,90,0.225,1,3
+Fis-23220,Elasmobranchii,Striped catshark,Poroderma africanum,DGE,10,100,GND,0,20,10,20,90,0.05555555555555555,0.1111111111111111,1
+Fis-23220,Elasmobranchii,Striped catshark,Poroderma africanum,DGE,10,100,PST,0,280,90,280,90,0.32142857142857145,1,3
+Fis-23220,Elasmobranchii,Striped catshark,Poroderma africanum,DGE,10,100,LLT,0,400,90,400,90,0.225,1,3
+Fis-24127,Elasmobranchii,Smoothtail mobula,Mobula thurstoni,FFE,10,100,GND,0,20,10,20,90,0.05555555555555555,0.1111111111111111,1
+Fis-24127,Elasmobranchii,Smoothtail mobula,Mobula thurstoni,FFE,10,100,PST,0,280,90,280,90,0.32142857142857145,1,3
+Fis-24127,Elasmobranchii,Smoothtail mobula,Mobula thurstoni,FFE,10,100,LLT,0,400,90,400,90,0.225,1,3
+Fis-28561,Elasmobranchii,NA,Aetomylaeus milvus,IE,10,100,GND,0,20,10,20,90,0.05555555555555555,0.1111111111111111,1
+Fis-28561,Elasmobranchii,NA,Aetomylaeus milvus,IE,10,100,PST,0,280,90,280,90,0.32142857142857145,1,3
+Fis-28561,Elasmobranchii,NA,Aetomylaeus milvus,IE,10,100,LLT,0,400,90,400,90,0.225,1,3
+Fis-23053,Elasmobranchii,Whitecheek shark,Carcharhinus dussumieri,SSE,10,100,GND,0,20,10,20,90,0.05555555555555555,0.1111111111111111,1
+Fis-23053,Elasmobranchii,Whitecheek shark,Carcharhinus dussumieri,SSE,10,100,PST,0,280,90,280,90,0.32142857142857145,1,3
+Fis-23053,Elasmobranchii,Whitecheek shark,Carcharhinus dussumieri,SSE,10,100,LLT,0,400,90,400,90,0.225,1,3
+Fis-23146,Elasmobranchii,Puffadder shyshark,Haploblepharus edwardsii,DGE,10,130,GND,0,20,10,20,120,0.04166666666666666,0.08333333333333333,1
+Fis-23146,Elasmobranchii,Puffadder shyshark,Haploblepharus edwardsii,DGE,10,130,PST,0,280,120,280,120,0.42857142857142855,1,3
+Fis-23146,Elasmobranchii,Puffadder shyshark,Haploblepharus edwardsii,DGE,10,130,LLT,0,400,120,400,120,0.3,1,3
+Fis-23028,Elasmobranchii,Australian spotted catshark,Asymbolus analis,DGE,10,180,GND,0,20,10,20,170,0.02941176470588235,0.058823529411764705,1
+Fis-23028,Elasmobranchii,Australian spotted catshark,Asymbolus analis,DGE,10,180,PST,0,280,170,280,170,0.6071428571428571,1,3
+Fis-23028,Elasmobranchii,Australian spotted catshark,Asymbolus analis,DGE,10,180,LLT,0,400,170,400,170,0.425,1,3
+Fis-25900,Elasmobranchii,Whiskery shark,Furgaleus macki,DGE,10,220,GND,0,20,10,20,210,0.0238095238095238,0.047619047619047616,1
+Fis-25900,Elasmobranchii,Whiskery shark,Furgaleus macki,DGE,10,220,PST,0,280,210,280,210,0.75,1,3
+Fis-25900,Elasmobranchii,Whiskery shark,Furgaleus macki,DGE,10,220,LLT,0,400,210,400,210,0.525,1,3
+Fis-23221,Elasmobranchii,Leopard catshark,Poroderma pantherinum,DGE,10,256,GND,0,20,10,20,246,0.02032520325203252,0.04065040650406504,1
+Fis-23221,Elasmobranchii,Leopard catshark,Poroderma pantherinum,DGE,10,256,PST,0,280,246,280,246,0.8785714285714286,1,3
+Fis-23221,Elasmobranchii,Leopard catshark,Poroderma pantherinum,DGE,10,256,LLT,0,400,246,400,246,0.615,1,3
+Fis-23243,Elasmobranchii,Australian sharpnose shark,Rhizoprionodon taylori,SSE,10,300,GND,0,20,10,20,290,0.01724137931034482,0.034482758620689655,1
+Fis-23243,Elasmobranchii,Australian sharpnose shark,Rhizoprionodon taylori,SSE,10,300,PST,0,280,270,280,290,0.8977832512315271,0.9310344827586207,3
+Fis-23243,Elasmobranchii,Australian sharpnose shark,Rhizoprionodon taylori,SSE,10,300,LLT,0,400,290,400,290,0.725,1,3
+Fis-169677,Elasmobranchii,Humans whaler shark,Carcharhinus humani,PGE,10,408,GND,0,20,10,20,398,0.01256281407035176,0.02512562814070352,1
+Fis-169677,Elasmobranchii,Humans whaler shark,Carcharhinus humani,PGE,10,408,PST,0,280,270,280,398,0.6541636755204595,0.678391959798995,3
+Fis-169677,Elasmobranchii,Humans whaler shark,Carcharhinus humani,PGE,10,408,LLT,0,400,390,400,398,0.9554020100502512,0.9798994974874372,3
+Fis-23045,Elasmobranchii,Bignose shark,Carcharhinus altimus,SSE,10,430,GND,0,20,10,20,420,0.0119047619047619,0.023809523809523808,1
+Fis-23045,Elasmobranchii,Bignose shark,Carcharhinus altimus,SSE,10,430,PST,0,280,270,280,420,0.6198979591836735,0.6428571428571429,3
+Fis-23045,Elasmobranchii,Bignose shark,Carcharhinus altimus,SSE,10,430,LLT,0,400,390,400,420,0.9053571428571427,0.9285714285714286,3
+Fis-31594,Elasmobranchii,Whitespotted smooth-hound,Mustelus palumbes,PGE,10,443,GND,0,20,10,20,433,0.0115473441108545,0.023094688221709007,1
+Fis-31594,Elasmobranchii,Whitespotted smooth-hound,Mustelus palumbes,PGE,10,443,PST,0,280,270,280,433,0.6012867040580666,0.6235565819861432,3
+Fis-31594,Elasmobranchii,Whitespotted smooth-hound,Mustelus palumbes,PGE,10,443,LLT,0,400,390,400,433,0.8781755196304849,0.9006928406466512,3
+Fis-58485,Elasmobranchii,Shortfin mako,Isurus oxyrinchus,OE,10,750,GND,0,20,10,20,740,0.00675675675675675,0.013513513513513514,1
+Fis-58485,Elasmobranchii,Shortfin mako,Isurus oxyrinchus,OE,10,750,PST,0,280,270,280,740,0.3518339768339768,0.36486486486486486,2
+Fis-58485,Elasmobranchii,Shortfin mako,Isurus oxyrinchus,OE,10,750,LLT,0,400,390,400,740,0.5138513513513513,0.527027027027027,3
+Fis-22768,Elasmobranchii,Porbeagle,Lamna nasus,PGE,10,1000,GND,0,20,10,20,990,0.00505050505050505,0.010101010101010102,1
+Fis-22768,Elasmobranchii,Porbeagle,Lamna nasus,PGE,10,1000,PST,0,280,270,280,990,0.262987012987013,0.2727272727272727,2
+Fis-22768,Elasmobranchii,Porbeagle,Lamna nasus,PGE,10,1000,LLT,0,400,390,400,990,0.38409090909090904,0.3939393939393939,2
+Fis-58398,Elasmobranchii,Blue stingray,Dasyatis chrysonota,IE,11,100,GND,0,20,9,20,89,0.04550561797752809,0.10112359550561797,1
+Fis-58398,Elasmobranchii,Blue stingray,Dasyatis chrysonota,IE,11,100,PST,0,280,89,280,89,0.31785714285714284,1,3
+Fis-58398,Elasmobranchii,Blue stingray,Dasyatis chrysonota,IE,11,100,LLT,0,400,89,400,89,0.2225,1,3
+Fis-160691,Elasmobranchii,Indonesian shortsnout spurdog,Squalus hemipinnis,SSE,11,100,GND,0,20,9,20,89,0.04550561797752809,0.10112359550561797,1
+Fis-160691,Elasmobranchii,Indonesian shortsnout spurdog,Squalus hemipinnis,SSE,11,100,PST,0,280,89,280,89,0.31785714285714284,1,3
+Fis-160691,Elasmobranchii,Indonesian shortsnout spurdog,Squalus hemipinnis,SSE,11,100,LLT,0,400,89,400,89,0.2225,1,3
+Fis-28562,Elasmobranchii,Ornate eagle ray,Aetomylaeus vespertilio,PGE,11,110,GND,0,20,9,20,99,0.04090909090909091,0.09090909090909091,1
+Fis-28562,Elasmobranchii,Ornate eagle ray,Aetomylaeus vespertilio,PGE,11,110,PST,0,280,99,280,99,0.3535714285714286,1,3
+Fis-28562,Elasmobranchii,Ornate eagle ray,Aetomylaeus vespertilio,PGE,11,110,LLT,0,400,99,400,99,0.2475,1,3
+Fis-30780,Elasmobranchii,Grey bambooshark,Chiloscyllium griseum,BE,12,80,GND,0,20,8,20,68,0.04705882352941176,0.11764705882352941,1
+Fis-30780,Elasmobranchii,Grey bambooshark,Chiloscyllium griseum,BE,12,80,PST,0,280,68,280,68,0.24285714285714283,1,3
+Fis-30780,Elasmobranchii,Grey bambooshark,Chiloscyllium griseum,BE,12,80,LLT,0,400,68,400,68,0.17,1,3
+Fis-161495,Elasmobranchii,Painted maskray,Neotrygon leylandi,DGE,12,80,GND,0,20,8,20,68,0.04705882352941176,0.11764705882352941,1
+Fis-161495,Elasmobranchii,Painted maskray,Neotrygon leylandi,DGE,12,80,PST,0,280,68,280,68,0.24285714285714283,1,3
+Fis-161495,Elasmobranchii,Painted maskray,Neotrygon leylandi,DGE,12,80,LLT,0,400,68,400,68,0.17,1,3
+Fis-32975,Elasmobranchii,Bowmouth guitarfish,Rhina ancylostoma,DGE,12,90,GND,0,20,8,20,78,0.04102564102564102,0.10256410256410256,1
+Fis-32975,Elasmobranchii,Bowmouth guitarfish,Rhina ancylostoma,DGE,12,90,PST,0,280,78,280,78,0.2785714285714286,1,3
+Fis-32975,Elasmobranchii,Bowmouth guitarfish,Rhina ancylostoma,DGE,12,90,LLT,0,400,78,400,78,0.195,1,3
+Fis-159583,Elasmobranchii,Granulated guitarfish,Glaucostegus granulatus,BE,12,119,GND,0,20,8,20,107,0.02990654205607476,0.07476635514018691,1
+Fis-159583,Elasmobranchii,Granulated guitarfish,Glaucostegus granulatus,BE,12,119,PST,0,280,107,280,107,0.3821428571428571,1,3
+Fis-159583,Elasmobranchii,Granulated guitarfish,Glaucostegus granulatus,BE,12,119,LLT,0,400,107,400,107,0.2675,1,3
+Fis-31571,Elasmobranchii,Arabian carpetshark,Chiloscyllium arabicum,BE,13,100,GND,0,20,7,20,87,0.02816091954022988,0.08045977011494253,1
+Fis-31571,Elasmobranchii,Arabian carpetshark,Chiloscyllium arabicum,BE,13,100,PST,0,280,87,280,87,0.3107142857142857,1,3
+Fis-31571,Elasmobranchii,Arabian carpetshark,Chiloscyllium arabicum,BE,13,100,LLT,0,400,87,400,87,0.2175,1,3
+Fis-161466,Elasmobranchii,Eastern shovelnose stingaree,Trygonoptera imitata,IE,13,120,GND,0,20,7,20,107,0.02289719626168224,0.06542056074766354,1
+Fis-161466,Elasmobranchii,Eastern shovelnose stingaree,Trygonoptera imitata,IE,13,120,PST,0,280,107,280,107,0.3821428571428571,1,3
+Fis-161466,Elasmobranchii,Eastern shovelnose stingaree,Trygonoptera imitata,IE,13,120,LLT,0,400,107,400,107,0.2675,1,3
+Fis-161491,Elasmobranchii,Peppered maskray,Neotrygon picta,DGE,14,96,GND,0,20,6,20,82,0.02195121951219512,0.07317073170731707,1
+Fis-161491,Elasmobranchii,Peppered maskray,Neotrygon picta,DGE,14,96,PST,0,280,82,280,82,0.29285714285714287,1,3
+Fis-161491,Elasmobranchii,Peppered maskray,Neotrygon picta,DGE,14,96,LLT,0,400,82,400,82,0.205,1,3
+Fis-48194,Elasmobranchii,Snaggletooth shark,Hemipristis elongata,SSE,14,130,GND,0,20,6,20,116,0.01551724137931034,0.05172413793103448,1
+Fis-48194,Elasmobranchii,Snaggletooth shark,Hemipristis elongata,SSE,14,130,PST,0,280,116,280,116,0.4142857142857143,1,3
+Fis-48194,Elasmobranchii,Snaggletooth shark,Hemipristis elongata,SSE,14,130,LLT,0,400,116,400,116,0.29,1,3
+Fis-161493,Elasmobranchii,Plain maskray,Neotrygon annotata,DGE,15,62,GND,0,20,5,20,47,0.02659574468085106,0.10638297872340426,1
+Fis-161493,Elasmobranchii,Plain maskray,Neotrygon annotata,DGE,15,62,PST,0,280,47,280,47,0.16785714285714284,1,3
+Fis-161493,Elasmobranchii,Plain maskray,Neotrygon annotata,DGE,15,62,LLT,0,400,47,400,47,0.1175,1,3
+Fis-24044,Elasmobranchii,Spiny butterfly ray,Gymnura altavela,IE,15,100,GND,0,20,5,20,85,0.01470588235294117,0.058823529411764705,1
+Fis-24044,Elasmobranchii,Spiny butterfly ray,Gymnura altavela,IE,15,100,PST,0,280,85,280,85,0.30357142857142855,1,3
+Fis-24044,Elasmobranchii,Spiny butterfly ray,Gymnura altavela,IE,15,100,LLT,0,400,85,400,85,0.2125,1,3
+Fis-25886,Elasmobranchii,Blind shark,Brachaelurus waddi,DGE,15,140,GND,0,20,5,20,125,0.01,0.04,1
+Fis-25886,Elasmobranchii,Blind shark,Brachaelurus waddi,DGE,15,140,PST,0,280,125,280,125,0.44642857142857145,1,3
+Fis-25886,Elasmobranchii,Blind shark,Brachaelurus waddi,DGE,15,140,LLT,0,400,125,400,125,0.3125,1,3
+Fis-29388,Elasmobranchii,Sand tiger shark,Carcharias taurus,SSE,15,191,GND,0,20,5,20,176,0.00710227272727272,0.028409090909090908,1
+Fis-29388,Elasmobranchii,Sand tiger shark,Carcharias taurus,SSE,15,191,PST,0,280,176,280,176,0.6285714285714286,1,3
+Fis-29388,Elasmobranchii,Sand tiger shark,Carcharias taurus,SSE,15,191,LLT,0,400,176,400,176,0.44,1,3
+Fis-29436,Elasmobranchii,Sliteye shark,Loxodon macrorhinus,SSE,16,100,GND,0,20,4,20,84,0.00952380952380952,0.047619047619047616,1
+Fis-29436,Elasmobranchii,Sliteye shark,Loxodon macrorhinus,SSE,16,100,PST,0,280,84,280,84,0.3,1,3
+Fis-29436,Elasmobranchii,Sliteye shark,Loxodon macrorhinus,SSE,16,100,LLT,0,400,84,400,84,0.21,1,3
+Fis-57444,Elasmobranchii,Spotted guitarfish,Rhinobatos punctifer,DGE,16,150,GND,0,20,4,20,134,0.00597014925373134,0.029850746268656716,1
+Fis-57444,Elasmobranchii,Spotted guitarfish,Rhinobatos punctifer,DGE,16,150,PST,0,280,134,280,134,0.4785714285714286,1,3
+Fis-57444,Elasmobranchii,Spotted guitarfish,Rhinobatos punctifer,DGE,16,150,LLT,0,400,134,400,134,0.335,1,3
+Fis-23048,Elasmobranchii,Pigeye shark,Carcharhinus amboinensis,SSE,16,150,GND,0,20,4,20,134,0.00597014925373134,0.029850746268656716,1
+Fis-23048,Elasmobranchii,Pigeye shark,Carcharhinus amboinensis,SSE,16,150,PST,0,280,134,280,134,0.4785714285714286,1,3
+Fis-23048,Elasmobranchii,Pigeye shark,Carcharhinus amboinensis,SSE,16,150,LLT,0,400,134,400,134,0.335,1,3
+Fis-47835,Elasmobranchii,Australian blacktip shark,Carcharhinus tilstoni,SSE,16,150,GND,0,20,4,20,134,0.00597014925373134,0.029850746268656716,1
+Fis-47835,Elasmobranchii,Australian blacktip shark,Carcharhinus tilstoni,SSE,16,150,PST,0,280,134,280,134,0.4785714285714286,1,3
+Fis-47835,Elasmobranchii,Australian blacktip shark,Carcharhinus tilstoni,SSE,16,150,LLT,0,400,134,400,134,0.335,1,3
+Fis-33107,Elasmobranchii,Marbled stingray,Dasyatis marmorata,IE,17,65,GND,0,20,3,20,48,0.009375,0.0625,1
+Fis-33107,Elasmobranchii,Marbled stingray,Dasyatis marmorata,IE,17,65,PST,0,280,48,280,48,0.17142857142857143,1,3
+Fis-33107,Elasmobranchii,Marbled stingray,Dasyatis marmorata,IE,17,65,LLT,0,400,48,400,48,0.12,1,3
+Fis-53171,Elasmobranchii,Crossback stingaree,Urolophus cruciatus,DGE,18,160,GND,0,20,2,20,142,0.00140845070422535,0.014084507042253521,1
+Fis-53171,Elasmobranchii,Crossback stingaree,Urolophus cruciatus,DGE,18,160,PST,0,280,142,280,142,0.5071428571428571,1,3
+Fis-53171,Elasmobranchii,Crossback stingaree,Urolophus cruciatus,DGE,18,160,LLT,0,400,142,400,142,0.355,1,3
+Fis-23144,Elasmobranchii,Tiger catshark,Halaelurus natalensis,DGE,18,172,GND,0,20,2,20,154,0.00129870129870129,0.012987012987012988,1
+Fis-23144,Elasmobranchii,Tiger catshark,Halaelurus natalensis,DGE,18,172,PST,0,280,154,280,154,0.55,1,3
+Fis-23144,Elasmobranchii,Tiger catshark,Halaelurus natalensis,DGE,18,172,LLT,0,400,154,400,154,0.385,1,3
+Fis-23062,Elasmobranchii,Hardnose shark,Carcharhinus macloti,SSE,19,170,GND,0,20,1,20,151,3.3112582781456954e-4,0.006622516556291391,1
+Fis-23062,Elasmobranchii,Hardnose shark,Carcharhinus macloti,SSE,19,170,PST,0,280,151,280,151,0.5392857142857143,1,3
+Fis-23062,Elasmobranchii,Hardnose shark,Carcharhinus macloti,SSE,19,170,LLT,0,400,151,400,151,0.3775,1,3
+Fis-28563,Elasmobranchii,Ocellated eagle ray,Aetobatus ocellatus,PGE,20,100,PST,0,280,80,280,80,0.2857142857142857,1,3
+Fis-28563,Elasmobranchii,Ocellated eagle ray,Aetobatus ocellatus,PGE,20,100,LLT,0,400,80,400,80,0.2,1,3
+Fis-54691,Elasmobranchii,Sparsely-spotted stingaree,Urolophus paucimaculatus,DGE,20,150,PST,0,280,130,280,130,0.4642857142857143,1,3
+Fis-54691,Elasmobranchii,Sparsely-spotted stingaree,Urolophus paucimaculatus,DGE,20,150,LLT,0,400,130,400,130,0.325,1,3
+Fis-31583,Elasmobranchii,Rusty carpetshark,Parascyllium ferrugineum,DGE,20,150,PST,0,280,130,280,130,0.4642857142857143,1,3
+Fis-31583,Elasmobranchii,Rusty carpetshark,Parascyllium ferrugineum,DGE,20,150,LLT,0,400,130,400,130,0.325,1,3
+Fis-32976,Elasmobranchii,Southern fiddler,Trygonorrhina fasciata,BE,20,180,PST,0,280,160,280,160,0.5714285714285714,1,3
+Fis-32976,Elasmobranchii,Southern fiddler,Trygonorrhina fasciata,BE,20,180,LLT,0,400,160,400,160,0.4,1,3
+Fis-25895,Elasmobranchii,Necklace carpetshark,Parascyllium variolatum,DGE,20,180,PST,0,280,160,280,160,0.5714285714285714,1,3
+Fis-25895,Elasmobranchii,Necklace carpetshark,Parascyllium variolatum,DGE,20,180,LLT,0,400,160,400,160,0.4,1,3
+Fis-166734,Elasmobranchii,Round ribbontail ray,Taeniurops meyeni,IE,20,500,PST,0,280,260,280,480,0.5029761904761905,0.5416666666666666,3
+Fis-166734,Elasmobranchii,Round ribbontail ray,Taeniurops meyeni,IE,20,500,LLT,0,400,380,400,480,0.7520833333333332,0.7916666666666666,3
+Fis-23066,Elasmobranchii,Sandbar shark,Carcharhinus plumbeus,PGE,5,500,GND,0,20,15,20,495,0.02272727272727272,0.030303030303030304,1
+Fis-23066,Elasmobranchii,Sandbar shark,Carcharhinus plumbeus,PGE,5,500,PST,0,280,275,280,495,0.5456349206349206,0.5555555555555556,3
+Fis-23066,Elasmobranchii,Sandbar shark,Carcharhinus plumbeus,PGE,5,500,LLT,0,400,395,400,495,0.7880050505050505,0.797979797979798,3
+Fis-23044,Elasmobranchii,Silvertip shark,Carcharhinus albimarginatus,PGE,5,800,GND,0,20,15,20,795,0.01415094339622641,0.018867924528301886,1
+Fis-23044,Elasmobranchii,Silvertip shark,Carcharhinus albimarginatus,PGE,5,800,PST,0,280,275,280,795,0.33973495058400716,0.34591194968553457,2
+Fis-23044,Elasmobranchii,Silvertip shark,Carcharhinus albimarginatus,PGE,5,800,LLT,0,400,395,400,795,0.4906446540880504,0.4968553459119497,2
+Fis-160887,Elasmobranchii,Dwarf spotted wobbegong,Orectolobus parvimaculatus,BE,22,135,PST,0,280,113,280,113,0.4035714285714286,1,3
+Fis-160887,Elasmobranchii,Dwarf spotted wobbegong,Orectolobus parvimaculatus,BE,22,135,LLT,0,400,113,400,113,0.2825,1,3
+Fis-32610,Elasmobranchii,Variable torpedo ray,Torpedo sinuspersici,BE,22,200,PST,0,280,178,280,178,0.6357142857142857,1,3
+Fis-32610,Elasmobranchii,Variable torpedo ray,Torpedo sinuspersici,BE,22,200,LLT,0,400,178,400,178,0.445,1,3
+Fis-47427,Elasmobranchii,Chinese numbfish,Narcine lingula,BE,22,200,PST,0,280,178,280,178,0.6357142857142857,1,3
+Fis-47427,Elasmobranchii,Chinese numbfish,Narcine lingula,BE,22,200,LLT,0,400,178,400,178,0.445,1,3
+Fis-23239,Elasmobranchii,Milk shark,Rhizoprionodon acutus,SSE,22,200,PST,0,280,178,280,178,0.6357142857142857,1,3
+Fis-23239,Elasmobranchii,Milk shark,Rhizoprionodon acutus,SSE,22,200,LLT,0,400,178,400,178,0.445,1,3
+Fis-26148,Elasmobranchii,Honeycomb stingray,Himantura uarnak,DGE,23,50,PST,0,280,27,280,27,0.09642857142857145,1,3
+Fis-26148,Elasmobranchii,Honeycomb stingray,Himantura uarnak,DGE,23,50,LLT,0,400,27,400,27,0.0675,1,3
+Fis-61406,Elasmobranchii,Coastal stingaree,Urolophus orarius,DGE,23,50,PST,0,280,27,280,27,0.09642857142857145,1,3
+Fis-61406,Elasmobranchii,Coastal stingaree,Urolophus orarius,DGE,23,50,LLT,0,400,27,400,27,0.0675,1,3
+Fis-170784,Elasmobranchii,Bull ray,Aetomylaeus bovinus,DGE,25,150,PST,0,280,125,280,125,0.44642857142857145,1,3
+Fis-170784,Elasmobranchii,Bull ray,Aetomylaeus bovinus,DGE,25,150,LLT,0,400,125,400,125,0.3125,1,3
+Fis-23082,Elasmobranchii,Australian swellshark,Cephaloscyllium laticeps,IE,25,220,PST,0,280,195,280,195,0.6964285714285714,1,3
+Fis-23082,Elasmobranchii,Australian swellshark,Cephaloscyllium laticeps,IE,25,220,LLT,0,400,195,400,195,0.4875,1,3
+Fis-139820,Elasmobranchii,Australian numbfish,Hypnos monopterygius,BE,26,240,PST,0,280,214,280,214,0.7642857142857142,1,3
+Fis-139820,Elasmobranchii,Australian numbfish,Hypnos monopterygius,BE,26,240,LLT,0,400,214,400,214,0.535,1,3
+Fis-156398,Elasmobranchii,Australian weasel shark,Hemigaleus australiensis,SSE,29,170,PST,0,280,141,280,141,0.5035714285714286,1,3
+Fis-156398,Elasmobranchii,Australian weasel shark,Hemigaleus australiensis,SSE,29,170,LLT,0,400,141,400,141,0.3525,1,3
+Fis-25414,Elasmobranchii,Atlantic weasel shark,Paragaleus pectoralis,SSE,30,100,PST,0,280,70,280,70,0.25,1,3
+Fis-25414,Elasmobranchii,Atlantic weasel shark,Paragaleus pectoralis,SSE,30,100,LLT,0,400,70,400,70,0.175,1,3
+Fis-31570,Elasmobranchii,Sicklefin weasel shark,Hemigaleus microstoma,SSE,30,200,PST,0,280,170,280,170,0.6071428571428571,1,3
+Fis-31570,Elasmobranchii,Sicklefin weasel shark,Hemigaleus microstoma,SSE,30,200,LLT,0,400,170,400,170,0.425,1,3
+Fis-23153,Elasmobranchii,Port Jackson shark,Heterodontus portusjacksoni,DGE,31,275,PST,0,280,244,280,244,0.8714285714285714,1,3
+Fis-23153,Elasmobranchii,Port Jackson shark,Heterodontus portusjacksoni,DGE,31,275,LLT,0,400,244,400,244,0.61,1,3
+Fis-29409,Elasmobranchii,Lined catshark,Halaelurus lineatus,DGE,32,290,PST,0,280,248,280,258,0.8513842746400886,0.9612403100775194,3
+Fis-29409,Elasmobranchii,Lined catshark,Halaelurus lineatus,DGE,32,290,LLT,0,400,258,400,258,0.645,1,3
+Fis-131407,Elasmobranchii,Banded sand catshark,Atelomycterus fasciatus,IE,37,122,PST,0,280,85,280,85,0.30357142857142855,1,3
+Fis-131407,Elasmobranchii,Banded sand catshark,Atelomycterus fasciatus,IE,37,122,LLT,0,400,85,400,85,0.2125,1,3
+Fis-58273,Elasmobranchii,Onefin electric ray,Narke capensis,BE,37,183,PST,0,280,146,280,146,0.5214285714285715,1,3
+Fis-58273,Elasmobranchii,Onefin electric ray,Narke capensis,BE,37,183,LLT,0,400,146,400,146,0.365,1,3
+Fis-23223,Elasmobranchii,Longnose sawshark,Pristiophorus cirratus,DGE,37,310,PST,0,280,243,280,273,0.7724882260596546,0.8901098901098901,3
+Fis-23223,Elasmobranchii,Longnose sawshark,Pristiophorus cirratus,DGE,37,310,LLT,0,400,273,400,273,0.6825,1,3
+Fis-32811,Elasmobranchii,Finless sleeper ray,Temera hardwickii,BE,39,200,PST,0,280,161,280,161,0.575,1,3
+Fis-32811,Elasmobranchii,Finless sleeper ray,Temera hardwickii,BE,39,200,LLT,0,400,161,400,161,0.4025,1,3
+Fis-28947,Elasmobranchii,Numbray,Narke dipterygia,BE,39,200,PST,0,280,161,280,161,0.575,1,3
+Fis-28947,Elasmobranchii,Numbray,Narke dipterygia,BE,39,200,LLT,0,400,161,400,161,0.4025,1,3
+Fis-25902,Elasmobranchii,Blacktip tope,Hypogaleus hyugaensis,SSE,40,230,PST,0,280,190,280,190,0.6785714285714286,1,3
+Fis-25902,Elasmobranchii,Blacktip tope,Hypogaleus hyugaensis,SSE,40,230,LLT,0,400,190,400,190,0.475,1,3
+Fis-29540,Elasmobranchii,Australian angelshark,Squatina australis,DGE,41,256,PST,0,280,215,280,215,0.7678571428571429,1,3
+Fis-29540,Elasmobranchii,Australian angelshark,Squatina australis,DGE,41,256,LLT,0,400,215,400,215,0.5375,1,3
+Fis-61240,Elasmobranchii,Panther electric ray,Torpedo panthera,BE,41,350,PST,0,280,239,280,309,0.6602057327785483,0.7734627831715211,3
+Fis-61240,Elasmobranchii,Panther electric ray,Torpedo panthera,BE,41,350,LLT,0,400,309,400,309,0.7725,1,3
+Fis-31600,Elasmobranchii,Starspotted smooth-hound,Mustelus manazo,DGE,41,360,PST,0,280,239,280,319,0.6395096283027317,0.7492163009404389,3
+Fis-31600,Elasmobranchii,Starspotted smooth-hound,Mustelus manazo,DGE,41,360,LLT,0,400,319,400,319,0.7975,1,3
+Fis-31247,Elasmobranchii,Marbled electric ray,Torpedo marmorata,BE,44,370,PST,0,280,236,280,326,0.6101665205959684,0.7239263803680982,3
+Fis-31247,Elasmobranchii,Marbled electric ray,Torpedo marmorata,BE,44,370,LLT,0,400,326,400,326,0.815,1,3
+Fis-160886,Elasmobranchii,Floral banded wobbegong,Orectolobus floridus,BE,46,85,PST,0,280,39,280,39,0.1392857142857143,1,3
+Fis-160886,Elasmobranchii,Floral banded wobbegong,Orectolobus floridus,BE,46,85,LLT,0,400,39,400,39,0.0975,1,3
+Fis-140634,Elasmobranchii,Variegated catshark,Asymbolus submaculatus,DGE,48,200,PST,0,280,152,280,152,0.5428571428571428,1,3
+Fis-140634,Elasmobranchii,Variegated catshark,Asymbolus submaculatus,DGE,48,200,LLT,0,400,152,400,152,0.38,1,3
+Fis-24377,Elasmobranchii,Common torpedo,Torpedo torpedo,BE,48,400,PST,0,280,232,280,352,0.5461038961038961,0.6590909090909091,3
+Fis-24377,Elasmobranchii,Common torpedo,Torpedo torpedo,BE,48,400,LLT,0,400,352,400,352,0.88,1,3
+Fis-29536,Elasmobranchii,Shortspine spurdog,Squalus mitsukurii,DSPE,48,600,PST,0,280,232,280,552,0.34824016563147,0.42028985507246375,2
+Fis-29536,Elasmobranchii,Shortspine spurdog,Squalus mitsukurii,DSPE,48,600,LLT,0,400,352,400,552,0.561159420289855,0.6376811594202898,3
+Fis-29485,Elasmobranchii,Shortnose sawshark,Pristiophorus nudipinnis,DGE,50,165,PST,0,280,115,280,115,0.4107142857142857,1,3
+Fis-29485,Elasmobranchii,Shortnose sawshark,Pristiophorus nudipinnis,DGE,50,165,LLT,0,400,115,400,115,0.2875,1,3
+Fis-31187,Elasmobranchii,Brown ray,Raja miraletus,BE,50,462,PST,0,280,230,280,412,0.4585644937586685,0.558252427184466,3
+Fis-31187,Elasmobranchii,Brown ray,Raja miraletus,BE,50,462,LLT,0,400,350,400,412,0.7433252427184466,0.8495145631067961,3
+Fis-131821,Elasmobranchii,White skate,Rostroraja alba,BE,50,600,PST,0,280,230,280,550,0.3435064935064935,0.41818181818181815,2
+Fis-131821,Elasmobranchii,White skate,Rostroraja alba,BE,50,600,LLT,0,400,350,400,550,0.5568181818181818,0.6363636363636364,3
+Fis-29532,Elasmobranchii,Picked dogfish,Squalus acanthias,DSPE,50,1460,PST,0,280,230,280,1410,0.1339918946301925,0.16312056737588654,1
+Fis-29532,Elasmobranchii,Picked dogfish,Squalus acanthias,DSPE,50,1460,LLT,0,400,350,400,1410,0.21719858156028368,0.24822695035460993,1
+Fis-31223,Elasmobranchii,Black-spotted torpedo,Torpedo fuscomaculata,BE,51,439,PST,0,280,229,280,388,0.4827043446244477,0.5902061855670103,3
+Fis-31223,Elasmobranchii,Black-spotted torpedo,Torpedo fuscomaculata,BE,51,439,LLT,0,400,349,400,388,0.7848002577319588,0.8994845360824743,3
+Fis-31582,Elasmobranchii,Collared carpetshark,Parascyllium collare,BE,55,160,PST,0,280,105,280,105,0.375,1,3
+Fis-31582,Elasmobranchii,Collared carpetshark,Parascyllium collare,BE,55,160,LLT,0,400,105,400,105,0.2625,1,3
+Fis-29406,Elasmobranchii,Speckled catshark,Halaelurus boesemani,DGE,60,250,PST,0,280,190,280,190,0.6785714285714286,1,3
+Fis-29406,Elasmobranchii,Speckled catshark,Halaelurus boesemani,DGE,60,250,LLT,0,400,190,400,190,0.475,1,3
+Fis-29481,Elasmobranchii,Sixgill sawshark,Pliotrema warreni,DGE,60,430,PST,0,280,220,280,370,0.4671814671814672,0.5945945945945946,3
+Fis-29481,Elasmobranchii,Sixgill sawshark,Pliotrema warreni,DGE,60,430,LLT,0,400,340,400,370,0.7810810810810811,0.918918918918919,3
+Fis-29539,Elasmobranchii,African angelshark,Squatina africana,DGE,60,494,PST,0,280,220,280,434,0.39828834759710335,0.5069124423963134,3
+Fis-29539,Elasmobranchii,African angelshark,Squatina africana,DGE,60,494,LLT,0,400,340,400,434,0.6658986175115208,0.783410138248848,3
+Fis-54787,Elasmobranchii,Southern round skate,Irolita waitii,BE,66,200,PST,0,280,134,280,134,0.4785714285714286,1,3
+Fis-54787,Elasmobranchii,Southern round skate,Irolita waitii,BE,66,200,LLT,0,400,134,400,134,0.335,1,3
+Fis-23156,Elasmobranchii,Zebra bullhead shark,Heterodontus zebra,BE,66,200,PST,0,280,134,280,134,0.4785714285714286,1,3
+Fis-23156,Elasmobranchii,Zebra bullhead shark,Heterodontus zebra,BE,66,200,LLT,0,400,134,400,134,0.335,1,3
+Fis-32609,Elasmobranchii,Brown guitarfish,Rhinobatos schlegelii,DGE,66,200,PST,0,280,134,280,134,0.4785714285714286,1,3
+Fis-32609,Elasmobranchii,Brown guitarfish,Rhinobatos schlegelii,DGE,66,200,LLT,0,400,134,400,134,0.335,1,3
+Fis-24153,Elasmobranchii,Broadnose sevengill shark,Notorynchus cepedianus,DGE,68,570,PST,0,280,212,280,502,0.3197495731360273,0.42231075697211157,2
+Fis-24153,Elasmobranchii,Broadnose sevengill shark,Notorynchus cepedianus,DGE,68,570,LLT,0,400,332,400,502,0.5489243027888445,0.6613545816733067,3
+Fis-29367,Elasmobranchii,Prickly shark,Echinorhinus cookei,PGE,70,1100,PST,0,280,210,280,1030,0.1529126213592233,0.20388349514563106,1
+Fis-29367,Elasmobranchii,Prickly shark,Echinorhinus cookei,PGE,70,1100,LLT,0,400,330,400,1030,0.26432038834951455,0.32038834951456313,2
+Fis-54800,Elasmobranchii,Peacock skate,Pavoraja nitida,BE,71,390,PST,0,280,209,280,319,0.48903940886699504,0.6551724137931034,3
+Fis-54800,Elasmobranchii,Peacock skate,Pavoraja nitida,BE,71,390,LLT,0,400,319,400,319,0.7975,1,3
+Fis-160267,Elasmobranchii,Rusty Catshark,Halaelurus sellus,DGE,72,164,PST,0,280,92,280,92,0.32857142857142857,1,3
+Fis-160267,Elasmobranchii,Rusty Catshark,Halaelurus sellus,DGE,72,164,LLT,0,400,92,400,92,0.23,1,3
+Fis-23198,Elasmobranchii,Smalltooth sand tiger,Odontaspis ferox,DSE,72,530,PST,0,280,208,280,458,0.3373674360573924,0.45414847161572053,2
+Fis-23198,Elasmobranchii,Smalltooth sand tiger,Odontaspis ferox,DSE,72,530,LLT,0,400,328,400,458,0.5872489082969432,0.7161572052401747,3
+Fis-29421,Elasmobranchii,Largetooth cookiecutter shark,Isistius plutodus,SSE,75,200,PST,0,280,125,280,125,0.44642857142857145,1,3
+Fis-29421,Elasmobranchii,Largetooth cookiecutter shark,Isistius plutodus,SSE,75,200,LLT,0,400,125,400,125,0.3125,1,3
+Fis-61410,Elasmobranchii,Brown stingaree,Urolophus westraliensis,DGE,76,210,PST,0,280,134,280,134,0.4785714285714286,1,3
+Fis-61410,Elasmobranchii,Brown stingaree,Urolophus westraliensis,DGE,76,210,LLT,0,400,134,400,134,0.335,1,3
+Fis-159136,Elasmobranchii,Goldeneye shovelnose,Rhinobatos sainsburyi,DGE,80,200,PST,0,280,120,280,120,0.42857142857142855,1,3
+Fis-159136,Elasmobranchii,Goldeneye shovelnose,Rhinobatos sainsburyi,DGE,80,200,LLT,0,400,120,400,120,0.3,1,3
+Fis-47425,Elasmobranchii,Greenback stingaree,Urolophus viridis,DGE,80,200,PST,0,280,120,280,120,0.42857142857142855,1,3
+Fis-47425,Elasmobranchii,Greenback stingaree,Urolophus viridis,DGE,80,200,LLT,0,400,120,400,120,0.3,1,3
+Fis-23252,Elasmobranchii,Yellowspotted catshark,Scyliorhinus capensis,DGE,81,495,PST,0,280,199,280,414,0.3416235334713596,0.4806763285024155,2
+Fis-23252,Elasmobranchii,Yellowspotted catshark,Scyliorhinus capensis,DGE,81,495,LLT,0,400,319,400,414,0.6144987922705314,0.7705314009661836,3
+Fis-34717,Elasmobranchii,Patchwork stingaree,Urolophus flavomosaicus,DGE,86,300,PST,0,280,194,280,214,0.6281041388518024,0.9065420560747663,3
+Fis-34717,Elasmobranchii,Patchwork stingaree,Urolophus flavomosaicus,DGE,86,300,LLT,0,400,214,400,214,0.535,1,3
+Fis-140692,Elasmobranchii,NA,Asymbolus rubiginosus,DGE,86,540,PST,0,280,194,280,454,0.2960667086217747,0.42731277533039647,2
+Fis-140692,Elasmobranchii,NA,Asymbolus rubiginosus,DGE,86,540,LLT,0,400,314,400,454,0.5429295154185022,0.6916299559471366,3
+Fis-29416,Elasmobranchii,Bigeyed sixgill shark,Hexanchus nakamurai,DGE,90,600,PST,0,280,190,280,510,0.25280112044817926,0.37254901960784315,2
+Fis-29416,Elasmobranchii,Bigeyed sixgill shark,Hexanchus nakamurai,DGE,90,600,LLT,0,400,310,400,510,0.471078431372549,0.6078431372549019,3
+Fis-33777,Elasmobranchii,Slender guitarfish,Rhinobatos holcorhynchus,DGE,94,253,PST,0,280,159,280,159,0.5678571428571428,1,3
+Fis-33777,Elasmobranchii,Slender guitarfish,Rhinobatos holcorhynchus,DGE,94,253,LLT,0,400,159,400,159,0.3975,1,3
+Fis-131829,Elasmobranchii,Slime skate,Dipturus pullopunctatus,BE,97,457,PST,0,280,183,280,360,0.33223214285714286,0.5083333333333333,3
+Fis-131829,Elasmobranchii,Slime skate,Dipturus pullopunctatus,BE,97,457,LLT,0,400,303,400,360,0.6375624999999999,0.8416666666666667,3
+Fis-23155,Elasmobranchii,Whitespotted bullhead shark,Heterodontus ramalheira,DGE,100,275,PST,0,280,175,280,175,0.625,1,3
+Fis-23155,Elasmobranchii,Whitespotted bullhead shark,Heterodontus ramalheira,DGE,100,275,LLT,0,400,175,400,175,0.4375,1,3
+Fis-47424,Elasmobranchii,Yellowback stingaree,Urolophus sufflavus,DGE,100,300,PST,0,280,180,280,200,0.5785714285714286,0.9,3
+Fis-47424,Elasmobranchii,Yellowback stingaree,Urolophus sufflavus,DGE,100,300,LLT,0,400,200,400,200,0.5,1,3
+Fis-33775,Elasmobranchii,Natal electric ray,Heteronarce garmani,BE,101,329,PST,0,280,179,280,228,0.5018953634085213,0.7850877192982456,3
+Fis-33775,Elasmobranchii,Natal electric ray,Heteronarce garmani,BE,101,329,LLT,0,400,228,400,228,0.57,1,3
+Fis-23029,Elasmobranchii,Gulf catshark,Asymbolus vincenti,DGE,102,650,PST,0,280,178,280,548,0.2064911366006256,0.3248175182481752,2
+Fis-23029,Elasmobranchii,Gulf catshark,Asymbolus vincenti,DGE,102,650,LLT,0,400,298,400,548,0.4051277372262773,0.5437956204379562,3
+Fis-23084,Elasmobranchii,Balloon shark,Cephaloscyllium sufflans,DGE,107,600,PST,0,280,173,280,493,0.2168139669660968,0.3509127789046653,2
+Fis-23084,Elasmobranchii,Balloon shark,Cephaloscyllium sufflans,DGE,107,600,LLT,0,400,293,400,493,0.4353397565922921,0.5943204868154158,3
+Fis-161470,Elasmobranchii,NA,Trygonoptera galba,DGE,111,210,PST,0,280,99,280,99,0.3535714285714286,1,3
+Fis-161470,Elasmobranchii,NA,Trygonoptera galba,DGE,111,210,LLT,0,400,99,400,99,0.2475,1,3
+Fis-47420,Elasmobranchii,Sandyback stingaree,Urolophus bucculentus,DGE,113,230,PST,0,280,117,280,117,0.41785714285714287,1,3
+Fis-47420,Elasmobranchii,Sandyback stingaree,Urolophus bucculentus,DGE,113,230,LLT,0,400,117,400,117,0.2925,1,3
+Fis-132550,Elasmobranchii,Yellowspotted skate,Leucoraja wallacei,BE,114,450,PST,0,280,166,280,336,0.2928996598639456,0.49404761904761907,2
+Fis-132550,Elasmobranchii,Yellowspotted skate,Leucoraja wallacei,BE,114,450,LLT,0,400,286,400,336,0.6086011904761904,0.8511904761904762,3
+Fis-23253,Elasmobranchii,Brownspotted catshark,Scyliorhinus garmani,DGE,116,800,PST,0,280,164,280,684,0.1404344193817878,0.23976608187134502,1
+Fis-23253,Elasmobranchii,Brownspotted catshark,Scyliorhinus garmani,DGE,116,800,LLT,0,400,284,400,684,0.2947953216374269,0.4152046783625731,2
+Fis-23280,Elasmobranchii,Shortnose spurdog,Squalus megalops,PGE,118,750,PST,0,280,162,280,632,0.14830470162748643,0.2563291139240506,2
+Fis-23280,Elasmobranchii,Shortnose spurdog,Squalus megalops,PGE,118,750,LLT,0,400,282,400,632,0.31457278481012657,0.4462025316455696,2
+Fis-161402,Elasmobranchii,White-spotted gummy shark,Mustelus stevensi,PGE,120,402,PST,0,280,160,280,282,0.3242147922998987,0.5673758865248227,3
+Fis-161402,Elasmobranchii,White-spotted gummy shark,Mustelus stevensi,PGE,120,402,LLT,0,400,280,400,282,0.6950354609929078,0.9929078014184397,3
+Fis-31577,Elasmobranchii,Megamouth shark,Megachasma pelagios,FFE,120,600,PST,0,280,160,280,480,0.1904761904761905,0.3333333333333333,2
+Fis-31577,Elasmobranchii,Megamouth shark,Megachasma pelagios,FFE,120,600,LLT,0,400,280,400,480,0.4083333333333333,0.5833333333333334,3
+Fis-29338,Elasmobranchii,Frilled shark,Chlamydoselachus anguineus,DSE,120,1570,PST,0,280,160,280,1450,0.06305418719211822,0.1103448275862069,1
+Fis-29338,Elasmobranchii,Frilled shark,Chlamydoselachus anguineus,DSE,120,1570,LLT,0,400,280,400,1450,0.13517241379310344,0.19310344827586207,1
+Fis-160464,Elasmobranchii,Australian grey smooth-hound,Mustelus ravidus,SSE,127,300,PST,0,280,153,280,173,0.4832576383154417,0.884393063583815,3
+Fis-160464,Elasmobranchii,Australian grey smooth-hound,Mustelus ravidus,SSE,127,300,LLT,0,400,173,400,173,0.4325,1,3
+Fis-140641,Elasmobranchii,Western spotted catshark,Asymbolus occiduus,DGE,132,400,PST,0,280,148,280,268,0.2918976545842218,0.5522388059701493,3
+Fis-140641,Elasmobranchii,Western spotted catshark,Asymbolus occiduus,DGE,132,400,LLT,0,400,268,400,268,0.67,1,3
+Fis-131815,Elasmobranchii,Indian ringed skate,Okamejei powelli,BE,135,244,PST,0,280,109,280,109,0.3892857142857143,1,3
+Fis-131815,Elasmobranchii,Indian ringed skate,Okamejei powelli,BE,135,244,LLT,0,400,109,400,109,0.2725,1,3
+Fis-161235,Elasmobranchii,Western round skate,Irolita westraliensis,BE,148,209,PST,0,280,61,280,61,0.2178571428571429,1,3
+Fis-161235,Elasmobranchii,Western round skate,Irolita westraliensis,BE,148,209,LLT,0,400,61,400,61,0.1525,1,3
+Fis-23159,Elasmobranchii,Izak catshark,Holohalaelurus regani,DGE,150,1075,PST,0,280,130,280,925,0.06525096525096526,0.14054054054054055,1
+Fis-23159,Elasmobranchii,Izak catshark,Holohalaelurus regani,DGE,150,1075,LLT,0,400,250,400,925,0.16891891891891891,0.2702702702702703,2
+Fis-31585,Elasmobranchii,Pygmy ribbontail catshark,Eridacnis radcliffei,DSE,156,766,PST,0,280,124,280,610,0.09002341920374707,0.20327868852459016,1
+Fis-31585,Elasmobranchii,Pygmy ribbontail catshark,Eridacnis radcliffei,DSE,156,766,LLT,0,400,244,400,610,0.244,0.4,2
+Fis-160862,Elasmobranchii,Western Angel Shark,Squatina pseudocellata,DGE,167,312,PST,0,280,113,280,145,0.3145073891625616,0.7793103448275862,3
+Fis-160862,Elasmobranchii,Western Angel Shark,Squatina pseudocellata,DGE,167,312,LLT,0,400,145,400,145,0.3625,1,3
+Fis-132518,Elasmobranchii,Blackspot skate,Dipturus campbelli,BE,167,403,PST,0,280,113,280,236,0.19323547215496367,0.4788135593220339,2
+Fis-132518,Elasmobranchii,Blackspot skate,Dipturus campbelli,BE,167,403,LLT,0,400,233,400,236,0.5750953389830509,0.9872881355932204,3
+Fis-140639,Elasmobranchii,NA,Asymbolus parvus,DSE,170,260,PST,0,280,90,280,90,0.32142857142857145,1,3
+Fis-140639,Elasmobranchii,NA,Asymbolus parvus,DSE,170,260,LLT,0,400,90,400,90,0.225,1,3
+Fis-58409,Elasmobranchii,Slender electric ray,Narcine rierai,BE,173,214,PST,0,280,41,280,41,0.14642857142857144,1,3
+Fis-58409,Elasmobranchii,Slender electric ray,Narcine rierai,BE,173,214,LLT,0,400,41,400,41,0.1025,1,3
+Fis-161440,Elasmobranchii,Whitefin swellshark,Cephaloscyllium albipinnum,DGE,176,554,PST,0,280,104,280,378,0.10219198790627362,0.2751322751322751,2
+Fis-161440,Elasmobranchii,Whitefin swellshark,Cephaloscyllium albipinnum,DGE,176,554,LLT,0,400,224,400,378,0.33185185185185184,0.5925925925925926,3
+Fis-23149,Elasmobranchii,Sharpnose sevengill shark,Heptranchias perlo,DGE,180,1000,PST,0,280,100,280,820,0.04355400696864112,0.12195121951219512,1
+Fis-23149,Elasmobranchii,Sharpnose sevengill shark,Heptranchias perlo,DGE,180,1000,LLT,0,400,220,400,820,0.14756097560975612,0.2682926829268293,2
+Fis-23157,Elasmobranchii,Bluntnose sixgill shark,Hexanchus griseus,DGE,180,2500,PST,0,280,100,280,2320,0.01539408866995074,0.04310344827586207,1
+Fis-23157,Elasmobranchii,Bluntnose sixgill shark,Hexanchus griseus,DGE,180,2500,LLT,0,400,220,400,2320,0.0521551724137931,0.09482758620689655,1
+Fis-161438,Elasmobranchii,Speckled swellshark,Cephaloscyllium speccum,DGE,184,455,PST,0,280,96,280,271,0.12145492883500264,0.35424354243542433,2
+Fis-161438,Elasmobranchii,Speckled swellshark,Cephaloscyllium speccum,DGE,184,455,LLT,0,400,216,400,271,0.4304059040590406,0.7970479704797048,3
+Fis-29380,Elasmobranchii,Broadbanded lanternshark,Etmopterus gracilispinis,DSPE,187,1000,PST,0,280,93,280,813,0.03799420137058514,0.11439114391143912,1
+Fis-29380,Elasmobranchii,Broadbanded lanternshark,Etmopterus gracilispinis,DSPE,187,1000,LLT,0,400,213,400,813,0.1395110701107011,0.26199261992619927,2
+Fis-161225,Elasmobranchii,Arafura skate,Okamejei arafurensis,BE,191,298,PST,0,280,89,280,107,0.26438584779706276,0.8317757009345794,3
+Fis-161225,Elasmobranchii,Arafura skate,Okamejei arafurensis,BE,191,298,LLT,0,400,107,400,107,0.2675,1,3
+Fis-61614,Elasmobranchii,Whitetail dogfish,Scymnodalatias albicauda,DSPE,191,510,PST,0,280,89,280,319,0.08868114643976713,0.27899686520376177,2
+Fis-61614,Elasmobranchii,Whitetail dogfish,Scymnodalatias albicauda,DSPE,191,510,LLT,0,400,209,400,319,0.3423275862068965,0.6551724137931034,3
+Fis-159586,Elasmobranchii,Fatspine spurdog,Squalus crassispinus,DSPE,194,262,PST,0,280,68,280,68,0.24285714285714283,1,3
+Fis-159586,Elasmobranchii,Fatspine spurdog,Squalus crassispinus,DSPE,194,262,LLT,0,400,68,400,68,0.17,1,3
+Fis-23064,Elasmobranchii,Dusky shark,Carcharhinus obscurus,PGE,200,400,PST,0,280,80,280,200,0.11428571428571428,0.4,2
+Fis-23064,Elasmobranchii,Dusky shark,Carcharhinus obscurus,PGE,200,400,LLT,0,400,200,400,200,0.5,1,3
+Fis-54647,Elasmobranchii,Wide stingaree,Urolophus expansus,DGE,200,420,PST,0,280,80,280,220,0.10389610389610388,0.36363636363636365,2
+Fis-54647,Elasmobranchii,Wide stingaree,Urolophus expansus,DGE,200,420,LLT,0,400,200,400,220,0.4545454545454546,0.9090909090909091,3
+Fis-164699,Elasmobranchii,NA,Cruriraja hulleyi,BE,200,545,PST,0,280,80,280,345,0.06625258799171842,0.2318840579710145,1
+Fis-164699,Elasmobranchii,NA,Cruriraja hulleyi,BE,200,545,LLT,0,400,200,400,345,0.2898550724637681,0.5797101449275363,3
+Fis-23075,Elasmobranchii,Gulper shark,Centrophorus granulosus,DSPE,200,1200,PST,0,280,80,280,1000,0.02285714285714285,0.08,1
+Fis-23075,Elasmobranchii,Gulper shark,Centrophorus granulosus,DSPE,200,1200,LLT,0,400,200,400,1000,0.1,0.2,1
+Fis-23077,Elasmobranchii,Little gulper shark,Centrophorus uyato,DSE,200,1400,PST,0,280,80,280,1200,0.01904761904761904,0.06666666666666667,1
+Fis-23077,Elasmobranchii,Little gulper shark,Centrophorus uyato,DSE,200,1400,LLT,0,400,200,400,1200,0.08333333333333333,0.16666666666666666,1
+Fis-23101,Elasmobranchii,Kitefin shark,Dalatias licha,DSE,200,1800,PST,0,280,80,280,1600,0.01428571428571428,0.05,1
+Fis-23101,Elasmobranchii,Kitefin shark,Dalatias licha,DSE,200,1800,LLT,0,400,200,400,1600,0.0625,0.125,1
+Fis-23124,Elasmobranchii,Velvet belly,Etmopterus spinax,DSPE,200,2490,PST,0,280,80,280,2290,0.00998128509045539,0.034934497816593885,1
+Fis-23124,Elasmobranchii,Velvet belly,Etmopterus spinax,DSPE,200,2490,LLT,0,400,200,400,2290,0.04366812227074235,0.08733624454148471,1
+Fis-27678,Elasmobranchii,Roughnose legskate,Cruriraja parcomaculata,BE,205,620,PST,0,280,75,280,415,0.048407917383821,0.18072289156626506,1
+Fis-27678,Elasmobranchii,Roughnose legskate,Cruriraja parcomaculata,BE,205,620,LLT,0,400,195,400,415,0.22906626506024097,0.46987951807228917,2
+Fis-144985,Elasmobranchii,NA,Parascyllium sparsimaculatum,DSE,208,245,PST,0,280,37,280,37,0.13214285714285717,1,3
+Fis-144985,Elasmobranchii,NA,Parascyllium sparsimaculatum,DSE,208,245,LLT,0,400,37,400,37,0.0925,1,3
+Fis-29321,Elasmobranchii,Smallfin gulper shark,Centrophorus moluccensis,DSE,210,823,PST,0,280,70,280,613,0.02854812398042414,0.11419249592169657,1
+Fis-29321,Elasmobranchii,Smallfin gulper shark,Centrophorus moluccensis,DSE,210,823,LLT,0,400,190,400,613,0.14722675367047308,0.3099510603588907,2
+Fis-131127,Elasmobranchii,Dwarf gulper shark,Centrophorus atromarginatus,DSE,213,450,PST,0,280,67,280,237,0.06764617239300784,0.28270042194092826,2
+Fis-131127,Elasmobranchii,Dwarf gulper shark,Centrophorus atromarginatus,DSE,213,450,LLT,0,400,187,400,237,0.3688713080168777,0.7890295358649789,3
+Fis-6652,Elasmobranchii,Australian sawtail catshark,Figaro boardmani,DSE,213,823,PST,0,280,67,280,610,0.02628220140515222,0.10983606557377049,1
+Fis-6652,Elasmobranchii,Australian sawtail catshark,Figaro boardmani,DSE,213,823,LLT,0,400,187,400,610,0.1433155737704918,0.30655737704918035,2
+Fis-25897,Elasmobranchii,African ribbontail catshark,Eridacnis sinuans,DSE,214,480,PST,0,280,66,280,266,0.05848549946294307,0.24812030075187969,1
+Fis-25897,Elasmobranchii,African ribbontail catshark,Eridacnis sinuans,DSE,214,480,LLT,0,400,186,400,266,0.32515037593984963,0.6992481203007519,3
+Fis-154010,Elasmobranchii,Bristly catshark,Bythaelurus hispidus,DSE,222,403,PST,0,280,58,280,181,0.06637726913970009,0.32044198895027626,2
+Fis-154010,Elasmobranchii,Bristly catshark,Bythaelurus hispidus,DSE,222,403,LLT,0,400,178,400,181,0.4376243093922652,0.9834254143646409,3
+Fis-29332,Elasmobranchii,Reticulated swellshark,Cephaloscyllium fasciatum,DSE,232,450,PST,0,280,48,280,218,0.03774574049803408,0.22018348623853212,1
+Fis-29332,Elasmobranchii,Reticulated swellshark,Cephaloscyllium fasciatum,DSE,232,450,LLT,0,400,168,400,218,0.3236697247706422,0.7706422018348624,3
+Fis-29385,Elasmobranchii,Thorny lanternshark,Etmopterus sentosus,DSE,234,500,PST,0,280,46,280,266,0.02841031149301826,0.17293233082706766,1
+Fis-29385,Elasmobranchii,Thorny lanternshark,Etmopterus sentosus,DSE,234,500,LLT,0,400,166,400,266,0.25898496240601504,0.6240601503759399,3
+Fis-29423,Elasmobranchii,Longfin mako,Isurus paucus,OE,234,1752,PST,0,280,46,280,1518,0.00497835497835497,0.030303030303030304,1
+Fis-29423,Elasmobranchii,Longfin mako,Isurus paucus,OE,234,1752,LLT,0,400,166,400,1518,0.04538208168642951,0.10935441370223979,1
+Fis-161233,Elasmobranchii,Sawback skate,Leucoraja pristispina,BE,236,504,PST,0,280,44,280,268,0.02579957356076759,0.16417910447761194,1
+Fis-161233,Elasmobranchii,Sawback skate,Leucoraja pristispina,BE,236,504,LLT,0,400,164,400,268,0.2508955223880597,0.6119402985074627,3
+Fis-23127,Elasmobranchii,Pygmy shark,Euprotomicrus bispinatus,DSE,241,1800,PST,0,280,39,280,1559,0.00348437643177861,0.025016035920461834,1
+Fis-23127,Elasmobranchii,Pygmy shark,Euprotomicrus bispinatus,DSE,241,1800,LLT,0,400,159,400,1559,0.04054041051956383,0.10198845413726748,1
+Fis-23158,Elasmobranchii,African spotted catshark,Holohalaelurus punctatus,DGE,244,440,PST,0,280,36,280,196,0.02361516034985422,0.1836734693877551,1
+Fis-23158,Elasmobranchii,African spotted catshark,Holohalaelurus punctatus,DGE,244,440,LLT,0,400,156,400,196,0.3104081632653061,0.7959183673469388,3
+Fis-29547,Elasmobranchii,Ornate angelshark,Squatina tergocellata,DGE,250,400,PST,0,280,30,280,150,0.02142857142857143,0.2,1
+Fis-29547,Elasmobranchii,Ornate angelshark,Squatina tergocellata,DGE,250,400,LLT,0,400,150,400,150,0.375,1,3
+Fis-23278,Elasmobranchii,Roughskin spurdog,Cirrhigaleus asper,DSPE,253,650,PST,0,280,27,280,397,0.00655811442965095,0.06801007556675064,1
+Fis-23278,Elasmobranchii,Roughskin spurdog,Cirrhigaleus asper,DSPE,253,650,LLT,0,400,147,400,397,0.13607682619647354,0.3702770780856423,2
+Fis-161228,Elasmobranchii,NA,Okamejei leptoura,BE,265,735,PST,0,280,15,280,470,0.00170972644376899,0.031914893617021274,1
+Fis-161228,Elasmobranchii,NA,Okamejei leptoura,BE,265,735,LLT,0,400,135,400,470,0.09694148936170216,0.2872340425531915,2
+Fis-58162,Elasmobranchii,Blurred smooth lantern shark,Etmopterus bigelowi,DSE,267,1000,PST,0,280,13,280,733,8.234262327031769e-4,0.017735334242837655,1
+Fis-58162,Elasmobranchii,Blurred smooth lantern shark,Etmopterus bigelowi,DSE,267,1000,LLT,0,400,133,400,733,0.06033083219645293,0.18144611186903137,1
+Fis-31578,Elasmobranchii,Goblin shark,Mitsukurina owstoni,DSE,270,1300,PST,0,280,10,280,1030,3.467406380027739e-4,0.009708737864077669,1
+Fis-31578,Elasmobranchii,Goblin shark,Mitsukurina owstoni,DSE,270,1300,LLT,0,400,130,400,1030,0.04101941747572815,0.1262135922330097,1
+Fis-160879,Elasmobranchii,Western Australian Legskate,Sinobatis bulbicauda,BE,273,1125,PST,0,280,7,280,852,2.053990610328639e-4,0.008215962441314555,1
+Fis-160879,Elasmobranchii,Western Australian Legskate,Sinobatis bulbicauda,BE,273,1125,LLT,0,400,127,400,852,0.04732687793427229,0.14906103286384975,1
+Fis-31589,Elasmobranchii,Longnose houndshark,Iago garricki,DSE,275,475,PST,0,280,5,280,200,4.464285714285714e-4,0.025,1
+Fis-31589,Elasmobranchii,Longnose houndshark,Iago garricki,DSE,275,475,LLT,0,400,125,400,200,0.1953125,0.625,3
+Fis-26519,Elasmobranchii,Deep-water stingray,Plesiobatis daviesi,DSE,275,780,PST,0,280,5,280,505,1.7680339462517678e-4,0.009900990099009901,1
+Fis-26519,Elasmobranchii,Deep-water stingray,Plesiobatis daviesi,DSE,275,780,LLT,0,400,125,400,505,0.07735148514851485,0.24752475247524752,1
+Fis-132528,Elasmobranchii,East African skate,Okamejei heemstrai,BE,286,500,LLT,0,400,114,400,214,0.15182242990654202,0.5327102803738317,3
+Fis-160938,Elasmobranchii,NA,Holohalaelurus favus,DGE,299,1000,LLT,0,400,101,400,701,0.03638017118402283,0.14407988587731813,1
+Fis-131465,Elasmobranchii,Andaman leg skate,Cruriraja andamanica,BE,300,511,LLT,0,400,100,400,211,0.11848341232227488,0.47393364928909953,2
+Fis-161638,Elasmobranchii,Sandy skate,Pavoraja arenaria,BE,300,712,LLT,0,400,100,400,412,0.06067961165048544,0.24271844660194175,1
+Fis-160439,Elasmobranchii,Edmund's spurdog,Squalus edmundsi,DSE,300,850,LLT,0,400,100,400,550,0.04545454545454545,0.18181818181818182,1
+Fis-160444,Elasmobranchii,Western longnose spurdog,Squalus nasutus,DSE,300,850,LLT,0,400,100,400,550,0.04545454545454545,0.18181818181818182,1
+Fis-131852,Elasmobranchii,Arctic skate,Amblyraja hyperborea,BE,300,2500,LLT,0,400,100,400,2200,0.01136363636363636,0.045454545454545456,1
+Fis-161448,Elasmobranchii,Australian reticulate swellshark,Cephaloscyllium hiscosellum,DSE,307,420,LLT,0,400,93,400,113,0.1913495575221239,0.8230088495575221,3
+Fis-125906,Elasmobranchii,Slender sawtail catshark,Galeus gracilis,DSE,309,470,LLT,0,400,91,400,161,0.12858695652173913,0.5652173913043478,3
+Fis-131844,Elasmobranchii,Prow-nose skate,Dipturus stenorhynchus,BE,313,761,LLT,0,400,87,400,448,0.04223772321428571,0.19419642857142858,1
+Fis-29319,Elasmobranchii,Dumb gulper shark,Centrophorus harrissoni,DSPE,314,790,LLT,0,400,86,400,476,0.03884453781512605,0.18067226890756302,1
+Fis-165849,Elasmobranchii,African dwarf sawshark,Pristiophorus nancyae,DSE,318,570,LLT,0,400,82,400,252,0.0667063492063492,0.3253968253968254,2
+Fis-54790,Elasmobranchii,Allens skate,Pavoraja alleni,BE,320,458,LLT,0,400,80,400,138,0.11594202898550726,0.5797101449275363,3
+Fis-166044,Elasmobranchii,Sculpted lanternshark,Etmopterus sculptus,DSE,320,900,LLT,0,400,80,400,580,0.02758620689655172,0.13793103448275862,1
+Fis-29531,Elasmobranchii,Spined pygmy shark,Squaliolus laticaudus,DSE,326,1200,LLT,0,400,74,400,874,0.01566361556064073,0.08466819221967964,1
+Fis-23260,Elasmobranchii,Little sleeper shark,Somniosus rostratus,DSPE,345,1330,LLT,0,400,55,400,985,0.00767766497461929,0.05583756345177665,1
+Fis-23113,Elasmobranchii,Bramble shark,Echinorhinus brucus,DGE,350,900,LLT,0,400,50,400,550,0.01136363636363636,0.09090909090909091,1
+Fis-23204,Elasmobranchii,Prickly dogfish,Oxynotus bruniensis,DSPE,350,1070,LLT,0,400,50,400,720,0.00868055555555555,0.06944444444444445,1
+Fis-131805,Elasmobranchii,Munchskin skate,Rajella caudaspinosa,BE,357,718,LLT,0,400,43,400,361,0.01280470914127423,0.11911357340720222,1
+Fis-30995,Elasmobranchii,Sixgill stingray,Hexatrygon bickelli,DSE,362,1120,LLT,0,400,38,400,758,0.00476253298153034,0.05013192612137203,1
+Fis-132559,Elasmobranchii,Bigthorn skate,Rajella barnardi,BE,372,1700,LLT,0,400,28,400,1328,0.00147590361445783,0.02108433734939759,1
+Fis-58285,Elasmobranchii,African pygmy skate,Neoraja stehmanni,BE,382,1025,LLT,0,400,18,400,643,0.00125972006220839,0.027993779160186624,1
+Fis-160378,Elasmobranchii,Indonesian greeneye spurdog,Squalus montalbani,DSE,383,1370,LLT,0,400,17,400,987,7.32016210739615e-4,0.017223910840932118,1
+Fis-154012,Elasmobranchii,Mud catshark,Bythaelurus lutarius,DSE,388,766,LLT,0,400,12,400,378,9.523809523809524e-4,0.031746031746031744,1
+Fis-23074,Elasmobranchii,Longnose velvet dogfish,Centroscymnus crepidater,DSE,394,1500,LLT,0,400,6,400,1106,8.1374321880651e-5,0.0054249547920434,1
+Fis-25903,Elasmobranchii,Bigeye houndshark,Iago omanensis,DSE,394,2195,LLT,0,400,6,400,1801,4.997223764575235e-5,0.003331482509716824,1
+Fis-32611,Elasmobranchii,Flapnose ray,Rhinoptera javanica,PGE,3,30,GND,0,20,17,20,27,0.5351851851851852,0.6296296296296297,3
+Fis-32611,Elasmobranchii,Flapnose ray,Rhinoptera javanica,PGE,3,30,PST,0,280,27,280,27,0.09642857142857145,1,3
+Fis-32611,Elasmobranchii,Flapnose ray,Rhinoptera javanica,PGE,3,30,LLT,0,400,27,400,27,0.0675,1,3
+Fis-27224,Elasmobranchii,Common sawfish,Pristis pristis,IE,5,50,GND,0,20,15,20,45,0.25,0.3333333333333333,2
+Fis-27224,Elasmobranchii,Common sawfish,Pristis pristis,IE,5,50,PST,0,280,45,280,45,0.16071428571428573,1,3
+Fis-27224,Elasmobranchii,Common sawfish,Pristis pristis,IE,5,50,LLT,0,400,45,400,45,0.1125,1,3
+Fis-28553,Elasmobranchii,Leopard whipray,Himantura undulata,DGE,6,50,GND,0,20,14,20,44,0.22272727272727272,0.3181818181818182,2
+Fis-28553,Elasmobranchii,Leopard whipray,Himantura undulata,DGE,6,50,PST,0,280,44,280,44,0.15714285714285714,1,3
+Fis-28553,Elasmobranchii,Leopard whipray,Himantura undulata,DGE,6,50,LLT,0,400,44,400,44,0.11,1,3
+Fis-61508,Elasmobranchii,Shortfin devil ray,Mobula kuhlii,FFE,10,100,GND,0,20,10,20,90,0.05555555555555555,0.1111111111111111,1
+Fis-61508,Elasmobranchii,Shortfin devil ray,Mobula kuhlii,FFE,10,100,PST,0,280,90,280,90,0.32142857142857145,1,3
+Fis-61508,Elasmobranchii,Shortfin devil ray,Mobula kuhlii,FFE,10,100,LLT,0,400,90,400,90,0.225,1,3
+Fis-26903,Elasmobranchii,Spotted numbfish,Narcine timlei,BE,22,200,PST,0,280,178,280,178,0.6357142857142857,1,3
+Fis-26903,Elasmobranchii,Spotted numbfish,Narcine timlei,BE,22,200,LLT,0,400,178,400,178,0.445,1,3
+Fis-21798,Elasmobranchii,Spinetail mobula,Mobula Mobula,FFE,0,300,GND,0,20,20,20,300,0.06666666666666667,0.06666666666666667,1
+Fis-21798,Elasmobranchii,Spinetail mobula,Mobula Mobula,FFE,0,300,PST,0,280,280,280,300,0.9333333333333332,0.9333333333333333,3
+Fis-21798,Elasmobranchii,Spinetail mobula,Mobula Mobula,FFE,0,300,LLT,0,400,300,400,300,0.75,1,3
+Fis-26085,Elasmobranchii,Short-tail stingray,Bathytoshia brevicaudata,IE,0,476,GND,0,20,20,20,476,0.04201680672268908,0.04201680672268908,1
+Fis-26085,Elasmobranchii,Short-tail stingray,Bathytoshia brevicaudata,IE,0,476,PST,0,280,280,280,476,0.5882352941176471,0.5882352941176471,3
+Fis-26085,Elasmobranchii,Short-tail stingray,Bathytoshia brevicaudata,IE,0,476,LLT,0,400,400,400,476,0.8403361344537815,0.8403361344537815,3
+Fis-32608,Elasmobranchii,Bluntnose guitarfish,Acroteriobatus blochii,BE,3,30,GND,0,20,17,20,27,0.5351851851851852,0.6296296296296297,3
+Fis-32608,Elasmobranchii,Bluntnose guitarfish,Acroteriobatus blochii,BE,3,30,PST,0,280,27,280,27,0.09642857142857145,1,3
+Fis-32608,Elasmobranchii,Bluntnose guitarfish,Acroteriobatus blochii,BE,3,30,LLT,0,400,27,400,27,0.0675,1,3
+Fis-28785,Elasmobranchii,Bleeker's whipray,Pateobatis bleekeri,IE,3,30,GND,0,20,17,20,27,0.5351851851851852,0.6296296296296297,3
+Fis-28785,Elasmobranchii,Bleeker's whipray,Pateobatis bleekeri,IE,3,30,PST,0,280,27,280,27,0.09642857142857145,1,3
+Fis-28785,Elasmobranchii,Bleeker's whipray,Pateobatis bleekeri,IE,3,30,LLT,0,400,27,400,27,0.0675,1,3
+Fis-154456,Elasmobranchii,Bennett's stingray,Hemitrygon bennetti,IE,5,40,GND,0,20,15,20,35,0.3214285714285714,0.42857142857142855,2
+Fis-154456,Elasmobranchii,Bennett's stingray,Hemitrygon bennetti,IE,5,40,PST,0,280,35,280,35,0.125,1,3
+Fis-154456,Elasmobranchii,Bennett's stingray,Hemitrygon bennetti,IE,5,40,LLT,0,400,35,400,35,0.0875,1,3
+Fis-166946,Elasmobranchii,Arabian banded whipray,Maculabatis randalli,IE,5,40,GND,0,20,15,20,35,0.3214285714285714,0.42857142857142855,2
+Fis-166946,Elasmobranchii,Arabian banded whipray,Maculabatis randalli,IE,5,40,PST,0,280,35,280,35,0.125,1,3
+Fis-166946,Elasmobranchii,Arabian banded whipray,Maculabatis randalli,IE,5,40,LLT,0,400,35,400,35,0.0875,1,3
+Fis-28787,Elasmobranchii,Scaly whipray,Brevitrygon imbricata,DGE,6,50,GND,0,20,14,20,44,0.22272727272727272,0.3181818181818182,2
+Fis-28787,Elasmobranchii,Scaly whipray,Brevitrygon imbricata,DGE,6,50,PST,0,280,44,280,44,0.15714285714285714,1,3
+Fis-28787,Elasmobranchii,Scaly whipray,Brevitrygon imbricata,DGE,6,50,LLT,0,400,44,400,44,0.11,1,3
+Fis-26902,Elasmobranchii,Pale-edged stingray,Telatrygon Zugei,DGE,6,50,GND,0,20,14,20,44,0.22272727272727272,0.3181818181818182,2
+Fis-26902,Elasmobranchii,Pale-edged stingray,Telatrygon Zugei,DGE,6,50,PST,0,280,44,280,44,0.15714285714285714,1,3
+Fis-26902,Elasmobranchii,Pale-edged stingray,Telatrygon Zugei,DGE,6,50,LLT,0,400,44,400,44,0.11,1,3
+Fis-60598,Elasmobranchii,Pearl stingray,Fontitrygon margaritella,IE,6,50,GND,0,20,14,20,44,0.22272727272727272,0.3181818181818182,2
+Fis-60598,Elasmobranchii,Pearl stingray,Fontitrygon margaritella,IE,6,50,PST,0,280,44,280,44,0.15714285714285714,1,3
+Fis-60598,Elasmobranchii,Pearl stingray,Fontitrygon margaritella,IE,6,50,LLT,0,400,44,400,44,0.11,1,3
+Fis-47488,Elasmobranchii,Sharpnose stingray,Maculabatis gerrardi,IE,6,50,GND,0,20,14,20,44,0.22272727272727272,0.3181818181818182,2
+Fis-47488,Elasmobranchii,Sharpnose stingray,Maculabatis gerrardi,IE,6,50,PST,0,280,44,280,44,0.15714285714285714,1,3
+Fis-47488,Elasmobranchii,Sharpnose stingray,Maculabatis gerrardi,IE,6,50,LLT,0,400,44,400,44,0.11,1,3
+Fis-31408,Elasmobranchii,Lesser sandshark,Acroteriobatus annulatus,BE,7,73,GND,0,20,13,20,66,0.12803030303030302,0.19696969696969696,1
+Fis-31408,Elasmobranchii,Lesser sandshark,Acroteriobatus annulatus,BE,7,73,PST,0,280,66,280,66,0.2357142857142857,1,3
+Fis-31408,Elasmobranchii,Lesser sandshark,Acroteriobatus annulatus,BE,7,73,LLT,0,400,66,400,66,0.165,1,3
+Fis-32960,Elasmobranchii,Australian bull ray,Myliobatis tenuicaudatus,PGE,9,85,GND,0,20,11,20,76,0.07960526315789475,0.14473684210526316,1
+Fis-32960,Elasmobranchii,Australian bull ray,Myliobatis tenuicaudatus,PGE,9,85,PST,0,280,76,280,76,0.2714285714285714,1,3
+Fis-32960,Elasmobranchii,Australian bull ray,Myliobatis tenuicaudatus,PGE,9,85,LLT,0,400,76,400,76,0.19,1,3
+Fis-27236,Elasmobranchii,Round stingray,Taeniurops grabatus,IE,10,300,GND,0,20,10,20,290,0.01724137931034482,0.034482758620689655,1
+Fis-27236,Elasmobranchii,Round stingray,Taeniurops grabatus,IE,10,300,PST,0,280,270,280,290,0.8977832512315271,0.9310344827586207,3
+Fis-27236,Elasmobranchii,Round stingray,Taeniurops grabatus,IE,10,300,LLT,0,400,290,400,290,0.725,1,3
+Fis-28552,Elasmobranchii,Thouin ray,Glaucostegus thouin,BE,11,100,GND,0,20,9,20,89,0.04550561797752809,0.10112359550561797,1
+Fis-28552,Elasmobranchii,Thouin ray,Glaucostegus thouin,BE,11,100,PST,0,280,89,280,89,0.31785714285714284,1,3
+Fis-28552,Elasmobranchii,Thouin ray,Glaucostegus thouin,BE,11,100,LLT,0,400,89,400,89,0.2225,1,3
+Fis-22814,Elasmobranchii,Chola guitarfish,Pseudobatus percellens,BE,11,110,GND,0,20,9,20,99,0.04090909090909091,0.09090909090909091,1
+Fis-22814,Elasmobranchii,Chola guitarfish,Pseudobatus percellens,BE,11,110,PST,0,280,99,280,99,0.3535714285714286,1,3
+Fis-22814,Elasmobranchii,Chola guitarfish,Pseudobatus percellens,BE,11,110,LLT,0,400,99,400,99,0.2475,1,3
+Fis-24098,Elasmobranchii,Giant manta,Mobula birostris,FFE,12,120,GND,0,20,8,20,108,0.02962962962962963,0.07407407407407407,1
+Fis-24098,Elasmobranchii,Giant manta,Mobula birostris,FFE,12,120,PST,0,280,108,280,108,0.3857142857142858,1,3
+Fis-24098,Elasmobranchii,Giant manta,Mobula birostris,FFE,12,120,LLT,0,400,108,400,108,0.27,1,3
+Fis-163295,Elasmobranchii,Alfred manta,Mobula alfredi,FFE,13,120,GND,0,20,7,20,107,0.02289719626168224,0.06542056074766354,1
+Fis-163295,Elasmobranchii,Alfred manta,Mobula alfredi,FFE,13,120,PST,0,280,107,280,107,0.3821428571428571,1,3
+Fis-163295,Elasmobranchii,Alfred manta,Mobula alfredi,FFE,13,120,LLT,0,400,107,400,107,0.2675,1,3
+Fis-23993,Elasmobranchii,Roughtail stingray,Bathytoshia centroura,IE,15,270,GND,0,20,5,20,255,0.00490196078431372,0.0196078431372549,1
+Fis-23993,Elasmobranchii,Roughtail stingray,Bathytoshia centroura,IE,15,270,PST,0,280,255,280,255,0.9107142857142856,1,3
+Fis-23993,Elasmobranchii,Roughtail stingray,Bathytoshia centroura,IE,15,270,LLT,0,400,255,400,255,0.6375,1,3
+Fis-54860,Elasmobranchii,Banded numbfish,Narcinops westraliensis,BE,16,70,GND,0,20,4,20,54,0.01481481481481481,0.07407407407407407,1
+Fis-54860,Elasmobranchii,Banded numbfish,Narcinops westraliensis,BE,16,70,PST,0,280,54,280,54,0.1928571428571429,1,3
+Fis-54860,Elasmobranchii,Banded numbfish,Narcinops westraliensis,BE,16,70,LLT,0,400,54,400,54,0.135,1,3
+Fis-161488,Elasmobranchii,NA,Maculabatis astra,IE,16,141,GND,0,20,4,20,125,0.0064,0.032,1
+Fis-161488,Elasmobranchii,NA,Maculabatis astra,IE,16,141,PST,0,280,125,280,125,0.44642857142857145,1,3
+Fis-161488,Elasmobranchii,NA,Maculabatis astra,IE,16,141,LLT,0,400,125,400,125,0.3125,1,3
+Fis-161209,Elasmobranchii,NA,Dentiraja confusus,BE,18,390,GND,0,20,2,20,372,5.376344086021506e-4,0.005376344086021506,1
+Fis-161209,Elasmobranchii,NA,Dentiraja confusus,BE,18,390,PST,0,280,262,280,372,0.6590245775729647,0.7043010752688172,3
+Fis-161209,Elasmobranchii,NA,Dentiraja confusus,BE,18,390,LLT,0,400,372,400,372,0.93,1,3
+Fis-160854,Elasmobranchii,Wedgenose skate,Spiniraja whitleyi,BE,21,170,PST,0,280,149,280,149,0.5321428571428571,1,3
+Fis-160854,Elasmobranchii,Wedgenose skate,Spiniraja whitleyi,BE,21,170,LLT,0,400,149,400,149,0.3725,1,3
+Fis-47352,Elasmobranchii,Smalleye stingray,Megatrygon microps,IE,22,200,PST,0,280,178,280,178,0.6357142857142857,1,3
+Fis-47352,Elasmobranchii,Smalleye stingray,Megatrygon microps,IE,22,200,LLT,0,400,178,400,178,0.445,1,3
+Fis-35264,Elasmobranchii,Pink whipray,Pateobatis fai,IE,22,200,PST,0,280,178,280,178,0.6357142857142857,1,3
+Fis-35264,Elasmobranchii,Pink whipray,Pateobatis fai,IE,22,200,LLT,0,400,178,400,178,0.445,1,3
+Fis-47495,Elasmobranchii,Black-spotted whipray,Maculabatis toshi,IE,23,140,PST,0,280,117,280,117,0.41785714285714287,1,3
+Fis-47495,Elasmobranchii,Black-spotted whipray,Maculabatis toshi,IE,23,140,LLT,0,400,117,400,117,0.2925,1,3
+Fis-35265,Elasmobranchii,Jenkins whipray,Pateobatis jenkinsii,DGE,34,50,PST,0,280,16,280,16,0.05714285714285714,1,3
+Fis-35265,Elasmobranchii,Jenkins whipray,Pateobatis jenkinsii,DGE,34,50,LLT,0,400,16,400,16,0.04,1,3
+Fis-32598,Elasmobranchii,Thorntail stingray,Bathytoshia Lata,DSE,51,440,PST,0,280,229,280,389,0.48146345941975766,0.5886889460154242,3
+Fis-32598,Elasmobranchii,Thorntail stingray,Bathytoshia Lata,DSE,51,440,LLT,0,400,349,400,389,0.7827827763496145,0.897172236503856,3
+Fis-161457,Elasmobranchii,NA,Narcinops ornata,BE,56,132,PST,0,280,76,280,76,0.2714285714285714,1,3
+Fis-161457,Elasmobranchii,NA,Narcinops ornata,BE,56,132,LLT,0,400,76,400,76,0.19,1,3
+Fis-47714,Elasmobranchii,NA,Acroteriobatus ocellatus,BE,73,185,PST,0,280,112,280,112,0.4,1,3
+Fis-47714,Elasmobranchii,NA,Acroteriobatus ocellatus,BE,73,185,LLT,0,400,112,400,112,0.28,1,3
+Fis-160851,Elasmobranchii,White-spotted skate,Dentiraja cerva,BE,73,470,PST,0,280,207,280,397,0.3854713925872617,0.5214105793450882,3
+Fis-160851,Elasmobranchii,White-spotted skate,Dentiraja cerva,BE,73,470,LLT,0,400,327,400,397,0.6733564231738035,0.8236775818639799,3
+Fis-161213,Elasmobranchii,False Argus skate,Dentiraja falloarga,BE,81,256,PST,0,280,175,280,175,0.625,1,3
+Fis-161213,Elasmobranchii,False Argus skate,Dentiraja falloarga,BE,81,256,LLT,0,400,175,400,175,0.4375,1,3
+Fis-54855,Elasmobranchii,Tasmanian numbfish,Narcinops tasmaniensis,BE,82,640,PST,0,280,198,280,558,0.25092165898617513,0.3548387096774194,2
+Fis-54855,Elasmobranchii,Tasmanian numbfish,Narcinops tasmaniensis,BE,82,640,LLT,0,400,318,400,558,0.4530645161290323,0.5698924731182796,3
+Fis-161473,Elasmobranchii,Dwarf black stingray,Hemitrygon parvonigra,DGE,130,183,PST,0,280,53,280,53,0.18928571428571428,1,3
+Fis-161473,Elasmobranchii,Dwarf black stingray,Hemitrygon parvonigra,DGE,130,183,LLT,0,400,53,400,53,0.1325,1,3
+Fis-149485,Elasmobranchii,Western numbfish,Narcinops lasti,BE,196,350,PST,0,280,84,280,154,0.1636363636363636,0.5454545454545454,3
+Fis-149485,Elasmobranchii,Western numbfish,Narcinops lasti,BE,196,350,LLT,0,400,154,400,154,0.385,1,3
+Fis-161218,Elasmobranchii,NA,Dentiraja oculata,BE,220,389,PST,0,280,60,280,169,0.07607776838546068,0.35502958579881655,2
+Fis-161218,Elasmobranchii,NA,Dentiraja oculata,BE,220,389,LLT,0,400,169,400,169,0.4225,1,3
+Fis-161159,Elasmobranchii,Heald's skate,Dentiraja healdi,BE,327,520,LLT,0,400,73,400,193,0.06902849740932643,0.37823834196891193,2
