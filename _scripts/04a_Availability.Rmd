@@ -1,0 +1,156 @@
+---
+title: "availability calc"
+author: "Leslie Roberson"
+date: "28/12/2021"
+output: html_document
+---
+
+## Susceptibility (S)
+
+step 1: calculate availability 
+
+```{r setup, include=FALSE}
+
+library(tidyverse)
+library(here)
+library(raster) # install.packages("raster")
+library(rgdal) # install.packages("rgdal")
+library(sf)
+library(sp)
+library(scales)
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## raster math (overlay) in R
+
+loop through all species and gears
+
+```{r loop overlay}
+## get spp rasters
+dir <- here("_data/spatial/species_rasters/proj_clipped_allprobs") # 161 Mb - git ignore, stored locally
+spp_rasts <- list.files(path = dir, pattern = "*.tif$", full.names = TRUE) 
+spp_rasts_short <- list.files(path = dir, pattern = "*.tif$", full.names = FALSE)
+
+##<><> get effort rast
+#eff_rast <- raster::raster(here("_data/spatial/effort_rasters//GN_smth95_scaled.tif"))
+#eff_rast <- raster::raster(here("_data/spatial/effort_rasters/LL_smth95_scaled.tif"))
+eff_rast <- raster::raster(here("_data/spatial/effort_rasters/PS_smth95_scaled.tif"))
+
+#<><> get the extent of one of hte species rasts
+spp.extent <- raster::raster("_data/spatial/species_rasters/Fis_20033.tif")
+## resample effort rast so extent exactly matches the species 
+# don't put this in the loop or it'll do it 405 times (resample is slow)
+eff_rast <- resample(eff_rast, spp.extent)
+
+for(i in 1:length(spp_rasts)){
+  # get rasters
+  temp <- raster(spp_rasts[[i]]) 
+  # get species name
+  spp_name <- sub('.tif', '', spp_rasts_short[i]) 
+  # multiply rasters
+  avail_raster <- temp*eff_rast
+  ## replace na vals with 0
+  avail_raster[is.na(avail_raster[])] <- 0
+  writeRaster(avail_raster, 
+              #file = paste0("/Users/rob713/github/indianocean_bycatchPSA_ms/_data/spatial/availability_rasters/GN/",
+              #file = paste0("/Users/rob713/github/indianocean_bycatchPSA_ms/_data/spatial/availability_rasters/LL/",
+              file = paste0("_data/spatial/availability_rasters/PS/",
+                           spp_name,"_avail.tiff",sep = ""), # name each file with the SpeciesID & save as geotiff
+              options = c("COMPRESS=deflate","tiled=Yes"), overwrite = TRUE)
+}
+
+```
+
+## get availability score for each species
+
+Sum availability across all cells 
+Make a df with all species
+remove species with 0 availability or 0 encounterability
+scale availability for each species, so availability matches other S parameters (on 1-3 continuous scale)
+Scale 1-3 across all gears for availability, so they're comparable (because fishing effort is scaled together in the A calculation - same effort unit for all gears)
+
+```{r scale 1-3}
+
+### Make empty df to store results
+result_df <- data.frame()
+
+##<><>< First sum availability across all cells for each species
+
+#<><><><><> Loop through all species
+## REPEAT THIS FOR EACH GEAR
+## get availability rasters 
+dir <- here("_data/spatial/availability_rasters/LL")
+#dir <- here("_data/spatial/availability_rasters/PS")
+#dir <- here("_data/spatial/availability_rasters/GN") 
+avail_rasts <- list.files(path = dir, pattern = "*.tif$", full.names = TRUE) 
+length(avail_rasts) # 405
+avail_rasts_short <- list.files(path = dir, pattern = "*.tif$", full.names = FALSE)
+
+GEAR <- "LLT"
+#GEAR <- "PST"
+#GEAR <- "GND"
+
+### Make empty df to store results
+cells_df <- data.frame()
+availsumm_df <- data.frame()
+
+## loop through rasters and store all summary values in a single dataframe, with a column for gear
+for(i in 1:length(avail_rasts)){
+  # get rasters
+  temp <- raster::raster(avail_rasts[i])
+  # get species name
+  species_id <- gsub("\\_avail.tif", "", avail_rasts_short[i])
+  # convert raster to df
+  temp_df <- raster::as.data.frame(temp, xy = TRUE, na.rm=TRUE) 
+  # rename availability column
+  names(temp_df)[3] <- "A"
+  # add species id and gear cols
+  temp_df$species_id <- species_id
+  temp_df$GEAR <- GEAR
+  # remove cells that don't overlap with fishing
+  temp_df <- temp_df %>% filter(A>0)
+  # add the full cell based availability to a results df
+  cells_df = rbind(cells_df, temp_df)
+  # count cells that overlap with fishing
+  ncells_overlap <- temp_df %>% summarise(ncells_overlap=nrow(temp_df))
+  ## sum all A values
+  sumA <- temp_df %>% summarise(sumA=sum(A))
+  ## add to df
+  outputsumm <- data.frame(species_id, sumA, ncells_overlap, GEAR)
+  availsumm_df = rbind(availsumm_df, outputsumm)
+}
+
+## save cell dfs separte by gear (for mapping)
+glimpse(cells_df)
+summary(cells_df) # No NAs or A==0
+
+gnd.cells <- cells_df
+fwrite(gnd.cells, here("_results/Susceptibility/Availability/GND_availcells.csv"))
+pst.cells <- cells_df
+fwrite(pst.cells, here("_results/Susceptibility/Availability/PST_availcells.csv"))
+llt.cells <- cells_df
+fwrite(llt.cells, here("_results/Susceptibility/Availability/LLT_availcells.csv"))
+## add these to gitignore - too big for github
+
+## combined and scale A for summary df
+glimpse(availsumm_df)
+gnd.summ <- availsumm_df
+pst.summ <- availsumm_df
+llt.summ <- availsumm_df
+
+allgears.summ <- bind_rows(gnd.summ, pst.summ, llt.summ)
+glimpse(allgears.summ)
+
+## scale A (across all gears)
+allgears.summ  <- allgears.summ  %>%
+  mutate(A_scaled = scales::rescale(sumA, to= c(1,3)))
+
+## checks
+summary(allgears.summ)
+unique(allgears.summ$GEAR)
+
+write_csv(allgears.summ, here("_results/Susceptibility/Availability/sum_availcells_allgears.csv"))
+
+```
+

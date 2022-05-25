@@ -1,0 +1,83 @@
+---
+title: "vulnerability per gear and species group"
+author: "Leslie Roberson"
+date: "08/02/2022"
+output: html_document
+---
+
+## Three-panel ridgeline histogram plot
+
+Used code from https://www.r-graph-gallery.com/294-basic-ridgeline-plot.html
+Final formatting (arrows on axis) done in Illustrator
+
+```{r setup, include=FALSE}
+
+library(tidyverse)
+library(here)
+library(ggridges) # install.packages("ggridges")
+library(forcats)
+library(cowplot)
+library(hrbrthemes) # install.packages("hrbrthemes")
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Prep data
+
+```{r prep data}
+
+## load results
+ridge.dat <-read_csv(here("_results/Vulnerability/V_scores.csv"))
+glimpse(ridge.dat)
+
+## fix gorup names
+ridge.dat <- ridge.dat %>% mutate(grp_name=stringr::str_replace_all(grp_name, "and", "&"))
+ridge.dat %>% distinct(tax_group, grp_name) %>% arrange(tax_group, grp_name)
+
+## colors for tax grups
+ridge.dat <- ridge.dat %>% mutate(tax_group=as_factor(class))
+levels(ridge.dat$tax_group)
+ridge.dat$tax_group <- fct_recode(ridge.dat$tax_group, "Elasmobranchs"="Elasmobranchii", "Cetaceans"="Mammalia", "Sea turtles"="Reptilia")
+levels(ridge.dat$tax_group)
+#      "Cetaceans"     "Sea turtles"   "Elasmobranchs" 
+pal_taxgrp <- c("navy", "olivedrab4", "slategray4")
+
+summary(ridge.dat$V)
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 1.701   2.167   2.480   2.514   2.829   3.504
+
+ridge.dat <- ridge.dat %>%
+  mutate(gear=case_when(gear=="GND"~"Drift gill nets", gear=="LLT"~"Longlines", gear=="PST"~"Purse seines", TRUE~""),
+         # order groups by tax group then alphabetically
+         grp_name=factor(grp_name, 
+                         levels=c("Sea turtles", 
+                                  "Benthic elasmobranchs", "Deep sea elasmobranchs", "Deep shelf pelagic elasmobranchs", "Demersal generalist elasmobranchs", "Filter feeder elasmobranchs", "Inshore elasmobranchs", "Oceanic elasmobranchs", "Pelagic generalist elasmobranchs", "Shallow shelf elasmobranchs",
+                                  "Baleen whales", "Inshore dolphins & porpoises", "Large oceanic dolphins", "Oceanic toothed whales", "Small oceanic & coastal dolphins" )))
+```
+
+Plot V as a ridgeline plot 
+
+- shows distribution of V scores for species in each group. 
+
+```{r V ridgeline}
+
+p.ridge <- ridge.dat %>%
+  ggplot(aes(x=V, y=grp_name, color=tax_group)) + 
+  geom_density_ridges(alpha=0.6, stat="binline", bins=50) + # height of the bars is probability
+  scale_color_manual(values=pal_taxgrp) +
+  scale_fill_manual(values=pal_taxgrp) +
+  labs(y="", x="(   Low)  Vulnerability  (High   )") +
+  facet_wrap(~gear) +
+  theme_bw() +
+  theme(panel.grid = element_blank(),
+        strip.background =element_rect(fill="white")) +
+  guides(color="none")
+p.ridge
+
+ggsave(plot=p.ridge,
+       width=6, height=5, units="in",
+       dpi=600,
+       filename="_results/figures/fig4_ridgeline.eps",
+       device=cairo_ps)
+
+```

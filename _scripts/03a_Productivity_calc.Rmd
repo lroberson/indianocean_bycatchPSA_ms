@@ -1,0 +1,56 @@
+---
+title: "PSA"
+output: html_document
+---
+
+## Summary 
+
+Here I take the spreadsheet of productivity attributes and calculate the geometric mean
+
+```{r setup, include=FALSE}
+
+library(tidyverse)
+library(pillar)
+library(janitor)
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Productivty traits spreadsheet
+
+revised_category	              3_high_productivity	2_med_productivity	    1_low_productivity
+offspring_peryr_cat	            More than 5	        1 to 5	                Less than 1
+age_sex_mature_cat	            Less than 5	        5 to 10           	    More than 10
+max_age_cat               	    Less than 10	      10 to 25	              More than 25
+parental_investment_cat   	    Egg layer	          Live birth unattended	  Live birth and care
+max_size_cm_cat_turtles	        Up to 50	          50 to 100	              More than 100
+max_size_cm_cat_cetaceans	      Up to 300	          300 to 900	            More than 900
+max_size_cm_cat_elasmobranchs	  Up to 100	          100 to 200	            More than 200
+			
+DATA QUALITY SCORE:	                             
+3_High	     Empirical data available for most life history traits
+2_Medium	   Some empirical data available; other traits assumed from closely related species (e.g. genus)
+1_Low        No empirical data available for the species or any closely related species (e.g. genus)
+
+```{r prod traits}
+
+traits123 <- read_excel(here("_data/Productivity_traits_123.xls"))
+glimpse(traits123)
+
+traits123 <- traits123 %>% dplyr::select(c(aquamaps_id, data_quality_score:size_bytaxa_score))
+
+```
+
+Calculate geometric mean
+
+```{r geo mean}
+names(traits123)
+
+traits123$productivity <- apply(traits123[ , c('fecundity_score', 'agemature_score', 'agemax_score', 'parental_invest_score', 'size_bytaxa_score')], 1, function(x) exp(mean(log(x))))  # 1 means apply by row
+
+glimpse(traits123)
+
+write_csv(traits123, here("_results/Productivity/P_scores.csv"))
+          
+```
+

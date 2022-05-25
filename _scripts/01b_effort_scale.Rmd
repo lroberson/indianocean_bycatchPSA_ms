@@ -1,0 +1,144 @@
+---
+title: "effort scale"
+author: "Leslie Roberson"
+date: "06/12/2021"
+output: html_document
+---
+
+Summary:
+- scale the effort and smooth very high and low values
+- make a raster for the overlay calculation (with effort averaged over the 3 years)
+
+```{r setup, include=FALSE}
+
+library(tidyverse)
+library(data.table)
+library(janitor)
+library(pillar)
+library(sf) 
+library(Rcpp)
+library(sp)
+library(raster)
+library(scales) 
+library(rgeos)
+library(rgdal)
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## smooth and scale
+
+```{r smooth and map}
+
+eff.sub <- fread("_data/fishingeffort/effort_sub_clipped_ms.csv")
+
+unique(eff.sub$Gear)
+
+## apply smooth function 
+names(eff.sub)
+
+GN.df <- eff.sub %>%
+  filter(Gear=="Gillnets") %>%
+  group_by(Gear, mycellid, Lat, Lon) %>%
+  summarise(avg_eff_gear_yr=sum(NomActive)/3)
+nrow(GN.df) # 21934
+
+LL.df <- eff.sub %>%
+  filter(Gear=="Lines_Longlines") %>%
+  group_by(Gear, mycellid, Lat, Lon) %>%
+  summarise(avg_eff_gear_yr=sum(NomActive)/3)
+
+PS.df <- eff.sub %>%
+  filter(Gear=="Seine_Purse_Seine") %>%
+  group_by(Gear, mycellid, Lat, Lon) %>%
+  summarise(avg_eff_gear_yr=sum(NomActive)/3)
+
+##<>><< smooth extreme low and highs to 95th quantile +1 and very low values to 0
+smth95 <- function(x){
+    quantiles <- quantile( x, c(.05, .95), na.rm = TRUE) # 
+    x[ x < quantiles[1] ] <- 0 
+    # very low vals to 0
+    x[ x > quantiles[2] ] <- quantiles[2]+1 
+    # very high vals to 95th + 1
+    x
+}
+
+GN.df$eff_smth <- GN.df$avg_eff_gear_yr
+GN.df[,"eff_smth"] <- apply(GN.df[,"eff_smth"], MARGIN = 2, FUN = smth95)
+nrow(GN.df)
+GN.df <- distinct(GN.df) # just in case
+summary(GN.df$eff_smth)
+LL.df$eff_smth <- LL.df$avg_eff_gear_yr
+LL.df[,"eff_smth"] <- apply(LL.df[,"eff_smth"], MARGIN = 2, FUN = smth95)
+PS.df$eff_smth <- PS.df$avg_eff_gear_yr
+PS.df[,"eff_smth"] <- apply(PS.df[,"eff_smth"], MARGIN = 2, FUN = smth95)
+
+fwrite(GN.df, "_data/fishingeffort/GN_smth95.csv")
+fwrite(LL.df, "_data/fishingeffort/LL_smth95.csv")
+fwrite(PS.df, "_data/fishingeffort/PS_smth95.csv")
+
+##<><>< Combine and scale <><>><><#
+# scale across the 3 gears 
+comb.df <- bind_rows(GN.df, LL.df, PS.df)
+
+fun_scale <- function(x) {      # Create user-defined function (getting strange behaviour with scales fxn)
+  (x - min(x)) / (max(x) - min(x))
+}
+comb.df$eff_smth_scaled <- comb.df$eff_smth
+comb.df[,"eff_smth_scaled"] <- apply(comb.df[,"eff_smth_scaled"], MARGIN = 2, FUN=fun_scale)
+nrow(comb.df)
+
+summary(comb.df$eff_smth_scaled)
+comb.df %>% filter(is.na(eff_smth_scaled)) # none
+
+fwrite(comb.df, here("_data/fishingeffort/effort_smth_scaled.csv"))
+
+```
+
+## make rasters
+
+```{r effort rasts}
+
+comb.df<-fread(here("_data/fishingeffort/effort_smth_scaled.csv"))
+glimpse(comb.df)
+
+## set raster dims
+e <- as(extent(20, 150, -56.1846, 30.3154), 'SpatialPolygons')
+crs(e) <- "+proj=longlat +datum=WGS84 +no_defs"
+res <- c(0.5, 0.5)
+
+## make separate rasters for each gear
+GN.df <- comb.df %>% filter(Gear=="Gillnets") 
+GN.sf <- st_as_sf(GN.df, coords=c("Lon", 'Lat'), crs=4326, remove=FALSE)
+GN.sp <- as_Spatial(GN.sf)
+GN.rast <- rasterFromXYZ(GN.sp@data[,c("Lon","Lat","eff_smth_scaled")], # convert to raster
+                              crs = "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0",
+                         res=res)
+GN.rast
+plot(GN.rast) 
+GN.rast <- extend(GN.rast, y=e, value=0)
+
+LL.df <-comb.df %>% filter(Gear=="Lines_Longlines") 
+LL.sf <- st_as_sf(LL.df, coords=c("Lon", 'Lat'), crs=4326, remove=FALSE) # remove=TRUE removes the lat lon cols
+LL.sp <- as_Spatial(LL.sf) # make spatial
+LL.rast <- rasterFromXYZ(LL.sp@data[,c("Lon","Lat","eff_smth_scaled")], # convert to raster
+                              crs = "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0",
+                         res=res)
+LL.rast
+LL.rast <- extend(LL.rast, y=e, value=0)
+
+PS.df <-comb.df %>% filter(Gear=="Seine_Purse_Seine") 
+PS.sf <- st_as_sf(PS.df, coords=c("Lon", 'Lat'), crs=4326, remove=FALSE)
+PS.sp <- as_Spatial(PS.sf) # make spatial
+PS.rast <- rasterFromXYZ(PS.sp@data[,c("Lon","Lat","eff_smth_scaled")], # convert to raster
+                              crs = "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0",
+                         res=res)
+PS.rast
+PS.rast <- extend(PS.rast, y=e, value=0)
+
+writeRaster(GN.rast, here("_data/spatial/effort_rasters/GN_smth95_scaled.tif"), overwrite=TRUE)
+writeRaster(LL.rast, here("_data/spatial/effort_rasters/LL_smth95_scaled.tif"), overwrite=TRUE)
+writeRaster(PS.rast, here("_data/spatial/effort_rasters/PS_smth95_scaled.tif"), overwrite=TRUE) 
+
+```
+

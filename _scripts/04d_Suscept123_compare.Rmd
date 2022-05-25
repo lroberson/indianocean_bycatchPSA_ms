@@ -1,0 +1,159 @@
+---
+title: "susceptibility sensitivity analysis scenario"
+author: "Leslie Roberson"
+date: "02/01/2022"
+output: html_document
+---
+
+## Summary
+
+Here I compare the results of our adapted PSA approach (using continuous axes) to the traditional 1,2,3 score based method
+
+```{r setup, include=FALSE}
+
+library(pillar)
+library(here)
+library(data.table)
+library(tidyverse)
+library(rlist) # install.packages("rlist")
+library(raster)
+library(purrr)
+library(sf)
+library(sp)
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Score availability
+
+Use the Proportion of range exposed to fishing
+use equal width bins:
+
+1: 0-33.3% overlap
+2: 33.4-66.6 % overlap
+3. 66.7-100% overlap
+
+```{r score availability}
+
+## load species ranges and availability results
+avail <- read_csv(here("_results/Susceptibility/Availability/sum_availcells_allgears.csv"))
+glimpse(avail)
+ranges <- read_csv(here("_data/species_ranges.csv"))
+glimpse(ranges)
+
+avail123 <- left_join(avail, ranges, by="species_id")
+## calculate exposure
+avail123 <- avail123 %>% 
+  mutate(prop_exposure=ncells_overlap/ncells_spp)
+
+avail123 <- avail123 %>% 
+  group_by(species_id, GEAR) %>%
+  mutate(avail123=case_when(
+    is.na(prop_exposure)~as.numeric(0), # just in case
+    prop_exposure<0.334~as.numeric(1),
+    prop_exposure>0.667~as.numeric(3),
+    TRUE~as.numeric(2)
+  ))
+avail123 %>% arrange(prop_exposure) 
+summary(avail123$prop_exposure)
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 0.5000  0.7747  0.9015  0.8658  0.9476  1.0000 
+
+```
+
+## score encounterability
+
+```{r 123 encount}
+
+## save encounterability df
+encount <- read_csv(here("_results/Susceptibility/Encounterability/spp_encount_long.csv"))
+glimpse(encount)
+
+## calculate % overlap
+encount <- encount %>%
+  group_by(species_id, gear) %>%
+  mutate(overlap_prop=ol_length/spp_range,
+         encount123=case_when(
+           is.na(overlap_prop)~as.numeric(0), # NA is when there's no overlap with that gear
+           overlap_prop<0.25~as.numeric(1),
+           overlap_prop>0.5~as.numeric(3),
+           TRUE~as.numeric(2)
+         ))
+summary(encount)
+
+## remove species/gear interactions with 0 encouterability
+encount <- encount %>% filter(encount_prob>0)
+
+```
+
+## Get selectivity and PLE scores
+
+(Allowing zero selectivity interactions to be removed)
+
+```{r selectivity scores}
+
+S.scores <- read_csv(here("_results/Susceptibility/S_scores.csv"))
+glimpse(S.scores)
+
+S123 <- S.scores %>%
+  dplyr::select(c(species_id, gear, ))
+
+sel <- read_csv(here("_data/Species/Susceptibility/Selectivity/spp_selectivity123_v5.csv"))
+ple <- read_csv(here("_data/Species/Susceptibility/PLE/spp_PLE123_v5.csv"))
+glimpse(sel)
+glimpse(ple)
+
+sel0123 <- sel %>%
+  dplyr::select(c(species_id, sel0123_LLT, sel0123_PST, sel0123_GND)) %>%
+  pivot_longer(cols=c(sel0123_LLT, sel0123_PST, sel0123_GND),
+               names_to="gear",
+               names_prefix="sel0123_",
+               values_to="select0123")
+unique(sel0123$gear)
+
+ple123 <- ple %>%
+  dplyr::select(c(species_id, ple_gn_drift, ple_ps, ple_ll)) %>%
+  pivot_longer(cols=c(ple_gn_drift, ple_ps, ple_ll),
+               names_to="gear",
+               names_prefix="ple_",
+               values_to="ple123") %>%
+  mutate(gear=str_replace_all(gear, "gn_drift", "GND"),
+         gear=str_replace_all(gear, "ps", "PST"),
+         gear=str_replace_all(gear, "ll", "LLT"),
+         ple123=case_when(
+           ple123==0.33~as.numeric(1),
+           ple123==0.66~as.numeric(2),
+           ple123==0.99~as.numeric(3),
+           TRUE~as.numeric(ple123)
+         ))
+unique(ple123$gear)
+
+```
+
+Calculate geometric mean
+
+```{r geo mean}
+
+## combine scores
+glimpse(avail123)
+glimpse(encount123)
+glimpse(sel0123)
+glimpse(ple123)
+
+suscept0123 <- avail123 %>% 
+  left_join(encount123, by=c("species_id", "gear")) %>%
+  left_join(sel0123, by=c("species_id", "gear")) %>%
+  left_join(ple123, by=c("species_id", "gear"))
+
+glimpse(suscept0123)# 730 rows
+names(suscept0123)
+
+## calculate geo mean
+suscept0123$suscept0123 <- apply(suscept0123[ , c('avail123', 'encount123', 'select0123', 'ple123')], 1, function(x) exp(mean(log(x)))) 
+# 1 means apply by row
+suscept0123 %>% filter(suscept0123==0) # none, but just in case
+suscept0123 <- suscept0123 %>% filter(suscept0123>0)
+glimpse(suscept0123) # 730 rows
+write_csv(suscept0123, "_results/susceptibility/revision1/v2_0123/susceptibility0123.csv")
+
+```

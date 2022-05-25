@@ -1,0 +1,135 @@
+---
+title: "PSA plots per gear"
+author: "Leslie Roberson"
+date: "08/02/2022"
+output: html_document
+---
+
+## Figure 2 PSA plot
+
+Generate fig 2 plot (save as .eps)
+Final formatting was done in Adobe Illustrator 
+
+```{r setup, include=FALSE}
+
+library(tidyverse)
+library(here)
+library(pillar)
+library(forcats)
+library(RColorBrewer)
+library(ggrepel)
+library(cowplot)
+library(grid)
+library(gridExtra)
+library(ggpubr)
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+PSA plots
+
+3 panels
+Size of dot corresponds to data quality score
+Colorfor class
+
+```{r get plot data}
+
+## load vulnerability summary 
+psaplot.dat <- read_csv(here("_results/Vulnerability/V_scores.csv"))
+glimpse(psaplot.dat)
+
+##prep
+psaplot.dat <- psaplot.dat %>% mutate(tax_group=as_factor(class))
+levels(psaplot.dat$tax_group)
+psaplot.dat$tax_group <- fct_recode(psaplot.dat$tax_group, "Elasmobranchs"="Elasmobranchii", "Cetaceans"="Mammalia", "Sea turtles"="Reptilia")
+levels(psaplot.dat$tax_group)
+#      "Cetaceans"     "Sea turtles"   "Elasmobranchs" 
+pal_taxgrp <- c("navy", "springgreen2", "slategray4")
+
+## make data quality score numeric factor and rename gears for plot labels
+psaplot.dat <- psaplot.dat %>% 
+  mutate(data_qual123 = case_when(
+           data_quality_score=="poor"~1, data_quality_score=="decent"~2, data_quality_score=="good"~3, TRUE~as.numeric(NA)),
+         gear=case_when(
+           gear=="GND"~"Drift gill nets", gear=="LLT"~"Longlines", gear=="PST"~"Purse seines", TRUE~""),
+         gear=as_factor(gear))
+
+```
+
+## Plot 6 facets
+colors for tax group then color gradient for V score
+No species names labels
+
+```{r 6 facets}
+
+glimpse(psaplot.dat)
+
+p.tax <- psaplot.dat %>%
+  ggplot() + 
+  geom_point(aes(x=S, y=P, size=data_qual123, color=tax_group, alpha=data_qual123)) +
+  scale_y_continuous(limits=c(1,3.1), breaks=seq(1,3,1), expand=expand_scale(add=c(0.2, 0.2))) +
+  scale_x_continuous(limits=c(1,3), breaks=seq(1,3,1)) +
+  scale_size_continuous(limits=c(1,3), breaks=seq(1,3,0.5), range=c(2.5, 0.5)) +
+  scale_color_manual(values=pal_taxgrp) + 
+  scale_alpha_continuous(range = c(0.3, 1)) +
+  facet_wrap(~gear, nrow=1, strip.position="top") + # can put it right or left too
+  labs(y="(    High)   Productivity   (Low     )", x= "(     Low)   Susceptibility   (High     )", color="", size="Data\nquality\nscore") +
+  coord_flip() + 
+  theme_bw() +
+  theme(legend.position="top",
+        strip.background =element_rect(fill="white"), # background of facet labels
+        #strip.text.x = element_blank(), # remove facet labels
+        panel.grid = element_blank()) +
+  guides(size="none",
+         alpha="none")
+p.tax
+  
+p.risk <- psaplot.dat %>%
+  ggplot() + 
+  geom_point(aes(x=S, y=P, size=data_qual123, color=ncells_spp, alpha=data_qual123)) +
+  scale_y_continuous(limits=c(1,3.1), breaks=seq(1,3,1), expand=expand_scale(add=c(0.2, 0.2))) +
+  scale_x_continuous(limits=c(1,3), breaks=seq(1,3,1)) +
+  scale_size_continuous(limits=c(1,3), breaks=seq(1,3,0.5), range=c(2.5, 0.5)) +
+  scale_color_viridis_c(option="magma", direction=-1) + # direction -1: small ranged species are light colors
+  scale_alpha_continuous(range = c(0.7, 1)) +
+  facet_wrap(~gear, nrow=1, strip.position="top") + 
+  labs(y="(    High)   Productivity   (Low     )", x= "(     Low)   Susceptibility   (High     )", color="", size="Data\nquality\nscore") +
+  coord_flip() + 
+  theme_bw() +
+  theme(legend.position="top",
+        strip.background =element_rect(fill="white"), # background of facet labels
+        #strip.text.x = element_blank(), # remove facet labels
+        panel.grid = element_blank()) +
+  guides(size="none",
+         alpha="none")
+p.risk
+
+##<>><< make legends
+
+psa.grid <- grid.arrange(
+             p.tax + theme(legend.position="top",
+                           legend.margin=margin(c(0.1,0.1,0.1,0.1)), # top, right, bottom, left margins
+                           legend.title=element_blank(),
+                           axis.title.y=element_blank(), # add in illustrator with font formatting and arrows
+                           axis.title.x=element_blank(),
+                           axis.text.x=element_blank(),
+                           axis.ticks.x=element_blank()),
+             p.risk + theme(legend.position="top", 
+                            legend.margin=margin(c(0.1,0.1,0.1,0.1)),
+                            legend.title=element_blank(),
+                            legend.text = element_blank(), # replace numbers with "small range" and "large range" in illustrator
+                            axis.title.y=element_blank(),
+                            axis.title.x=element_blank(),
+                            strip.text.x=element_blank()),
+            ncol=1, nrow=2,
+            heights = c(3, 3))
+psa.grid
+
+ggsave(psa.grid, 
+       width=7, height=6, units="in",
+       dpi=600,
+       filename="_results/figures/fig2_PSA.eps",
+       device=cairo_ps)
+```
+
+

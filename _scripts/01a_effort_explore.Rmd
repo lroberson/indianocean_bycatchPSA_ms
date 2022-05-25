@@ -1,0 +1,66 @@
+---
+title: "new effort wrangling"
+author: "Leslie Roberson"
+date: "18/11/2021"
+output: html_document
+---
+
+## Summary
+
+Here I take the effort data from Rousseau 2019 (version Nov 2021)
+- cropped to IOTC area
+- gear types gillnets, longlines, purse seines, for "pelagics 30-90cm" and "pelagics >90 cm"
+- removed unpowered artisanal effort
+- years 2015-2017
+
+```{r setup, include=FALSE}
+
+library(tidyverse)
+library(here)
+library(data.table)
+library(janitor)
+library(pillar)
+library(sf) 
+library(Rcpp)
+library(sp)
+library(tmap)
+library(tmaptools)
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## explore countries and gears
+
+```{r explore eff}
+
+eff.sub <- fread(here("_data/fishingeffort/effort_sub_clipped_ms.csv")) # 618 MB
+# NB this file is too big to push to main
+glimpse(eff.sub)
+#V1: row identifier
+#Lat / Lon centroids of 0.5 degree cells 
+#Gear 
+# NomActive: nominal effort. Nom effort in DAYS AT SEA-kW per year for the active vessels (approx. 70% of vessels are active at any given time)
+# Length_Category: For this new version of the effort, vessel classification line with the FAO classification of vessels, so they are classified by length instead of power.
+# Year 
+# Sector: Artisanal powered, Unpowered, Industrial 
+# NomActiveHours: The effort (per year) in hours (fished hours-kW).
+# FGroup: Now large pelagics instead of "tuna and tuna likes". Use  "pelagic30-90cm" and "pelagic>=90cm" and remove "pelagic<30cm" to focus on tuna
+# Country: 3 letter country code
+# mycellid: added a cell Id (combo lat and lon)
+
+## Make a summary table for SI
+t.DAS <- eff.sub %>% 
+  group_by(Country) %>%
+  mutate(avg_eff_yr=sum(NomActive)/3, # I use NomActive in Days at Sea, for consistency with most FAO-based reporting/data
+         count_cells=n_distinct(V1)) %>%
+  group_by(Country, Gear, avg_eff_yr, count_cells) %>%
+  summarise(avg_eff_gear=sum(NomActive)/3) %>%
+  pivot_wider(id_cols=c(Country, avg_eff_yr, count_cells),
+              names_from=Gear,
+              values_from=avg_eff_gear,
+              values_fill=0) %>%
+  arrange(desc(avg_eff_yr)) %>%
+  ungroup()
+write_csv(t.DAS, "_results/fishingeffort/country_eff_DAS_summ.csv")
+
+```

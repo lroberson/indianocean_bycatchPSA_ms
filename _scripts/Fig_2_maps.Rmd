@@ -1,0 +1,94 @@
+---
+title: "vulnerability maps"
+author: "Leslie Roberson"
+date: "08/02/2022"
+output: html_document
+---
+
+## Fig 2 maps
+
+Make rasters for catchability maps 
+Availability x Encounterability per cell summed over all species for each gear
+Formatting done in Illustrator
+
+```{r setup, include=FALSE}
+
+library(tidyverse)
+library(here)
+library(data.table)
+library(scales)
+library(sf)
+library(raster)
+library(viridis)
+library(RColorBrewer)
+library(forcats)
+library(cowplot)
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+make rasters
+
+```{r make rasters}
+
+## load availability results
+gnd.cells <- fread(here("_results/Susceptibility/Availability/GND_availcells.csv"))
+pst.cells <- fread(here("_results/Susceptibility/Availability/PST_availcells.csv"))
+llt.cells <- fread(here("_results/Susceptibility/Availability/LLT_availcells.csv"))
+
+glimpse(llt)
+summary(llt$AxE_cell)
+
+llt$gear <- "LLT"
+pst$gear <- "PST"
+gnd$gear <- "GND"
+
+allgears.cells <- bind_rows(llt, pst, gnd)
+glimpse(allgears.cells) 
+n_distinct(allgears.cells$species_id)
+allgears.cells <- allgears.cells %>% filter(AxE_cell>0)
+
+## add S x PLE geomean
+S.scores <- read_csv(here("_data/Species/Susceptibility/S_scores.csv"))
+glimpse(S.scores)
+n_distinct(S.scores$species_id)
+S.scores <- S.scores %>%
+  mutate(species_id=stringr::str_replace_all(species_id, "-", "_")) %>%
+  dplyr::select(c(species_id, gear, geomean))
+
+allgears.cells.summ <- allgears.cells %>%
+  left_join(S.scores, by=c("gear", "species_id")) %>% 
+  group_by(gear) %>%
+  mutate(S_cell=AxE_cell*geomean) %>%
+  filter(S_cell>0) %>%
+  group_by(gear, x, y) %>%
+  summarise(nspp_S_cell = n_distinct(species_id), # number of species occur in that cell with catchability >0
+            S_sum_cell = sum(S_cell)) %>%
+  ungroup()
+glimpse(allgears.cells.summ)  
+
+print(object.size(allgears.cells.summ), units="Mb") # 2.2
+
+fwrite(allgears.cells.summ, here("_data/Species/Susceptibility/Suscept_percell/allgears_cells_S.csv"))
+
+##<>>< Make rasters
+
+## check iotc rast dims
+iotc.rast <- raster::raster(here("_data/Spatial/iotc_rast_3_copy/iotc_rast_3.tif"))
+iotc.rast
+
+glimpse(allgears.cells.summ)
+allgears.cells.summ <- allgears.cells.summ %>% mutate(gear=factor(gear, levels=c("GND", "LLT", "PST")))
+
+## Loop through dadta frame and make rasters
+
+for(i in levels(allgears.cells.summ$gear)){
+  nspp.df <- allgears.cells.summ %>% filter(gear==i) %>% dplyr::select(c(x,y,nspp_S_cell))
+  rast.nspp <- rasterFromXYZ(nspp.df, res=c(0.5,0.5), crs="+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0")
+  writeRaster(rast.nspp,  file=paste0("_rasters/S_maps/", i, "_nspp_rast.tiff", sep=""), overwrite=TRUE)
+  S.df <- allgears.cells.summ %>% filter(gear==i) %>% dplyr::select(c(x,y,S_sum_cell))
+  rast.S <- rasterFromXYZ(S.df, res=c(0.5,0.5), crs="+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0")
+  writeRaster(rast.S,  file=paste0("_rasters/S_maps/", i, "_S_rast.tiff", sep=""))
+}
+
+```

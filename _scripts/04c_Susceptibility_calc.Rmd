@@ -1,0 +1,94 @@
+---
+title: "susceptibility calc"
+author: "Leslie Roberson"
+date: "02/01/2022"
+output: html_document
+---
+
+## Susceptibility score calculation
+    
+```{r setup, include=FALSE}
+
+library(pillar)
+library(here)
+library(data.table)
+library(tidyverse)
+library(scales)
+library(janitor)
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## combine A & E scaled scores
+
+```{r combine A and E}
+
+avail<- read_csv(here("_results/Susceptibility/Availability/sum_availcells_allgears.csv"))
+glimpse(avail)
+avail <- avail %>% 
+  rename(gear=GEAR) %>%
+  mutate(species_id=stringr::str_replace_all(species_id, "_", "-"))
+
+encount <- read_csv(here("_results/Susceptibility/Encounterability/sum_encount_allgears.csv"))
+glimpse(encount)
+
+## join
+AE <- left_join(encount, avail, by = c("species_id", "gear")) # any 0 encount scores get removed
+glimpse(AE)
+
+```
+
+## calculate geometric mean of A, E, S, PLE
+
+selectivity and post capture mortality were scored by species/group
+
+```{r geomean}
+
+## selectivity
+sel0123 <- read_excel(here("_results/Susceptibility/Selectivity/selectivity_scores.xls"))
+glimpse(sel0123)
+
+sel0123 <- sel0123 %>% dplyr::select(c(species_id, sel0123_GND, sel0123_PST, sel0123_LLT)) %>%
+  ## put in long format)
+  pivot_longer(cols = !species_id, names_to = "gear", names_prefix="sel0123_", values_to = "sel0123")
+glimpse(sel0123)
+
+## PCM
+pcm <- read_excel(here("_results/Susceptibility/PCM/PCM123_scores.xls"))
+glimpse(pcm)
+
+pcm_sub <- pcm %>%  
+  dplyr::select(c(species_id, pcm_gn_drift, pcm_ps, pcm_ll)) %>%
+  pivot_longer(cols = !species_id, names_to = "gear", names_prefix="pcm_", values_to = "pcm")
+pcm_sub$gear <- as_factor(pcm_sub$gear)
+levels(pcm_sub$gear)
+pcm_sub$gear <- fct_recode(pcm_sub$gear, GND="gn_drift", PST="ps", LLT="ll")
+nrow(pcm_sub)
+
+#<>>< combine
+glimpse(AE)
+S.scores <- AE %>%
+  left_join(sel0123, by = c("species_id", "gear")) %>% 
+  left_join(., pcm_sub, by=c("species_id", "gear"))
+
+glimpse(S.scores) # 921 rows
+S.scores %>% filter(is.na(pcm)) # none
+S.scores %>% filter(sel0123==0) %>% count() # 191 
+
+##<><>>< Calculate geomean of parameters for each species
+S.scores$geomean <- apply(S.scores[ , c('A_scaled','E_scaled', 'sel0123', 'pcm')], 1, function(x) exp(mean(log(x))))
+nrow(S.scores) # 921
+
+# remove species-gears with S==0 
+S.scores <- S.scores %>% filter(geomean>0)
+glimpse(S.scores) # 730 INTERACTIONS ARE SUSCEPTIBLE
+summary(S.scores$geomean)
+
+table(S.scores$gear)
+# GND LLT PST 
+# 208 282 240
+
+write_csv(S.scores, here("_results/Susceptibility/S_scores.csv"))
+
+```
+

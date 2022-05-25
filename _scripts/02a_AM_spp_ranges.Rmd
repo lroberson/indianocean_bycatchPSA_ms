@@ -1,0 +1,83 @@
+---
+title: "species ranges"
+author: "Leslie Roberson"
+date: "02/01/2022"
+output: html_document
+---
+
+## Summary
+
+Here I pull in the species raster files and combine into a dataframe, then summarize species ranges
+
+*species rasters were made in ArcGIS
+
+```{r setup, include=FALSE}
+
+library(tidyverse)
+library(pillar)
+library(here)
+library(rgeos)
+library(raster) # install.packages("raster")
+library(rgdal) # 
+library(sf)
+library(sp)
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Loop to convert each raster to df, summarize, and output summary of all dfs
+* using all probabilities of occurrence
+
+```{r spp ranges}
+
+## set location of rasters
+dir <- here("_data/spatial/species_rasters/proj_clipped_allprobs") # 161 Mb - git ignore, stored locally
+
+## list files availabile in folder
+spp_rasts <- list.files(path = dir, pattern = "*.tif$", full.names = TRUE) # exclude all the shit after .tif (the aux files)
+length(spp_rasts) # n = 405
+# to get species names more easily
+spp_rasts_short <- list.files(path = dir, pattern = "*.tif$", full.names = FALSE)
+
+for(i in 1:length(spp_rasts)){
+  # get rasters
+  temp <- raster(spp_rasts[[i]]) 
+  # get species name
+  spp_name <- sub('.tif', '', spp_rasts_short[i]) 
+  # convert raster to df
+  temp_df <- raster::as.data.frame(temp, xy = TRUE, na.rm=TRUE) 
+  # assign unique cell_ids
+  temp_df$cell_id <- as.character(factor(with(temp_df, paste0(x, y)))) 
+  names(temp_df)[3] <- "probability"
+  # count cells
+  temp_df <- temp_df %>% filter(probability > 0 & probability <= 1)
+  # just in case
+  temp_df <- temp_df %>% filter(!is.na(probability))
+  # summary output file
+  output <- temp_df %>% summarise(ncells_spp = n_distinct(cell_id))
+  write_csv(output, file=paste0("_data/spatial/species_rasters/proj_clipped_allprobs/_temp_spprange/", spp_name, ".csv"))
+}
+
+## <>< combine into one df
+location <- "_data/spatial/species_rasters/proj_clipped_allprobs/_temp_spprange/"
+## get species names
+files <- list.files(path = location, pattern = "\\.csv")
+# define what happens to each CSV
+read_sp <- function(file_name) {
+  # extract species id from file name
+  sp_id <- gsub("\\.csv", "", file_name)
+  # read and keep species ID in a column
+  read.csv(file.path(location, file_name)) %>% 
+    mutate(species_id = sp_id)
+}
+
+## Execute ##
+## loop through all, store as single dataframe
+spp_ranges_df <- map_df(files, read_sp)
+
+head(spp_ranges_df)
+## save
+write_csv(spp_ranges_df, "_data/species_ranges.csv")
+
+```
+

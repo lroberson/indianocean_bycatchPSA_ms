@@ -1,0 +1,172 @@
+---
+title: "summary of fishing countries"
+author: "Leslie Roberson"
+date: "28/12/2021"
+output: html_document
+---
+
+Summary stats of fishing countries
+
+```{r setup, include=FALSE}
+
+library(tidyverse)
+library(data.table)
+library(janitor)
+library(pillar)
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Got country codes lookup from https://gist.github.com/tadast/8827699
+
+```{r fishing countries}
+
+#NB using unsmoothed effort values
+effort.df <- fread("_data/fishingeffort/effort_sub_clipped_ms.csv") # stored locally only
+glimpse(effort.df) 
+
+effort.summ <- effort.df %>%
+  group_by(Country) %>%
+  summarise(avg_eff_yr=sum(NomActive)/3) %>% # using Days At Sea instead of fishign hours
+  arrange(desc(avg_eff_yr)) %>%
+  mutate(country_rank=1:n()) %>%
+  rename(country_allgears=Country)
+nrow(effort.summ) # 112
+
+gn.summ <- effort.df %>%
+  filter(Gear=="Gillnets") %>%
+  group_by(Country) %>%
+  summarise(avg_GNeff_yr=sum(NomActive/3)) %>%
+  arrange(desc(avg_GNeff_yr)) %>%
+  mutate(country_rank=1:n()) %>%
+  rename(country_GN=Country)
+
+ll.summ <- effort.df %>%
+  filter(Gear=="Lines_Longlines") %>%
+  group_by(Country) %>%
+  summarise(avg_LLeff_yr=sum(NomActive/3)) %>%
+  arrange(desc(avg_LLeff_yr)) %>%
+  mutate(country_rank=1:n()) %>%
+  rename(country_LL=Country)
+
+ps.summ <- effort.df %>%
+  filter(Gear=="Seine_Purse_Seine") %>%
+  group_by(Country) %>%
+  summarise(avg_PSeff_yr=sum(NomActive/3)) %>%
+  arrange(desc(avg_PSeff_yr)) %>%
+  mutate(country_rank=1:n()) %>%
+  rename(country_PS=Country)
+
+# join
+result <- left_join(effort.summ, gn.summ, by="country_rank", keep=FALSE) %>%
+  left_join(., ps.summ, by="country_rank", keep=FALSE) %>%
+  left_join(., ll.summ, by="country_rank", keep=FALSE)
+head(result,20)
+tail(result, 20)
+result <- result %>% dplyr::select(c(country_rank, everything()))
+
+# add country names
+codes <- read_csv(here("_data/lookuptables/countries_codes_and_coordinates.csv"))
+codes <- codes %>% janitor::clean_names()
+glimpse(codes)
+codes <- codes %>% dplyr::select(c(country, alpha_3_code)) %>% rename(country_name=country)
+
+# add names just to the first country column
+glimpse(result)
+result.full <- left_join(result, codes, by=c("country_allgears"="alpha_3_code")) %>%
+  dplyr::select(c(country_rank, country_name, everything()))
+glimpse(result.full)
+
+## save
+write_csv(result.full, here("_results/fishingeffort/countries_names_effort_NomDAS_summary.csv"))
+
+```
+
+## Make SI table that shows country names and effort for each gear and cumulative, each gear ordered by descending effort
+
+```{r SI effort table}
+
+effort.df <- fread("_data/Effort/effort_sub_clipped.csv")
+glimpse(effort.df) 
+
+effort.summ <- effort.df %>%
+  group_by(Country) %>%
+  summarise(avg_eff_yr=sum(NomActive)/3) %>% # using Days At Sea instead of fishign hours
+  arrange(desc(avg_eff_yr)) %>%
+  mutate(country_rank=1:n()) %>%
+  rename(country_allgears=Country)
+nrow(effort.summ) # 112
+
+gn.summ <- effort.df %>%
+  filter(Gear=="Gillnets") %>%
+  group_by(Country) %>%
+  summarise(avg_GNeff_yr=sum(NomActive/3)) %>%
+  arrange(desc(avg_GNeff_yr)) %>%
+  mutate(country_rank=1:n()) %>%
+  rename(country_GN=Country)
+nrow(gn.summ) # 77
+ll.summ <- effort.df %>%
+  filter(Gear=="Lines_Longlines") %>%
+  group_by(Country) %>%
+  summarise(avg_LLeff_yr=sum(NomActive/3)) %>%
+  arrange(desc(avg_LLeff_yr)) %>%
+  mutate(country_rank=1:n()) %>%
+  rename(country_LL=Country)
+nrow(ll.summ) # 79
+ps.summ <- effort.df %>%
+  filter(Gear=="Seine_Purse_Seine") %>%
+  group_by(Country) %>%
+  summarise(avg_PSeff_yr=sum(NomActive/3)) %>%
+  arrange(desc(avg_PSeff_yr)) %>%
+  mutate(country_rank=1:n()) %>%
+  rename(country_PS=Country)
+nrow(ps.summ) # 74
+
+# join
+result <- left_join(effort.summ, gn.summ, by="country_rank", keep=FALSE) %>%
+  left_join(., ps.summ, by="country_rank", keep=FALSE) %>%
+  left_join(., ll.summ, by="country_rank", keep=FALSE)
+tail(result, 20)
+result <- result %>% dplyr::select(c(country_rank, everything()))
+
+# replace Alpha 3 codes with country names for all columns
+glimpse(result)
+glimpse(codes)
+
+result.full <- left_join(result, codes, by=c("country_allgears"="alpha_3_code")) %>%
+  rename(country_name_allgears=country_name) %>%
+  left_join(., codes, by=c("country_GN"="alpha_3_code")) %>%
+  rename(country_GND=country_name) %>%
+  left_join(., codes, by=c("country_PS"="alpha_3_code")) %>%
+  rename(country_PST=country_name) %>%
+  left_join(., codes, by=c("country_LL"="alpha_3_code")) %>%
+  rename(country_LLT=country_name) 
+glimpse(result.full)
+
+result.full <- result.full %>%
+  dplyr::select(c(country_rank, country_name_allgears, avg_eff_yr, country_GND, avg_GNeff_yr, country_PST, avg_PSeff_yr, country_LLT, avg_LLeff_yr))
+
+## save
+write_csv(result.full, here("_results/fishingeffort/SItbl_countryeffort.csv"))
+## NB there are double name listing, e.g. Taiwan and Taiwan, Province of... or Myanmar v Burma; manually remove duplicatse in excel
+
+
+## number of flag states for eaach gear
+result %>%
+  dplyr::select(c(country_GN, avg_GNeff_yr)) %>%
+  filter(!is.na(country_GN)) %>%
+  filter(avg_GNeff_yr>0) %>%
+  nrow() # 77 GND flags
+result %>%
+  dplyr::select(c(country_PS, avg_PSeff_yr)) %>%
+  filter(!is.na(country_PS)) %>%
+  filter(avg_PSeff_yr>0) %>%
+  nrow() # 74 PST flags
+result %>%
+  dplyr::select(c(country_LL, avg_LLeff_yr)) %>%
+  filter(!is.na(country_LL)) %>%
+  filter(avg_LLeff_yr>0) %>%
+  nrow() # 79 LLT flags
+
+```
+
