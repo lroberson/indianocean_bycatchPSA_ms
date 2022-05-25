@@ -1,0 +1,325 @@
+---
+title: "conservation status and number of fisheries species is susceptible to"
+author: "Leslie Roberson"
+date: "08/02/2022"
+output: html_document
+---
+
+Make plot showing Vulnerability, IUCN status and number of fisheries species is susceptible to
+
+```{r setup, include=FALSE}
+
+library(tidyverse)
+library(data.table)
+library(pillar)
+library(readxl)
+library(janitor)
+library(ggpubr)
+library(ggridges) # install.packages("ggridges")
+library(cowplot)
+library(grid)
+library(gridExtra)
+#library(RColorBrewer)
+#library(viridis)
+#library(colorBlindness) # install.packages("colorBlindness")
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Make plot dat
+
+Get IUCN statuses
+
+Manual searches:
+ 1 Chiloscyllium hasseltii     EN
+ 2 Dentiraja confusus         CR 
+ 3 Mobula Mobula      EN         
+ 4 Pseudobatus percellens    EN  
+ 5 Telatrygon Zugei       VU     
+ 6 Himantura granulata     VU     
+ 7 Stegostoma fasciatum EN        
+ 8 Delphinus delphis tropicalis   LC  ** taxonomy debated
+ 9 Balaenoptera brydei      DD ** taxonomy debated on this one too   
+10 Natator depressa       DD         
+11 Centroscymnus crepidater  NT  
+12 Bathytoshia Lata       VU
+
+```{r make plot dat}
+
+##<>>< Make IUCN status df
+
+# Don't use all_other_fields.csv (extra conservation info)
+# Don't need the taxonomy file either
+assess_raw <- read_csv("_data/IUCN/redlist_species_data_2021_3/assessments.csv")
+glimpse(assess_raw)
+assess <- assess_raw %>% clean_names(case = "snake") %>% dplyr::select(c(internal_taxon_id, scientific_name, redlist_category))
+
+## load IUCN - AM lookup
+lookup <- fread(here("_data/IUCN/lookup_am_v_iucn_2019_2.csv"))
+glimpse(lookup)
+lookup <- lookup %>% dplyr::select(c(iucn_sid, sciname, am_sid, am_sciname, reviewed))
+lookup <- lookup %>% mutate(iucn_sid=as_factor(iucn_sid))
+glimpse(assess)
+assess <- assess %>% rename(iucn_sid=internal_taxon_id) %>% mutate(iucn_sid=as_factor(iucn_sid))
+
+iucn <- left_join(assess, lookup, by="iucn_sid") 
+glimpse(iucn)
+iucn %>% filter(is.na(am_sid)) %>% count()
+iucn %>% filter(!is.na(am_sid))
+
+## load vulnerability summary 
+V.dat <- read_csv(here("_results/vulnerability/Vulnerability_summ.csv"))
+glimpse(V.dat)
+V.dat <- V.dat %>% mutate(species_id=stringr::str_replace_all(species_id, "_", "-"))
+
+##<><>><< MATCH ROUND 1: Lookup table
+V.dat <- left_join(V.dat, iucn, by=c("species_id"="am_sid"))
+glimpse(V.dat)
+V.dat %>% distinct(species_id, iucn_sid) %>% filter(is.na(iucn_sid)) %>% count() # 271 more
+
+##<><>><< MATCH ROUND 2: Scientific names
+V.dat <- left_join(V.dat, assess, by=c("sciname_new"="scientific_name")) %>%
+  mutate(iucn_sid=coalesce(iucn_sid.x, iucn_sid.y),
+         redlist_category=coalesce(redlist_category.x, redlist_category.y)) %>%
+  dplyr::select(c(species_id:V123, iucn_sid, redlist_category))
+glimpse(V.dat)
+V.dat %>% filter(is.na(redlist_category)) %>% distinct(sciname_new) # only 12 unmatched 
+unique(V.dat$redlist_category)
+
+##<><><><> MATCH ROUND 3: Manual search
+
+V.dat <- V.dat %>%
+  mutate(redlist_category = factor(redlist_category, 
+                                   levels=c("Critically Endangered", "Endangered", "Vulnerable", "Near Threatened", "Least Concern", "Data Deficient")),
+    sciname_new=stringr::str_replace(sciname_new, "Mobula Mobula", "Mobula mobula"),
+         sciname_new=stringr::str_replace(sciname_new, "Telatrygon Zugei", "Telatrygon zugei"),
+         sciname_new=stringr::str_replace(sciname_new, "Delphinus delphis tropicalis", "Delphinus delphis"),
+         sciname_new=stringr::str_replace(sciname_new, "Bathytoshia Lata", "Bathytoshia lata"),
+      iucn_sciname=sciname_new,
+         redlist_category=case_when(
+           sciname_new=="Dentiraja confusus" ~ "Critically Endangered",
+           sciname_new %in% c("Chiloscyllium hasseltii", "Mobula mobula", "Pseudobatus percellens", "Stegostoma fasciatum") ~ "Endangered",
+           sciname_new %in% c("Telatrygon zugei", "Himantura granulata", "Bathytoshia lata") ~ "Vulnerable",
+           sciname_new=="Centroscymnus crepidater" ~ "Near Threatened",
+           sciname_new=="Delphinus delphis" ~ "Least Concern",
+           sciname_new %in% c("Natator depressa", "Balaenoptera brydei") ~ "Data Deficient",
+           TRUE~as.character(redlist_category)),
+         iucn_sciname=case_when(
+           sciname_new=="Chiloscyllium hasseltii"~"Chiloscyllium hasselti",
+           sciname_new=="Dentiraja confusus"~"Dentiraja confusa",
+           sciname_new=="Mobula mobula"~"Mobula mobular",
+           sciname_new=="Pseudobatus percellens"~"Pseudobatos percellens",
+           sciname_new=="Himantura granulata"~"Urogymnus granulatus",
+           sciname_new=="Stegostoma fasciatum"~"Stegostoma tigrinum",
+           sciname_new=="Natator depressa"~"Natator depressus",
+           sciname_new=="Centroscymnus crepidater"~"Centroselachus crepidater",
+           sciname_new=="Balaenoptera brydei"~"Balaenoptera omurai",
+           TRUE~as.character(sciname_new)
+         ))
+glimpse(V.dat)
+
+V.dat <- V.dat %>%
+  group_by(species_id) %>%
+  mutate(n_gears=n_distinct(gear)) %>%
+  ungroup()
+
+V.dat %>% distinct(species_id, n_gears) %>% tabyl(n_gears)
+# n_gears   n   percent
+#       1  64 0.2006270
+#       2  99 0.3103448
+#       3 156 0.4890282
+
+write_csv(V.dat, "_results/figures/fig_IUCN/fig_iucn_dat.csv")
+
+```
+
+## update with new V scores
+
+```{r update Vs}
+
+V.results <- read_csv(here("_results/vulnerability/Vulnerability_summ_rev2.csv"))
+glimpse(V.results)
+dat <- read_csv("_results/figures/fig_IUCN/fig_iucn_dat.csv")
+glimpse(dat)
+
+dat.sub <- dat %>%
+  dplyr::select(c(species_id, sciname_new, class, grp_code, grp_name, ncells_spp, gear, data_quality_score, productivity, S, V123, iucn_sid, redlist_category, n_gears))
+dat.sub <- distinct(dat.sub)
+glimpse(dat.sub)
+
+V.sub <- V.results %>% 
+  dplyr::select(c(species_id, gear, V)) %>% 
+  mutate(species_id=stringr::str_replace_all(species_id, "-", "_")) %>%
+  rename(V_rev2=V)
+glimpse(V.sub)
+dat.sub <- left_join(dat.sub, V.sub, by=c("species_id", "gear"))
+glimpse(dat.sub)
+
+write_csv(dat.sub, here("_results/figures/fig_IUCN/fig_iucn_dat.csv"))
+```
+
+## Plot V2
+
+IUCN status on y axis and V score (123 score) on X axis 
+number of gears susceptible to
+Can try adding color for tax group -> this looks really messy so I made color correspond to ngears
+
+```{r scatter}
+
+dat <- read_csv(here("_results/figures/fig_IUCN/fig_iucn_dat.csv"))
+glimpse(dat)
+pdat <- dat %>% 
+  group_by(species_id, n_gears, redlist_category) %>%
+  summarise(avgV=mean(V_rev2), # mean V score across the 3 gears
+            avgV123=mean(V123))
+summary(pdat$avgV123)
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 1.822   2.557   2.836   2.849   3.153   3.702
+
+##<><>> prep data
+
+pdat$n_gears <- as_factor(pdat$n_gears)
+# red oragne yellow color pal for 1, 2, 3 gears
+# that looks a lot liek the redlist categoris - pick another gradient scale
+pal_ngears <- c("cadetblue1", "dodgerblue1", "royalblue4")
+pdat$redlist_category <- as_factor(pdat$redlist_category)
+pdat$redlist_category <- fct_relevel(pdat$redlist_category, levels=c("Critically Endangered", "Endangered", "Vulnerable", "Near Threatened", "Least Concern", "pdata Deficient"))
+
+## plot
+p.density <- pdat %>%
+  ggplot() +
+  geom_density_ridges(aes(x=avgV, y=redlist_category, fill=n_gears, color=n_gears), alpha=0.75) +
+  labs(y="", x="Mean Vulnerability score", fill="", color="") +
+  scale_y_discrete(limits=rev) +
+  scale_x_continuous(limits=c(1.5,4.5), breaks=seq(2,4,0.5)) +
+  scale_color_manual(values=pal_ngears) + 
+  scale_fill_manual(values=pal_ngears) + 
+  theme_bw() +
+  theme(legend.position="top",
+        panel.grid = element_blank()) +
+  guides(color="none")
+p.density
+
+##<><>< Add a bar plot to the right side
+p.bar <- pdat %>%
+  group_by(redlist_category, n_gears) %>%
+  summarise(n_spp=n_distinct(species_id)) %>%
+  ggplot(aes(fill=n_gears, x=redlist_category, y=n_spp)) +
+  geom_bar(width=0.4, position="stack", stat="identity") +
+  scale_color_manual(values=pal_ngears) + 
+  scale_fill_manual(values=pal_ngears) + 
+  scale_x_discrete(limits=rev) +
+  scale_y_continuous(breaks=seq(0,125,25)) +
+  labs(x="", y="Number of species", fill="Number of gears") +
+  coord_flip() +
+  theme_bw() +
+  theme(legend.position="top",
+        panel.grid = element_blank(),
+        axis.ticks.y=element_blank()) +
+  guides(color="none")
+p.bar
+
+##<>><>< make common legend
+legend_gears <- get_legend(
+  p.bar + 
+    guides(fill = guide_legend(nrow = 1)) +
+    theme(legend.position = "top")
+)
+legend_gears
+
+#ggarrange(legend_gears, p.density + guides(fill="none"), p.bar + rremove("y.text") + guides(fill="none"),
+#         labels=c("A", "B"),
+#         nrow=2)
+
+iucn.grid <- grid.arrange(legend_gears,
+             p.density + theme(legend.position="none"),
+             p.bar + theme(legend.position="none",
+                                       axis.title.y=element_blank(),
+                                       axis.text.y=element_blank(),
+                                       axis.ticks.y=element_blank()),
+            ncol=2, nrow=2,
+            layout_matrix = rbind(c(1,1), c(2,3)),
+          widths = c(3.5, 2), heights = c(0.2, 2.5))
+iucn.grid
+
+ggsave(iucn.grid,
+       width=6, height=5, units="in",
+       dpi=600,
+       filename="_results/figures/fig_IUCN/10april_iucngrid.eps",
+       device=cairo_ps)
+ggsave(iucn.grid,
+       width=6, height=5, units="in",
+       dpi=600,
+       filename="_results/figures/fig_IUCN/10april_iucngrid.png")
+
+```
+
+Explore plot variations
+
+```{r plot explore}
+##<>< plot explore
+ptest <- dat %>%
+  ggplot() +
+  geom_density(aes(y=V123, fill=n_gears, color=n_gears), alpha=0.8) +
+  #geom_jitter(aes(x=redlist_category, y=V123, color=n_gears), alpha=0.8) +
+              #colour="black",pch=21) + # dots with outline
+  #stat_chull(aes(x=redlist_category, y=V123, color = n_gears, fill = n_gears), alpha = 0.1, geom = "polygon") + # this would also be cool for just one scatterplot with lots of dots, to show groups
+  labs(x="", y="Vulnerability score", fill="Number of gears", color="") +
+  scale_color_manual(values=pal_ngears) + 
+  scale_fill_manual(values=pal_ngears) + 
+  #scale_fill_grey(start=0.8, end=0.1) +
+  #scale_color_manual(values=pal_taxgrp) +
+  #scale_size_area(max_size=4) + # size of dots makes it too cluttered
+  #scale_x_discrete(limits=rev) + # so CR is on top
+  coord_flip() +
+  facet_wrap(~redlist_category, nrow=2) + # how do I make the density curves on 3 different levels so they're not overlapping?
+  #facet_grid(n_gears~redlist_category) + # nah too many boxes
+  theme_bw() +
+  theme(legend.position="top",
+        panel.grid = element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank(),
+        strip.background =element_rect(fill="white"))
+ptest ## hmmm no it's just a mess of huge dots 
+
+ggscatterhist(
+  dat, x="redlist_category", y="V123", color="n_gears", size = 2, alpha = 0.6,
+  palette = c("#00AFBB", "#E7B800", "#FC4E07"),
+  margin.plot = "boxplot",
+  ggtheme = theme_bw()
+  ) # that's cool but it only really works for a normal continuous by continuous scatter
+
+```
+
+## Plot V1
+
+grouped stacked barplot with the IUCN grups and number of species in 1, 2, or 3 fisheries
+
+```{r bar plot}
+
+glimpse(V.dat)
+V.dat$n_gears <- as_factor(V.dat$n_gears)
+V.dat$redlist_category <- as_factor(V.dat$redlist_category)
+V.dat$redlist_category <- fct_relevel(V.dat$redlist_category, levels=c("Critically Endangered", "Endangered", "Vulnerable", "Near Threatened", "Least Concern", "Data Deficient"))
+
+iucn.plot <- V.dat %>%
+  distinct(species_id, n_gears, redlist_category) %>%
+  ggplot(aes(fill=n_gears, x=redlist_category)) +
+  geom_bar(width=0.75, position=position_dodge(0.75), stat="count", color="black", size=0.4) +
+  labs(x="", y="Number of species", fill = "Number of\nfishing gears") +
+  scale_fill_grey(start=0.8, end=0.1) +
+  scale_x_discrete(limits=rev) +
+  scale_y_continuous(limits=c(0,45), breaks=seq(0,40,10)) +
+  coord_flip() +
+  theme_bw() +
+  theme(panel.grid = element_blank(),
+        legend.text=element_text(size=6)) +
+  guides(fill=guide_legend(reverse=TRUE))
+iucn.plot
+
+pdf("_results/figures/fig_IUCN/10feb_grpedbarplot_grey.pdf", width=5, height=2.5, bg="white")
+print(iucn.plot)
+dev.off()
+
+```
+

@@ -128,7 +128,7 @@ psa.grid
 ggsave(psa.grid, 
        width=7, height=6, units="in",
        dpi=600,
-       filename="_results/figures/fig2_PSA.eps",
+       filename="_results/figures/fig3_PSA.eps",
        device=cairo_ps)
 ```
 

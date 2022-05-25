@@ -1,0 +1,72 @@
+---
+title: "plot explore difference between PSAs"
+author: "Leslie Roberson"
+date: "20/02/2022"
+output: html_document
+---
+
+Figure 5 beeswarm plot
+some final formatting in Illustrator
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(here)
+library(pillar)
+library(forcats)
+library(ggbeeswarm)
+library(ggforce)
+library(ggsci)
+
+```
+
+Beeswarm plot by species group
+
+```{r beeswarm}
+
+## prep data
+v.scores <- read_csv(here("_results/Vulnerability/V_scores.csv"))
+glimpse(v.scores)
+pdat <- v.scores %>%
+  mutate(grp_name=stringr::str_replace_all(grp_name, "and", "&"),
+         gear=case_when(gear=="GND"~"Drift gill nets", 
+                        gear=="LLT"~"Longlines", 
+                        gear=="PST"~"Purse seines", 
+                        TRUE~""),
+         grp_name=factor(grp_name, 
+                        levels=c("Sea turtles", 
+                                  "Benthic elasmobranchs", "Deep sea elasmobranchs", "Deep shelf pelagic elasmobranchs", "Demersal generalist elasmobranchs", "Filter feeder elasmobranchs", "Inshore elasmobranchs", "Oceanic elasmobranchs", "Pelagic generalist elasmobranchs", "Shallow shelf elasmobranchs",
+                                  "Baleen whales", "Inshore dolphins & porpoises", "Large oceanic dolphins", "Oceanic toothed whales", "Small oceanic & coastal dolphins" )))
+pdat$gear <- as_factor(pdat$gear)
+levels(pdat$gear)
+pdat <- pdat %>%
+  group_by(species_id, gear) %>%
+  mutate(deltaV=V123-V) %>%
+  ungroup()
+
+##<>><> plot difference by species group
+## color for gear
+show_col(pal_jama()(3))
+
+p.beeswarm <- pdat %>%
+  ggplot() +
+  geom_beeswarm(aes(x=grp_name, y=deltaV, color=gear), alpha=0.7) + 
+  geom_hline(yintercept=0.00, size=0.5, linetype="dashed") +
+  ggsci::scale_color_jama() +
+  labs(x="", y="Vulnerability score", color="") +
+  coord_flip() +
+  theme_bw() +
+  theme(legend.position=c(0.85, 0.9),
+        legend.margin=margin(t=-1, r=0, b=-0.5, l=0, unit="cm"),
+        panel.grid=element_blank())
+p.beeswarm
+
+ggsave(p.beeswarm,
+       width=7, height=5, units="in",
+       dpi=600,
+       filename="_results/figures/fig4_compareVs.eps",
+       device=cairo_ps)
+
+```
+
