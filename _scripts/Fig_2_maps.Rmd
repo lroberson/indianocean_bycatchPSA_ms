@@ -7,8 +7,8 @@ output: html_document
 
 ## Fig 2 maps
 
-Make rasters for catchability maps 
-Availability x Encounterability per cell summed over all species for each gear
+Make rasters for Susceptibility maps 
+Availability per cell weighted by the geomean of Encounterability x Selectivity x PCM, summed over all species, for each gear
 Formatting done in Illustrator
 
 ```{r setup, include=FALSE}
@@ -36,30 +36,27 @@ gnd.cells <- fread(here("_results/Susceptibility/Availability/GND_availcells.csv
 pst.cells <- fread(here("_results/Susceptibility/Availability/PST_availcells.csv"))
 llt.cells <- fread(here("_results/Susceptibility/Availability/LLT_availcells.csv"))
 
-glimpse(llt)
-summary(llt$AxE_cell)
-
-llt$gear <- "LLT"
-pst$gear <- "PST"
-gnd$gear <- "GND"
-
-allgears.cells <- bind_rows(llt, pst, gnd)
-glimpse(allgears.cells) 
-n_distinct(allgears.cells$species_id)
-allgears.cells <- allgears.cells %>% filter(AxE_cell>0)
-
-## add S x PLE geomean
+## Add encounterability, selectivity
 S.scores <- read_csv(here("_data/Species/Susceptibility/S_scores.csv"))
-glimpse(S.scores)
 n_distinct(S.scores$species_id)
 S.scores <- S.scores %>%
   mutate(species_id=stringr::str_replace_all(species_id, "-", "_")) %>%
   dplyr::select(c(species_id, gear, geomean))
 
+allgears.cells <- bind_rows(llt.cells, pst.cells, gnd.cells)
+glimpse(allgears.cells) 
+n_distinct(allgears.cells$species_id)
+allgears.cells <- allgears.cells %>% rename(gear=GEAR)
+
+allgears.cells <- left_join(allgears.cells, S.scores, by=c("species_id", "gear"))
+print(object.size(allgears.cells), units="Mb") # 178.9 Mb
+
+## save intermediary file
+fwrite(allgears.cells, here("_results/Susceptibility/allgears_cells_S_intermediary.csv"))
+
 allgears.cells.summ <- allgears.cells %>%
-  left_join(S.scores, by=c("gear", "species_id")) %>% 
-  group_by(gear) %>%
-  mutate(S_cell=AxE_cell*geomean) %>%
+  group_by(gear, species_id, x, y) %>%
+  mutate(S_cell=A*geomean) %>%
   filter(S_cell>0) %>%
   group_by(gear, x, y) %>%
   summarise(nspp_S_cell = n_distinct(species_id), # number of species occur in that cell with catchability >0
@@ -68,8 +65,7 @@ allgears.cells.summ <- allgears.cells %>%
 glimpse(allgears.cells.summ)  
 
 print(object.size(allgears.cells.summ), units="Mb") # 2.2
-
-fwrite(allgears.cells.summ, here("_data/Species/Susceptibility/Suscept_percell/allgears_cells_S.csv"))
+fwrite(allgears.cells.summ, here("_results/Susceptibility/allgears_cells_S.csv"))
 
 ##<>>< Make rasters
 
