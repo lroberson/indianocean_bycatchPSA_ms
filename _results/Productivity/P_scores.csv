@@ -1,0 +1,369 @@
+aquamaps_id,tax_group,scientific_name,offspring_peryr_cat,age_sex_mature_cat,max_age_cat,parental_investment_cat,max_size_cm_cat,length_cm,data_quality_score,fecundity_score,agemature_score,agemax_score,parental_invest_score,size_bytaxa_score,productivity
+Fis-47424,Elasmobranchs,Urolophus sufflavus,1 to 5,Less than 5,10 to 25,Live birth unattended,3,35,decent,2,2,2,2,1,1.7411011265922482
+Fis-31585,Elasmobranchs,Eridacnis radcliffei,1 to 5,5 to 10,10 to 25,Egg layer,3,23,poor,2,2,2,1,1,1.515716566510398
+Fis-23158,Elasmobranchs,Holohalaelurus punctatus,1 to 5,5 to 10,10 to 25,Egg layer,3,31.3,poor,2,2,2,1,1,1.515716566510398
+Fis-125906,Elasmobranchs,Galeus gracilis,1 to 5,5 to 10,10 to 25,Egg layer,3,34,poor,2,2,2,1,1,1.515716566510398
+Fis-160267,Elasmobranchs,Halaelurus sellus,1 to 5,5 to 10,10 to 25,Egg layer,3,35,poor,2,2,2,1,1,1.515716566510398
+Fis-25897,Elasmobranchs,Eridacnis sinuans,1 to 5,5 to 10,10 to 25,Egg layer,3,37,poor,2,2,2,1,1,1.515716566510398
+Fis-29332,Elasmobranchs,Cephaloscyllium fasciatum,1 to 5,5 to 10,10 to 25,Egg layer,3,42,poor,2,2,2,1,1,1.515716566510398
+Fis-23144,Elasmobranchs,Halaelurus natalensis,1 to 5,5 to 10,10 to 25,Egg layer,3,45,poor,2,2,2,1,1,1.515716566510398
+Fis-161448,Elasmobranchs,Cephaloscyllium hiscosellum,1 to 5,5 to 10,10 to 25,Egg layer,3,46.3,poor,2,2,2,1,1,1.515716566510398
+Fis-29406,Elasmobranchs,Halaelurus boesemani,1 to 5,5 to 10,10 to 25,Egg layer,3,48,poor,2,2,2,1,1,1.515716566510398
+Fis-160938,Elasmobranchs,Holohalaelurus favus,1 to 5,5 to 10,10 to 25,Egg layer,3,51.5,poor,2,2,2,1,1,1.515716566510398
+Fis-29409,Elasmobranchs,Halaelurus lineatus,1 to 5,5 to 10,10 to 25,Egg layer,3,56,poor,2,2,2,1,1,1.515716566510398
+Fis-6652,Elasmobranchs,Figaro boardmani,1 to 5,5 to 10,10 to 25,Egg layer,3,61,poor,2,2,2,1,1,1.515716566510398
+Fis-161438,Elasmobranchs,Cephaloscyllium speccum,1 to 5,5 to 10,10 to 25,Egg layer,3,69,poor,2,2,2,1,1,1.515716566510398
+Fis-23159,Elasmobranchs,Holohalaelurus regani,1 to 5,5 to 10,10 to 25,Egg layer,3,69,poor,2,2,2,1,1,1.515716566510398
+Fis-131815,Elasmobranchs,Okamejei powelli,1 to 5,5 to 10,10 to 25,Egg layer,3,21,decent,2,2,2,1,1,1.515716566510398
+Fis-161225,Elasmobranchs,Okamejei arafurensis,1 to 5,5 to 10,10 to 25,Egg layer,3,40.7,decent,2,2,2,1,1,1.515716566510398
+Fis-161228,Elasmobranchs,Okamejei leptoura,1 to 5,5 to 10,10 to 25,Egg layer,3,48.6,decent,2,2,2,1,1,1.515716566510398
+Fis-132528,Elasmobranchs,Okamejei heemstrai,1 to 5,5 to 10,10 to 25,Egg layer,3,51.5,decent,2,2,2,1,1,1.515716566510398
+Fis-23146,Elasmobranchs,Haploblepharus edwardsii,1 to 5,5 to 10,10 to 25,Egg layer,3,59,decent,2,2,2,1,1,1.515716566510398
+Fis-29411,Elasmobranchs,Haploblepharus fuscus,1 to 5,5 to 10,10 to 25,Egg layer,3,69,decent,2,2,2,1,1,1.515716566510398
+Fis-23221,Elasmobranchs,Poroderma pantherinum,1 to 5,5 to 10,10 to 25,Egg layer,3,84,good,2,2,2,1,1,1.515716566510398
+Fis-23220,Elasmobranchs,Poroderma africanum,1 to 5,5 to 10,10 to 25,Egg layer,3,93,good,2,2,2,1,1,1.515716566510398
+Fis-23252,Elasmobranchs,Scyliorhinus capensis,1 to 5,5 to 10,10 to 25,Egg layer,3,70,poor,2,2,2,1,1,1.515716566510398
+Fis-131465,Elasmobranchs,Cruriraja andamanica,More than 5,5 to 10,10 to 25,Egg layer,3,20.7,poor,1,2,2,1,1,1.3195079107728942
+Fis-131805,Elasmobranchs,Rajella caudaspinosa,More than 5,5 to 10,10 to 25,Egg layer,3,32,poor,1,2,2,1,1,1.3195079107728942
+Fis-58285,Elasmobranchs,Neoraja stehmanni,More than 5,5 to 10,10 to 25,Egg layer,3,35,poor,1,2,2,1,1,1.3195079107728942
+Fis-23253,Elasmobranchs,Scyliorhinus garmani,More than 5,5 to 10,10 to 25,Egg layer,3,38,poor,1,2,2,1,1,1.3195079107728942
+Fis-160879,Elasmobranchs,Sinobatis bulbicauda,More than 5,5 to 10,10 to 25,Egg layer,3,43,poor,1,2,2,1,1,1.3195079107728942
+Fis-27678,Elasmobranchs,Cruriraja parcomaculata,More than 5,5 to 10,10 to 25,Egg layer,3,55,poor,1,2,2,1,1,1.3195079107728942
+Fis-164699,Elasmobranchs,Cruriraja hulleyi,More than 5,5 to 10,10 to 25,Egg layer,3,58,poor,1,2,2,1,1,1.3195079107728942
+Fis-132559,Elasmobranchs,Rajella barnardi,More than 5,5 to 10,10 to 25,Egg layer,3,70,poor,1,2,2,1,1,1.3195079107728942
+Fis-131852,Elasmobranchs,Amblyraja hyperborea,More than 5,5 to 10,10 to 25,Egg layer,2,112,poor,1,2,2,1,2,1.515716566510398
+Fis-160854,Elasmobranchs,Spiniraja whitleyi,More than 5,5 to 10,10 to 25,Egg layer,2,200,poor,1,2,2,1,2,1.515716566510398
+Fis-31187,Elasmobranchs,Raja miraletus,More than 5,5 to 10,10 to 25,Egg layer,3,35,decent,1,2,2,1,1,1.3195079107728942
+Fis-161233,Elasmobranchs,Leucoraja pristispina,More than 5,5 to 10,10 to 25,Egg layer,3,40.1,decent,1,2,2,1,1,1.3195079107728942
+Fis-64122,Elasmobranchs,Raja pita,More than 5,5 to 10,10 to 25,Egg layer,3,46,decent,1,2,2,1,1,1.3195079107728942
+Fis-132550,Elasmobranchs,Leucoraja wallacei,More than 5,5 to 10,10 to 25,Egg layer,3,100,decent,1,2,2,1,1,1.3195079107728942
+Fis-31573,Elasmobranchs,Chiloscyllium punctatum,More than 5,5 to 10,10 to 25,Egg layer,2,132,decent,1,2,2,1,2,1.515716566510398
+Fis-161440,Elasmobranchs,Cephaloscyllium albipinnum,1 to 5,5 to 10,10 to 25,Egg layer,2,103,poor,2,2,2,1,2,1.7411011265922482
+Fis-23084,Elasmobranchs,Cephaloscyllium sufflans,1 to 5,5 to 10,10 to 25,Egg layer,2,110,poor,2,2,2,1,2,1.7411011265922482
+Fis-131407,Elasmobranchs,Atelomycterus fasciatus,1 to 5,Less than 5,10 to 25,Egg layer,3,34.5,poor,2,1,2,1,1,1.3195079107728942
+Fis-140639,Elasmobranchs,Asymbolus parvus,1 to 5,Less than 5,10 to 25,Egg layer,3,35,poor,2,1,2,1,1,1.3195079107728942
+Fis-140692,Elasmobranchs,Asymbolus rubiginosus,1 to 5,Less than 5,10 to 25,Egg layer,3,39.3,poor,2,1,2,1,1,1.3195079107728942
+Fis-140634,Elasmobranchs,Asymbolus submaculatus,1 to 5,Less than 5,10 to 25,Egg layer,3,41.4,poor,2,1,2,1,1,1.3195079107728942
+Fis-140641,Elasmobranchs,Asymbolus occiduus,1 to 5,Less than 5,10 to 25,Egg layer,3,60.1,poor,2,1,2,1,1,1.3195079107728942
+Fis-23029,Elasmobranchs,Asymbolus vincenti,1 to 5,Less than 5,10 to 25,Egg layer,3,61,poor,2,1,2,1,1,1.3195079107728942
+Fis-23028,Elasmobranchs,Asymbolus analis,1 to 5,Less than 5,10 to 25,Egg layer,3,90,poor,2,1,2,1,1,1.3195079107728942
+Fis-24448,Elasmobranchs,Atelomycterus marmoratus,1 to 5,Less than 5,10 to 25,Egg layer,3,59.5,decent,2,1,2,1,1,1.3195079107728942
+Fis-29298,Elasmobranchs,Atelomycterus macleayi,1 to 5,Less than 5,10 to 25,Egg layer,3,60,decent,2,1,2,1,1,1.3195079107728942
+Fis-132130,Elasmobranchs,Chiloscyllium hasseltii,More than 5,Less than 5,10 to 25,Egg layer,3,61,decent,1,1,2,1,1,1.148698354997035
+Fis-25892,Elasmobranchs,Chiloscyllium indicum,More than 5,Less than 5,10 to 25,Egg layer,3,65,decent,1,1,2,1,1,1.148698354997035
+Fis-30780,Elasmobranchs,Chiloscyllium griseum,More than 5,Less than 5,10 to 25,Egg layer,3,77,decent,1,1,2,1,1,1.148698354997035
+Fis-31576,Elasmobranchs,Hemiscyllium trispeculare,More than 5,Less than 5,10 to 25,Egg layer,3,79,decent,1,1,2,1,1,1.148698354997035
+Fis-31583,Elasmobranchs,Parascyllium ferrugineum,More than 5,Less than 5,10 to 25,Egg layer,3,80,decent,1,1,2,1,1,1.148698354997035
+Fis-31571,Elasmobranchs,Chiloscyllium arabicum,More than 5,Less than 5,10 to 25,Egg layer,3,80,decent,1,1,2,1,1,1.148698354997035
+Fis-25470,Elasmobranchs,Chiloscyllium plagiosum,More than 5,Less than 5,10 to 25,Egg layer,3,83,decent,1,1,2,1,1,1.148698354997035
+Fis-25894,Elasmobranchs,Hemiscyllium ocellatum,More than 5,Less than 5,10 to 25,Egg layer,2,107,decent,1,1,2,1,2,1.3195079107728942
+Fis-144985,Elasmobranchs,Parascyllium sparsimaculatum,More than 5,Less than 5,10 to 25,Egg layer,3,78.1,poor,1,1,2,1,1,1.148698354997035
+Fis-25895,Elasmobranchs,Parascyllium variolatum,More than 5,Less than 5,10 to 25,Egg layer,3,91,poor,1,1,2,1,1,1.148698354997035
+Fis-23155,Elasmobranchs,Heterodontus ramalheira,More than 5,More than 10,10 to 25,Egg layer,3,73.5,decent,1,3,2,1,1,1.4309690811052556
+Fis-23082,Elasmobranchs,Cephaloscyllium laticeps,1 to 5,5 to 10,10 to 25,Egg layer,2,150,poor,2,2,2,1,2,1.7411011265922482
+Fis-161638,Elasmobranchs,Pavoraja arenaria,More than 5,5 to 10,More than 25,Egg layer,3,34.3,poor,1,2,3,1,1,1.4309690811052556
+Fis-54790,Elasmobranchs,Pavoraja alleni,More than 5,5 to 10,More than 25,Egg layer,3,35,poor,1,2,3,1,1,1.4309690811052556
+Fis-161235,Elasmobranchs,Irolita westraliensis,More than 5,5 to 10,More than 25,Egg layer,3,35,poor,1,2,3,1,1,1.4309690811052556
+Fis-54800,Elasmobranchs,Pavoraja nitida,More than 5,5 to 10,More than 25,Egg layer,3,36.8,poor,1,2,3,1,1,1.4309690811052556
+Fis-54787,Elasmobranchs,Irolita waitii,More than 5,5 to 10,More than 25,Egg layer,3,52,poor,1,2,3,1,1,1.4309690811052556
+Fis-161213,Elasmobranchs,Dentiraja falloarga,More than 5,5 to 10,More than 25,Egg layer,3,40,decent,1,2,3,1,1,1.4309690811052556
+Fis-164471,Elasmobranchs,Dentiraja lemprieri,More than 5,5 to 10,More than 25,Egg layer,3,55,decent,1,2,3,1,1,1.4309690811052556
+Fis-161218,Elasmobranchs,Dentiraja oculata,More than 5,5 to 10,More than 25,Egg layer,3,55.7,decent,1,2,3,1,1,1.4309690811052556
+Fis-161159,Elasmobranchs,Dentiraja healdi,More than 5,5 to 10,More than 25,Egg layer,3,58.7,decent,1,2,3,1,1,1.4309690811052556
+Fis-160851,Elasmobranchs,Dentiraja cerva,More than 5,5 to 10,More than 25,Egg layer,3,66,decent,1,2,3,1,1,1.4309690811052556
+Fis-161209,Elasmobranchs,Dentiraja confusus,More than 5,5 to 10,More than 25,Egg layer,3,70,decent,1,2,3,1,1,1.4309690811052556
+Fis-23153,Elasmobranchs,Heterodontus portusjacksoni,More than 5,5 to 10,More than 25,Egg layer,2,137,good,1,2,3,1,2,1.6437518295172258
+Fis-8339,Elasmobranchs,Stegostoma fasciatum,More than 5,5 to 10,More than 25,Egg layer,1,354,good,1,2,3,1,3,1.7826024579660034
+Fis-131821,Elasmobranchs,Rostroraja alba,1 to 5,More than 10,More than 25,Egg layer,2,230,good,2,3,3,1,2,2.0476725110792193
+Fis-23156,Elasmobranchs,Heterodontus zebra,More than 5,More than 10,More than 25,Egg layer,3,84,poor,1,3,3,1,1,1.5518455739153598
+Fis-132518,Elasmobranchs,Dipturus campbelli,More than 5,More than 10,More than 25,Egg layer,3,66,decent,1,3,3,1,1,1.5518455739153598
+Fis-131844,Elasmobranchs,Dipturus stenorhynchus,More than 5,More than 10,More than 25,Egg layer,2,101,decent,1,3,3,1,2,1.7826024579660034
+Fis-131829,Elasmobranchs,Dipturus pullopunctatus,More than 5,More than 10,More than 25,Egg layer,2,130,decent,1,3,3,1,2,1.7826024579660034
+Rep-6936,Sea turtles,Lepidochelys olivacea,More than 5,More than 10,More than 25,Egg layer,2,75,good,1,3,3,1,2,1.7826024579660034
+Rep-8732,Sea turtles,Natator depressa,More than 5,More than 10,More than 25,Egg layer,2,76,good,1,3,3,1,2,1.7826024579660034
+Rep-5181,Sea turtles,Eretmochelys imbricata,More than 5,More than 10,More than 25,Egg layer,2,87,good,1,3,3,1,2,1.7826024579660034
+Rep-2666,Sea turtles,Caretta caretta,More than 5,More than 10,More than 25,Egg layer,2,90,good,1,3,3,1,2,1.7826024579660034
+Rep-2941,Sea turtles,Chelonia mydas,More than 5,More than 10,More than 25,Egg layer,1,112,good,1,3,3,1,3,1.9331820449317627
+Rep-4381,Sea turtles,Dermochelys coriacea,More than 5,More than 10,More than 25,Egg layer,1,160,good,1,3,3,1,3,1.9331820449317627
+ITS-Mam-180449,Cetaceans,Cephalorhynchus commersonii,Less than 1,5 to 10,10 to 25,Live birth and care,3,150,good,3,2,2,3,1,2.0476725110792193
+ITS-Mam-180451,Cetaceans,Cephalorhynchus heavisidii,Less than 1,5 to 10,10 to 25,Live birth and care,3,170,good,3,2,2,3,1,2.0476725110792193
+ITS-Mam-180440,Cetaceans,Lagenodelphis hosei,Less than 1,5 to 10,10 to 25,Live birth and care,3,270,good,3,2,2,3,1,2.0476725110792193
+ITS-Mam-180475,Cetaceans,Phocoena dioptrica,Less than 1,Less than 5,10 to 25,Live birth and care,3,224,decent,3,1,2,3,1,1.7826024579660034
+ITS-Mam-180478,Cetaceans,Neophocaena phocaenoides,Less than 1,Less than 5,10 to 25,Live birth and care,3,175,good,3,1,2,3,1,1.7826024579660034
+ITS-Mam-180492,Cetaceans,Kogia sima,Less than 1,Less than 5,10 to 25,Live birth and care,3,250,good,3,1,2,3,1,1.7826024579660034
+ITS-Mam-180491,Cetaceans,Kogia breviceps,Less than 1,Less than 5,10 to 25,Live birth and care,3,300,good,3,1,2,3,1,1.7826024579660034
+ITS-Mam-180535,Cetaceans,Caperea marginata,Less than 1,5 to 10,More than 25,Live birth and care,2,650,poor,3,2,3,3,2,2.550849001251582
+ITS-Mam-180461,Cetaceans,Feresa attenuata,Less than 1,5 to 10,More than 25,Live birth and care,3,260,decent,3,2,3,3,1,2.22064303492292
+ITS-Mam-180508,Cetaceans,Mesoplodon mirus,Less than 1,5 to 10,More than 25,Live birth and care,2,518,decent,3,2,3,3,2,2.550849001251582
+ITS-Mam-180498,Cetaceans,Ziphius cavirostris,Less than 1,5 to 10,More than 25,Live birth and care,2,640,decent,3,2,3,3,2,2.550849001251582
+ITS-Mam-180502,Cetaceans,Indopacetus pacificus,Less than 1,5 to 10,More than 25,Live birth and care,2,648,decent,3,2,3,3,2,2.550849001251582
+ITS-Mam-180500,Cetaceans,Tasmacetus shepherdi,Less than 1,5 to 10,More than 25,Live birth and care,2,700,decent,3,2,3,3,2,2.550849001251582
+ITS-Mam-180447,Cetaceans,Lagenorhynchus cruciger,Less than 1,5 to 10,More than 25,Live birth and care,3,174.5,good,3,2,3,3,1,2.22064303492292
+ITS-Mam-180445,Cetaceans,Lagenorhynchus obscurus,Less than 1,5 to 10,More than 25,Live birth and care,3,190,good,3,2,3,3,1,2.22064303492292
+ITS-Mam-180471,Cetaceans,Orcaella brevirostris,Less than 1,5 to 10,More than 25,Live birth and care,3,210,good,3,2,3,3,1,2.22064303492292
+ITS-Mam-771132,Cetaceans,Orcaella heinsohni,Less than 1,5 to 10,More than 25,Live birth and care,3,220,good,3,2,3,3,1,2.22064303492292
+ITS-Mam-180417,Cetaceans,Steno bredanensis,Less than 1,5 to 10,More than 25,Live birth and care,3,230,good,3,2,3,3,1,2.22064303492292
+ITS-Mam-180419,Cetaceans,Sousa chinensis,Less than 1,5 to 10,More than 25,Live birth and care,3,250,good,3,2,3,3,1,2.22064303492292
+ITS-Mam-180459,Cetaceans,Peponocephala electra,Less than 1,5 to 10,More than 25,Live birth and care,3,270,good,3,2,3,3,1,2.22064303492292
+ITS-Mam-180457,Cetaceans,Grampus griseus,Less than 1,5 to 10,More than 25,Live birth and care,3,280,good,3,2,3,3,1,2.22064303492292
+ITS-Mam-612596,Cetaceans,Tursiops aduncus,Less than 1,5 to 10,More than 25,Live birth and care,3,300,good,3,2,3,3,1,2.22064303492292
+ITS-Mam-180455,Cetaceans,Lissodelphis peronii,Less than 1,5 to 10,More than 25,Live birth and care,3,300,good,3,2,3,3,1,2.22064303492292
+ITS-Mam-180426,Cetaceans,Tursiops truncatus,Less than 1,5 to 10,More than 25,Live birth and care,3,300,good,3,2,3,3,1,2.22064303492292
+ITS-Mam-180507,Cetaceans,Mesoplodon hectori,Less than 1,5 to 10,More than 25,Live birth and care,2,400,good,3,2,3,3,2,2.550849001251582
+ITS-Mam-180517,Cetaceans,Mesoplodon densirostris,Less than 1,5 to 10,More than 25,Live birth and care,2,460,good,3,2,3,3,2,2.550849001251582
+ITS-Mam-180513,Cetaceans,Mesoplodon bowdoini,Less than 1,5 to 10,More than 25,Live birth and care,2,460,good,3,2,3,3,2,2.550849001251582
+ITS-Mam-552461,Cetaceans,Globicephala melas,Less than 1,5 to 10,More than 25,Live birth and care,2,480,good,3,2,3,3,2,2.550849001251582
+ITS-Mam-180466,Cetaceans,Globicephala macrorhynchus,Less than 1,5 to 10,More than 25,Live birth and care,2,500,good,3,2,3,3,2,2.550849001251582
+ITS-Mam-180510,Cetaceans,Mesoplodon ginkgodens,Less than 1,5 to 10,More than 25,Live birth and care,2,530,good,3,2,3,3,2,2.550849001251582
+ITS-Mam-180511,Cetaceans,Mesoplodon grayi,Less than 1,5 to 10,More than 25,Live birth and care,2,600,good,3,2,3,3,2,2.550849001251582
+ITS-Mam-180463,Cetaceans,Pseudorca crassidens,Less than 1,5 to 10,More than 25,Live birth and care,2,610,good,3,2,3,3,2,2.550849001251582
+ITS-Mam-180516,Cetaceans,Mesoplodon layardii,Less than 1,5 to 10,More than 25,Live birth and care,2,620,good,3,2,3,3,2,2.550849001251582
+ITS-Mam-180505,Cetaceans,Hyperoodon planifrons,Less than 1,5 to 10,More than 25,Live birth and care,2,750,good,3,2,3,3,2,2.550849001251582
+ITS-Mam-180495,Cetaceans,Berardius arnuxii,Less than 1,5 to 10,More than 25,Live birth and care,1,1000,good,3,2,3,3,3,2.7663237344451836
+ITS-Mam-180524,Cetaceans,Balaenoptera acutorostrata,Less than 1,5 to 10,More than 25,Live birth and care,1,1020,good,3,2,3,3,3,2.7663237344451836
+ITS-Mam-612592,Cetaceans,Balaenoptera bonaerensis,Less than 1,5 to 10,More than 25,Live birth and care,1,1022,good,3,2,3,3,3,2.7663237344451836
+ITS-Mam-180525,Cetaceans,Balaenoptera edeni,Less than 1,5 to 10,More than 25,Live birth and care,1,1300,good,3,2,3,3,3,2.7663237344451836
+ITS-Mam-612597,Cetaceans,Balaenoptera brydei,Less than 1,5 to 10,More than 25,Live birth and care,1,1500,good,3,2,3,3,3,2.7663237344451836
+ITS-Mam-552771,Cetaceans,Eubalaena australis,Less than 1,5 to 10,More than 25,Live birth and care,1,1600,good,3,2,3,3,3,2.7663237344451836
+ITS-Mam-180488,Cetaceans,Physeter macrocephalus,Less than 1,5 to 10,More than 25,Live birth and care,1,2070,good,3,2,3,3,3,2.7663237344451836
+ITS-Mam-180527,Cetaceans,Balaenoptera physalus,Less than 1,5 to 10,More than 25,Live birth and care,1,2700,good,3,2,3,3,3,2.7663237344451836
+ITS-Mam-180530,Cetaceans,Megaptera novaeangliae,Less than 1,Less than 5,More than 25,Live birth and care,1,1500,good,3,1,3,3,3,2.4082246852806923
+ITS-Mam-180528,Cetaceans,Balaenoptera musculus,Less than 1,Less than 5,More than 25,Live birth and care,1,3350,good,3,1,3,3,3,2.4082246852806923
+ITS-Mam-555654,Cetaceans,Delphinus delphis tropicalis,Less than 1,More than 10,More than 25,Live birth and care,3,200,good,3,3,3,3,1,2.4082246852806923
+ITS-Mam-180429,Cetaceans,Stenella longirostris,Less than 1,More than 10,More than 25,Live birth and care,3,200,good,3,3,3,3,1,2.4082246852806923
+ITS-Mam-180438,Cetaceans,Delphinus delphis,Less than 1,More than 10,More than 25,Live birth and care,3,210,good,3,3,3,3,1,2.4082246852806923
+ITS-Mam-180434,Cetaceans,Stenella coeruleoalba,Less than 1,More than 10,More than 25,Live birth and care,3,236,good,3,3,3,3,1,2.4082246852806923
+ITS-Mam-180430,Cetaceans,Stenella attenuata,Less than 1,More than 10,More than 25,Live birth and care,3,250,good,3,3,3,3,1,2.4082246852806923
+ITS-Mam-180469,Cetaceans,Orcinus orca,Less than 1,More than 10,More than 25,Live birth and care,2,800,good,3,3,3,3,2,2.7663237344451836
+ITS-Mam-180526,Cetaceans,Balaenoptera borealis,Less than 1,More than 10,More than 25,Live birth and care,1,1520,good,3,3,3,3,3,3.0000000000000004
+Fis-22814,Elasmobranchs,Pseudobatus percellens,1 to 5,5 to 10,10 to 25,Live birth unattended,3,70,decent,2,2,2,2,1,1.7411011265922482
+Fis-160439,Elasmobranchs,Squalus edmundsi,1 to 5,5 to 10,10 to 25,Live birth unattended,3,70,decent,2,2,2,2,1,1.7411011265922482
+Fis-154010,Elasmobranchs,Bythaelurus hispidus,1 to 5,5 to 10,10 to 25,Live birth unattended,3,26,poor,2,2,2,2,1,1.7411011265922482
+Fis-154012,Elasmobranchs,Bythaelurus lutarius,1 to 5,5 to 10,10 to 25,Live birth unattended,3,34,poor,2,2,2,2,1,1.7411011265922482
+Fis-140161,Elasmobranchs,Paragaleus randalli,1 to 5,5 to 10,10 to 25,Live birth unattended,3,48.3,poor,2,2,2,2,1,1.7411011265922482
+Fis-35265,Elasmobranchs,Pateobatis jenkinsii,1 to 5,5 to 10,10 to 25,Live birth unattended,3,80,poor,2,2,2,2,1,1.7411011265922482
+Fis-6035,Elasmobranchs,Urogymnus asperrimus,1 to 5,5 to 10,10 to 25,Live birth unattended,3,100,poor,2,2,2,2,1,1.7411011265922482
+Fis-27236,Elasmobranchs,Taeniurops grabatus,1 to 5,5 to 10,10 to 25,Live birth unattended,3,100,poor,2,2,2,2,1,1.7411011265922482
+Fis-28785,Elasmobranchs,Pateobatis bleekeri,1 to 5,5 to 10,10 to 25,Live birth unattended,2,105,poor,2,2,2,2,2,2
+Fis-166734,Elasmobranchs,Taeniurops meyeni,1 to 5,5 to 10,10 to 25,Live birth unattended,2,110,poor,2,2,2,2,2,2
+Fis-35264,Elasmobranchs,Pateobatis fai,1 to 5,5 to 10,10 to 25,Live birth unattended,2,115.4,poor,2,2,2,2,2,2
+Fis-29338,Elasmobranchs,Chlamydoselachus anguineus,1 to 5,5 to 10,10 to 25,Live birth unattended,2,150,poor,2,2,2,2,2,2
+Fis-54860,Elasmobranchs,Narcinops westraliensis,1 to 5,5 to 10,10 to 25,Live birth unattended,3,18,decent,2,2,2,2,1,1.7411011265922482
+Fis-28787,Elasmobranchs,Brevitrygon imbricata,1 to 5,5 to 10,10 to 25,Live birth unattended,3,20.5,decent,2,2,2,2,1,1.7411011265922482
+Fis-161457,Elasmobranchs,Narcinops ornata,1 to 5,5 to 10,10 to 25,Live birth unattended,3,24.1,decent,2,2,2,2,1,1.7411011265922482
+Fis-58409,Elasmobranchs,Narcine rierai,1 to 5,5 to 10,10 to 25,Live birth unattended,3,30.1,decent,2,2,2,2,1,1.7411011265922482
+Fis-47427,Elasmobranchs,Narcine lingula,1 to 5,5 to 10,10 to 25,Live birth unattended,3,35,decent,2,2,2,2,1,1.7411011265922482
+Fis-149485,Elasmobranchs,Narcinops lasti,1 to 5,5 to 10,10 to 25,Live birth unattended,3,36.5,decent,2,2,2,2,1,1.7411011265922482
+Fis-26903,Elasmobranchs,Narcine timlei,1 to 5,5 to 10,10 to 25,Live birth unattended,3,38,decent,2,2,2,2,1,1.7411011265922482
+Fis-54855,Elasmobranchs,Narcinops tasmaniensis,1 to 5,5 to 10,10 to 25,Live birth unattended,3,47,decent,2,2,2,2,1,1.7411011265922482
+Fis-28559,Elasmobranchs,Gymnura zonura,1 to 5,5 to 10,10 to 25,Live birth unattended,3,47.6,decent,2,2,2,2,1,1.7411011265922482
+Fis-23204,Elasmobranchs,Oxynotus bruniensis,1 to 5,5 to 10,10 to 25,Live birth unattended,3,60,decent,2,2,2,2,1,1.7411011265922482
+Fis-28555,Elasmobranchs,Himantura granulata,1 to 5,5 to 10,10 to 25,Live birth unattended,3,60,decent,2,2,2,2,1,1.7411011265922482
+Fis-161480,Elasmobranchs,Himantura leoparda,1 to 5,5 to 10,10 to 25,Live birth unattended,3,82,decent,2,2,2,2,1,1.7411011265922482
+Fis-26148,Elasmobranchs,Himantura uarnak,1 to 5,5 to 10,10 to 25,Live birth unattended,3,83,decent,2,2,2,2,1,1.7411011265922482
+Fis-28553,Elasmobranchs,Himantura undulata,1 to 5,5 to 10,10 to 25,Live birth unattended,3,87,decent,2,2,2,2,1,1.7411011265922482
+Fis-24046,Elasmobranchs,Gymnura micrura,1 to 5,5 to 10,10 to 25,Live birth unattended,3,90,decent,2,2,2,2,1,1.7411011265922482
+Fis-47368,Elasmobranchs,Gymnura australis,1 to 5,5 to 10,10 to 25,Live birth unattended,3,94,decent,2,2,2,2,1,1.7411011265922482
+Fis-23068,Elasmobranchs,Carcharhinus sealei,1 to 5,5 to 10,10 to 25,Live birth unattended,3,100,decent,2,2,2,2,1,1.7411011265922482
+Fis-24044,Elasmobranchs,Gymnura altavela,1 to 5,5 to 10,10 to 25,Live birth unattended,2,200,decent,2,2,2,2,2,2
+Fis-26932,Elasmobranchs,Gymnura poecilura,1 to 5,5 to 10,10 to 25,Live birth unattended,2,250,decent,2,2,2,2,2,2
+Fis-15849,Elasmobranchs,Gymnura natalensis,1 to 5,5 to 10,10 to 25,Live birth unattended,2,250,decent,2,2,2,2,2,2
+Fis-23198,Elasmobranchs,Odontaspis ferox,1 to 5,5 to 10,10 to 25,Live birth unattended,1,360,decent,2,2,2,2,3,2.168943542395397
+Fis-23311,Elasmobranchs,Triaenodon obesus,1 to 5,5 to 10,10 to 25,Live birth unattended,2,107,good,2,2,2,2,2,2
+Fis-23047,Elasmobranchs,Carcharhinus amblyrhynchos,1 to 5,5 to 10,10 to 25,Live birth unattended,2,130.7,good,2,2,2,2,2,2
+Fis-47835,Elasmobranchs,Carcharhinus tilstoni,1 to 5,5 to 10,10 to 25,Live birth unattended,2,200,good,2,2,2,2,2,2
+Fis-23052,Elasmobranchs,Carcharhinus cautus,1 to 5,5 to 10,10 to 25,Live birth unattended,3,91,poor,2,2,2,2,1,1.7411011265922482
+Fis-25889,Elasmobranchs,Chaenogaleus macrostoma,1 to 5,5 to 10,10 to 25,Live birth unattended,3,100,poor,2,2,2,2,1,1.7411011265922482
+Fis-32611,Elasmobranchs,Rhinoptera javanica,Less than 1,5 to 10,10 to 25,Live birth unattended,2,150,decent,3,2,2,2,2,2.168943542395397
+Fis-47352,Elasmobranchs,Megatrygon microps,Less than 1,5 to 10,10 to 25,Live birth unattended,2,200,decent,3,2,2,2,2,2.168943542395397
+Fis-32811,Elasmobranchs,Temera hardwickii,More than 5,5 to 10,10 to 25,Live birth unattended,3,15,poor,1,2,2,2,1,1.515716566510398
+Fis-33775,Elasmobranchs,Heteronarce garmani,More than 5,5 to 10,10 to 25,Live birth unattended,3,17,poor,1,2,2,2,1,1.515716566510398
+Fis-28947,Elasmobranchs,Narke dipterygia,More than 5,5 to 10,10 to 25,Live birth unattended,3,18,poor,1,2,2,2,1,1.515716566510398
+Fis-26902,Elasmobranchs,Telatrygon Zugei,More than 5,5 to 10,10 to 25,Live birth unattended,3,29,poor,1,2,2,2,1,1.515716566510398
+Fis-60598,Elasmobranchs,Fontitrygon margaritella,More than 5,5 to 10,10 to 25,Live birth unattended,3,30,poor,1,2,2,2,1,1.515716566510398
+Fis-33107,Elasmobranchs,Dasyatis marmorata,More than 5,5 to 10,10 to 25,Live birth unattended,3,30,poor,1,2,2,2,1,1.515716566510398
+Fis-25603,Elasmobranchs,Taeniura lymma,More than 5,5 to 10,10 to 25,Live birth unattended,3,35,poor,1,2,2,2,1,1.515716566510398
+Fis-58273,Elasmobranchs,Narke capensis,More than 5,5 to 10,10 to 25,Live birth unattended,3,38,poor,1,2,2,2,1,1.515716566510398
+Fis-139820,Elasmobranchs,Hypnos monopterygius,More than 5,5 to 10,10 to 25,Live birth unattended,3,40,poor,1,2,2,2,1,1.515716566510398
+Fis-160925,Elasmobranchs,Electrolux addisoni,More than 5,5 to 10,10 to 25,Live birth unattended,3,52,poor,1,2,2,2,1,1.515716566510398
+Fis-165849,Elasmobranchs,Pristiophorus nancyae,More than 5,5 to 10,10 to 25,Live birth unattended,3,61.6,poor,1,2,2,2,1,1.515716566510398
+Fis-58398,Elasmobranchs,Dasyatis chrysonota,More than 5,5 to 10,10 to 25,Live birth unattended,3,75,poor,1,2,2,2,1,1.515716566510398
+Fis-32975,Elasmobranchs,Rhina ancylostoma,More than 5,5 to 10,10 to 25,Live birth unattended,2,162,poor,1,2,2,2,2,1.7411011265922482
+Fis-24377,Elasmobranchs,Torpedo torpedo,More than 5,5 to 10,10 to 25,Live birth unattended,3,35,decent,1,2,2,2,1,1.515716566510398
+Fis-31247,Elasmobranchs,Torpedo marmorata,More than 5,5 to 10,10 to 25,Live birth unattended,3,45,decent,1,2,2,2,1,1.515716566510398
+Fis-31223,Elasmobranchs,Torpedo fuscomaculata,More than 5,5 to 10,10 to 25,Live birth unattended,3,64,decent,1,2,2,2,1,1.515716566510398
+Fis-25414,Elasmobranchs,Paragaleus pectoralis,More than 5,5 to 10,10 to 25,Live birth unattended,3,80,decent,1,2,2,2,1,1.515716566510398
+Fis-61240,Elasmobranchs,Torpedo panthera,More than 5,5 to 10,10 to 25,Live birth unattended,3,100,decent,1,2,2,2,1,1.515716566510398
+Fis-23046,Elasmobranchs,Carcharhinus amblyrhynchoides,More than 5,5 to 10,10 to 25,Live birth unattended,2,115,decent,1,2,2,2,2,1.7411011265922482
+Fis-159582,Elasmobranchs,Glaucostegus halavi,More than 5,5 to 10,10 to 25,Live birth unattended,2,120,decent,1,2,2,2,2,1.7411011265922482
+Fis-25886,Elasmobranchs,Brachaelurus waddi,More than 5,5 to 10,10 to 25,Live birth unattended,2,120,decent,1,2,2,2,2,1.7411011265922482
+Fis-23223,Elasmobranchs,Pristiophorus cirratus,More than 5,5 to 10,10 to 25,Live birth unattended,2,125,decent,1,2,2,2,2,1.7411011265922482
+Fis-32610,Elasmobranchs,Torpedo sinuspersici,More than 5,5 to 10,10 to 25,Live birth unattended,2,130,decent,1,2,2,2,2,1.7411011265922482
+Fis-29481,Elasmobranchs,Pliotrema warreni,More than 5,5 to 10,10 to 25,Live birth unattended,2,150,decent,1,2,2,2,2,1.7411011265922482
+Fis-148497,Elasmobranchs,Lamiopsis temminckii,More than 5,5 to 10,10 to 25,Live birth unattended,2,170,decent,1,2,2,2,2,1.7411011265922482
+Fis-23057,Elasmobranchs,Carcharhinus hemiodon,More than 5,5 to 10,10 to 25,Live birth unattended,2,200,decent,1,2,2,2,2,1.7411011265922482
+Fis-159584,Elasmobranchs,Glaucostegus typus,More than 5,5 to 10,10 to 25,Live birth unattended,2,270,decent,1,2,2,2,2,1.7411011265922482
+Fis-159583,Elasmobranchs,Glaucostegus granulatus,More than 5,5 to 10,10 to 25,Live birth unattended,2,280,decent,1,2,2,2,2,1.7411011265922482
+Fis-28552,Elasmobranchs,Glaucostegus thouin,More than 5,5 to 10,10 to 25,Live birth unattended,2,300,decent,1,2,2,2,2,1.7411011265922482
+Fis-23060,Elasmobranchs,Carcharhinus limbatus,More than 5,5 to 10,10 to 25,Live birth unattended,2,165,good,1,2,2,2,2,1.7411011265922482
+Fis-23061,Elasmobranchs,Carcharhinus longimanus,More than 5,5 to 10,10 to 25,Live birth unattended,2,187,good,1,2,2,2,2,1.7411011265922482
+Fis-23222,Elasmobranchs,Prionace glauca,More than 5,5 to 10,10 to 25,Live birth unattended,2,195.5,good,1,2,2,2,2,1.7411011265922482
+Fis-23054,Elasmobranchs,Carcharhinus falciformis,More than 5,5 to 10,10 to 25,Live birth unattended,2,228,good,1,2,2,2,2,1.7411011265922482
+Fis-23056,Elasmobranchs,Carcharhinus galapagensis,More than 5,5 to 10,10 to 25,Live birth unattended,2,300,good,1,2,2,2,2,1.7411011265922482
+Fis-54720,Elasmobranchs,Aptychotrema vincentiana,More than 5,5 to 10,10 to 25,Live birth unattended,3,84,poor,1,2,2,2,1,1.515716566510398
+Fis-166946,Elasmobranchs,Maculabatis randalli,1 to 5,Less than 5,10 to 25,Live birth unattended,3,40,poor,2,1,2,2,1,1.515716566510398
+Fis-161488,Elasmobranchs,Maculabatis astra,1 to 5,Less than 5,10 to 25,Live birth unattended,3,43.5,poor,2,1,2,2,1,1.515716566510398
+Fis-47488,Elasmobranchs,Maculabatis gerrardi,1 to 5,Less than 5,10 to 25,Live birth unattended,3,48,poor,2,1,2,2,1,1.515716566510398
+Fis-47495,Elasmobranchs,Maculabatis toshi,1 to 5,Less than 5,10 to 25,Live birth unattended,3,86,poor,2,1,2,2,1,1.515716566510398
+Fis-30995,Elasmobranchs,Hexatrygon bickelli,1 to 5,Less than 5,10 to 25,Live birth unattended,2,143,poor,2,1,2,2,2,1.7411011265922482
+Fis-26519,Elasmobranchs,Plesiobatis daviesi,1 to 5,Less than 5,10 to 25,Live birth unattended,2,200,poor,2,1,2,2,2,1.7411011265922482
+Fis-161491,Elasmobranchs,Neotrygon picta,1 to 5,Less than 5,10 to 25,Live birth unattended,3,24,decent,2,1,2,2,1,1.515716566510398
+Fis-161495,Elasmobranchs,Neotrygon leylandi,1 to 5,Less than 5,10 to 25,Live birth unattended,3,25,decent,2,1,2,2,1,1.515716566510398
+Fis-161494,Elasmobranchs,Neotrygon kuhlii,1 to 5,Less than 5,10 to 25,Live birth unattended,3,27.6,decent,2,1,2,2,1,1.515716566510398
+Fis-61406,Elasmobranchs,Urolophus orarius,1 to 5,Less than 5,10 to 25,Live birth unattended,3,31,decent,2,1,2,2,1,1.515716566510398
+Fis-161470,Elasmobranchs,Trygonoptera galba,1 to 5,Less than 5,10 to 25,Live birth unattended,3,33,decent,2,1,2,2,1,1.515716566510398
+Fis-61410,Elasmobranchs,Urolophus westraliensis,1 to 5,Less than 5,10 to 25,Live birth unattended,3,36,decent,2,1,2,2,1,1.515716566510398
+Fis-47425,Elasmobranchs,Urolophus viridis,1 to 5,Less than 5,10 to 25,Live birth unattended,3,44,decent,2,1,2,2,1,1.515716566510398
+Fis-161493,Elasmobranchs,Neotrygon annotata,1 to 5,Less than 5,10 to 25,Live birth unattended,3,45,decent,2,1,2,2,1,1.515716566510398
+Fis-54647,Elasmobranchs,Urolophus expansus,1 to 5,Less than 5,10 to 25,Live birth unattended,3,47,decent,2,1,2,2,1,1.515716566510398
+Fis-53171,Elasmobranchs,Urolophus cruciatus,1 to 5,Less than 5,10 to 25,Live birth unattended,3,50,decent,2,1,2,2,1,1.515716566510398
+Fis-54691,Elasmobranchs,Urolophus paucimaculatus,1 to 5,Less than 5,10 to 25,Live birth unattended,3,57,decent,2,1,2,2,1,1.515716566510398
+Fis-34717,Elasmobranchs,Urolophus flavomosaicus,1 to 5,Less than 5,10 to 25,Live birth unattended,3,59,decent,2,1,2,2,1,1.515716566510398
+Fis-25062,Elasmobranchs,Myliobatis aquila,1 to 5,Less than 5,10 to 25,Live birth unattended,3,60,decent,2,1,2,2,1,1.515716566510398
+Fis-61250,Elasmobranchs,Trygonoptera ovalis,1 to 5,Less than 5,10 to 25,Live birth unattended,3,61,decent,2,1,2,2,1,1.515716566510398
+Fis-27676,Elasmobranchs,Aetomylaeus nichofii,1 to 5,Less than 5,10 to 25,Live birth unattended,3,65,decent,2,1,2,2,1,1.515716566510398
+Fis-161466,Elasmobranchs,Trygonoptera imitata,1 to 5,Less than 5,10 to 25,Live birth unattended,3,68.9,decent,2,1,2,2,1,1.515716566510398
+Fis-27240,Elasmobranchs,Aetobatus flagellum,1 to 5,Less than 5,10 to 25,Live birth unattended,3,72,decent,2,1,2,2,1,1.515716566510398
+Fis-20033,Elasmobranchs,Pteroplatytrygon violacea,1 to 5,Less than 5,10 to 25,Live birth unattended,3,80,decent,2,1,2,2,1,1.515716566510398
+Fis-47420,Elasmobranchs,Urolophus bucculentus,1 to 5,Less than 5,10 to 25,Live birth unattended,3,80,decent,2,1,2,2,1,1.515716566510398
+Fis-169677,Elasmobranchs,Carcharhinus humani,1 to 5,Less than 5,10 to 25,Live birth unattended,3,84.4,decent,2,1,2,2,1,1.515716566510398
+Fis-32960,Elasmobranchs,Myliobatis tenuicaudatus,1 to 5,Less than 5,10 to 25,Live birth unattended,2,120,decent,2,1,2,2,2,1.7411011265922482
+Fis-28561,Elasmobranchs,Aetomylaeus milvus,1 to 5,Less than 5,10 to 25,Live birth unattended,2,123,decent,2,1,2,2,2,1.7411011265922482
+Fis-170784,Elasmobranchs,Aetomylaeus bovinus,1 to 5,Less than 5,10 to 25,Live birth unattended,2,150,decent,2,1,2,2,2,1.7411011265922482
+Fis-28560,Elasmobranchs,Aetomylaeus maculatus,1 to 5,Less than 5,10 to 25,Live birth unattended,2,200,decent,2,1,2,2,2,1.7411011265922482
+Fis-28562,Elasmobranchs,Aetomylaeus vespertilio,1 to 5,Less than 5,10 to 25,Live birth unattended,2,240,decent,2,1,2,2,2,1.7411011265922482
+Fis-23322,Elasmobranchs,Aetobatus narinari,1 to 5,Less than 5,10 to 25,Live birth unattended,1,330,decent,2,1,2,2,3,1.888175022589804
+Fis-28563,Elasmobranchs,Aetobatus ocellatus,1 to 5,Less than 5,10 to 25,Live birth unattended,1,350,decent,2,1,2,2,3,1.888175022589804
+Fis-29436,Elasmobranchs,Loxodon macrorhinus,1 to 5,Less than 5,10 to 25,Live birth unattended,3,98,good,2,1,2,2,1,1.515716566510398
+Fis-23070,Elasmobranchs,Carcharhinus sorrah,1 to 5,Less than 5,10 to 25,Live birth unattended,2,130,good,2,1,2,2,2,1.7411011265922482
+Fis-23062,Elasmobranchs,Carcharhinus macloti,1 to 5,less than 5,10 to 25,Live birth unattended,3,70,poor,2,1,2,2,1,1.515716566510398
+Fis-26906,Elasmobranchs,Anoxypristis cuspidata,More than 5,Less than 5,10 to 25,Live birth unattended,1,470,poor,1,1,2,2,3,1.6437518295172258
+Fis-25903,Elasmobranchs,Iago omanensis,More than 5,Less than 5,10 to 25,Live birth unattended,3,37,decent,1,1,2,2,1,1.3195079107728942
+Fis-159136,Elasmobranchs,Rhinobatos sainsburyi,More than 5,Less than 5,10 to 25,Live birth unattended,3,59.5,decent,1,1,2,2,1,1.3195079107728942
+Fis-31600,Elasmobranchs,Mustelus manazo,More than 5,Less than 5,10 to 25,Live birth unattended,3,68,decent,1,1,2,2,1,1.3195079107728942
+Fis-160464,Elasmobranchs,Mustelus ravidus,More than 5,Less than 5,10 to 25,Live birth unattended,3,68.3,decent,1,1,2,2,1,1.3195079107728942
+Fis-31589,Elasmobranchs,Iago garricki,More than 5,Less than 5,10 to 25,Live birth unattended,3,75,decent,1,1,2,2,1,1.3195079107728942
+Fis-47714,Elasmobranchs,Acroteriobatus ocellatus,More than 5,Less than 5,10 to 25,Live birth unattended,3,81,decent,1,1,2,2,1,1.3195079107728942
+Fis-57444,Elasmobranchs,Rhinobatos punctifer,More than 5,Less than 5,10 to 25,Live birth unattended,3,88,decent,1,1,2,2,1,1.3195079107728942
+Fis-161402,Elasmobranchs,Mustelus stevensi,More than 5,Less than 5,10 to 25,Live birth unattended,3,91.9,decent,1,1,2,2,1,1.3195079107728942
+Fis-32609,Elasmobranchs,Rhinobatos schlegelii,More than 5,Less than 5,10 to 25,Live birth unattended,3,100,decent,1,1,2,2,1,1.3195079107728942
+Fis-32608,Elasmobranchs,Acroteriobatus blochii,More than 5,Less than 5,10 to 25,Live birth unattended,3,100,decent,1,1,2,2,1,1.3195079107728942
+Fis-156398,Elasmobranchs,Hemigaleus australiensis,More than 5,Less than 5,10 to 25,Live birth unattended,2,110,decent,1,1,2,2,2,1.515716566510398
+Fis-25900,Elasmobranchs,Furgaleus macki,More than 5,Less than 5,10 to 25,Live birth unattended,2,112,decent,1,1,2,2,2,1.515716566510398
+Fis-31570,Elasmobranchs,Hemigaleus microstoma,More than 5,Less than 5,10 to 25,Live birth unattended,2,114,decent,1,1,2,2,2,1.515716566510398
+Fis-31594,Elasmobranchs,Mustelus palumbes,More than 5,Less than 5,10 to 25,Live birth unattended,2,120,decent,1,1,2,2,2,1.515716566510398
+Fis-33777,Elasmobranchs,Rhinobatos holcorhynchus,More than 5,Less than 5,10 to 25,Live birth unattended,2,127,decent,1,1,2,2,2,1.515716566510398
+Fis-25902,Elasmobranchs,Hypogaleus hyugaensis,More than 5,Less than 5,10 to 25,Live birth unattended,2,127,decent,1,1,2,2,2,1.515716566510398
+Fis-31408,Elasmobranchs,Acroteriobatus annulatus,More than 5,Less than 5,10 to 25,Live birth unattended,2,140,decent,1,1,2,2,2,1.515716566510398
+Fis-48194,Elasmobranchs,Hemipristis elongata,More than 5,Less than 5,10 to 25,Live birth unattended,2,200,decent,1,1,2,2,2,1.515716566510398
+Fis-161456,Elasmobranchs,Rhynchobatus palpebratus,More than 5,Less than 5,10 to 25,Live birth unattended,2,262,decent,1,1,2,2,2,1.515716566510398
+Fis-25664,Elasmobranchs,Rhynchobatus djiddensis,More than 5,Less than 5,10 to 25,Live birth unattended,1,310,decent,1,1,2,2,3,1.6437518295172258
+Fis-25412,Elasmobranchs,Mustelus mustelus,More than 5,Less than 5,10 to 25,Live birth unattended,3,100,good,1,1,2,2,1,1.3195079107728942
+Fis-31602,Elasmobranchs,Mustelus antarcticus,More than 5,Less than 5,10 to 25,Live birth unattended,2,130,good,1,1,2,2,2,1.515716566510398
+Fis-23055,Elasmobranchs,Carcharhinus fitzroyensis,More than 5,Less than 5,10 to 25,Live birth unattended,2,135,good,1,1,2,2,2,1.515716566510398
+Fis-31568,Elasmobranchs,Alopias pelagicus,1 to 5,More than 10,10 to 25,Live birth unattended,2,276,good,2,3,2,2,2,2.168943542395397
+Fis-23899,Elasmobranchs,Alopias vulpinus,1 to 5,More than 10,10 to 25,Live birth unattended,1,303,good,2,3,2,2,3,2.352158045049347
+Fis-23898,Elasmobranchs,Alopias superciliosus,1 to 5,More than 10,10 to 25,Live birth unattended,1,350,good,2,3,2,2,3,2.352158045049347
+Fis-23045,Elasmobranchs,Carcharhinus altimus,More than 5,More than 10,10 to 25,Live birth unattended,2,226,good,1,3,2,2,2,1.888175022589804
+Fis-25888,Elasmobranchs,Nebrius ferrugineus,More than 5,More than 10,10 to 25,Live birth unattended,2,250,good,1,3,2,2,2,1.888175022589804
+Fis-29485,Elasmobranchs,Pristiophorus nudipinnis,More than 5,5 to 10,Less than 10,Live birth unattended,2,122,decent,1,2,1,2,2,1.515716566510398
+Fis-23053,Elasmobranchs,Carcharhinus dussumieri,1 to 5,Less than 5,Less than 10,Live birth unattended,2,121,decent,2,1,1,2,2,1.515716566510398
+Fis-25899,Elasmobranchs,Pseudocarcharias kamoharai,1 to 5,Less than 5,Less than 10,Live birth unattended,3,91.6,good,2,1,1,2,1,1.3195079107728942
+Fis-29500,Elasmobranchs,Rhizoprionodon oligolinx,More than 5,Less than 5,Less than 10,Live birth unattended,3,65,decent,1,1,1,2,1,1.148698354997035
+Fis-23239,Elasmobranchs,Rhizoprionodon acutus,More than 5,Less than 5,Less than 10,Live birth unattended,2,110,decent,1,1,1,2,2,1.3195079107728942
+Fis-23243,Elasmobranchs,Rhizoprionodon taylori,More than 5,Less than 5,Less than 10,Live birth unattended,3,69,good,1,1,1,2,1,1.148698354997035
+Fis-29505,Elasmobranchs,Scoliodon laticaudus,More than 5,Less than 5,Less than 10,Live birth unattended,3,100,good,1,1,1,2,1,1.148698354997035
+Fis-21801,Elasmobranchs,Pastinachus sephen,1 to 5,5 to 10,More than 25,Live birth unattended,3,65,decent,2,2,3,2,1,1.888175022589804
+Fis-29547,Elasmobranchs,Squatina tergocellata,1 to 5,5 to 10,More than 25,Live birth unattended,2,120,decent,2,2,3,2,2,2.168943542395397
+Fis-23063,Elasmobranchs,Carcharhinus melanopterus,1 to 5,5 to 10,More than 25,Live birth unattended,2,200,good,2,2,3,2,2,2.168943542395397
+Fis-29388,Elasmobranchs,Carcharias taurus,1 to 5,5 to 10,More than 25,Live birth unattended,2,250,good,2,2,3,2,2,2.168943542395397
+Fis-22747,Elasmobranchs,Cetorhinus maximus,1 to 5,5 to 10,More than 25,Live birth unattended,1,1520,good,2,2,3,2,3,2.352158045049347
+Fis-61508,Elasmobranchs,Mobula kuhlii,Less than 1,5 to 10,More than 25,Live birth unattended,2,115,decent,3,2,3,2,2,2.352158045049347
+Fis-24127,Elasmobranchs,Mobula thurstoni,Less than 1,5 to 10,More than 25,Live birth unattended,2,150,decent,3,2,3,2,2,2.352158045049347
+Fis-21798,Elasmobranchs,Mobula mobula,Less than 1,5 to 10,More than 25,Live birth unattended,2,225,decent,3,2,3,2,2,2.352158045049347
+Fis-35514,Elasmobranchs,Mobula tarapacana,Less than 1,5 to 10,More than 25,Live birth unattended,2,250,decent,3,2,3,2,2,2.352158045049347
+Fis-24098,Elasmobranchs,Mobula birostris,Less than 1,5 to 10,More than 25,Live birth unattended,1,450,decent,3,2,3,2,3,2.550849001251582
+Fis-163295,Elasmobranchs,Mobula alfredi,Less than 1,5 to 10,More than 25,Live birth unattended,1,380,good,3,2,3,2,3,2.550849001251582
+Fis-23113,Elasmobranchs,Echinorhinus brucus,More than 5,5 to 10,More than 25,Live birth unattended,1,310,poor,1,2,3,2,3,2.0476725110792193
+Fis-61614,Elasmobranchs,Scymnodalatias albicauda,More than 5,5 to 10,More than 25,Live birth unattended,2,111,decent,1,2,3,2,2,1.888175022589804
+Fis-23993,Elasmobranchs,Bathytoshia centroura,More than 5,5 to 10,More than 25,Live birth unattended,2,120,decent,1,2,3,2,2,1.888175022589804
+Fis-26085,Elasmobranchs,Bathytoshia brevicaudata,More than 5,5 to 10,More than 25,Live birth unattended,2,200,decent,1,2,3,2,2,1.888175022589804
+Fis-32598,Elasmobranchs,Bathytoshia Lata,More than 5,5 to 10,More than 25,Live birth unattended,1,400,decent,1,2,3,2,3,2.0476725110792193
+Fis-160378,Elasmobranchs,Squalus montalbani,More than 5,5 to 10,More than 25,Live birth unattended,3,84,good,1,2,3,2,1,1.6437518295172258
+Fis-29532,Elasmobranchs,Squalus acanthias,More than 5,5 to 10,More than 25,Live birth unattended,3,100,good,1,2,3,2,1,1.6437518295172258
+Fis-23128,Elasmobranchs,Eusphyra blochii,More than 5,5 to 10,More than 25,Live birth unattended,2,186,good,1,2,3,2,2,1.888175022589804
+Fis-23059,Elasmobranchs,Carcharhinus leucas,More than 5,5 to 10,More than 25,Live birth unattended,2,193,good,1,2,3,2,2,1.888175022589804
+Fis-23066,Elasmobranchs,Carcharhinus plumbeus,More than 5,5 to 10,More than 25,Live birth unattended,2,200,good,1,2,3,2,2,1.888175022589804
+Fis-23051,Elasmobranchs,Carcharhinus brevipinna,More than 5,5 to 10,More than 25,Live birth unattended,2,210,good,1,2,3,2,2,1.888175022589804
+Fis-23273,Elasmobranchs,Sphyrna lewini,More than 5,5 to 10,More than 25,Live birth unattended,1,360,good,1,2,3,2,3,2.0476725110792193
+Fis-23274,Elasmobranchs,Sphyrna mokarran,More than 5,5 to 10,More than 25,Live birth unattended,1,370,good,1,2,3,2,3,2.0476725110792193
+Fis-23277,Elasmobranchs,Sphyrna zygaena,More than 5,5 to 10,More than 25,Live birth unattended,1,380,good,1,2,3,2,3,2.0476725110792193
+Fis-32599,Elasmobranchs,Pristis zijsron,More than 5,5 to 10,More than 25,Live birth unattended,1,550,good,1,2,3,2,3,2.0476725110792193
+Fis-27224,Elasmobranchs,Pristis pristis,More than 5,5 to 10,More than 25,Live birth unattended,1,600,good,1,2,3,2,3,2.0476725110792193
+Fis-29540,Elasmobranchs,Squatina australis,More than 5,5 to 10,More than 25,Live birth unattended,2,152,poor,1,2,3,2,2,1.888175022589804
+Fis-31577,Elasmobranchs,Megachasma pelagios,1 to 5,5 to 10,More than 25,Live birth unattended,1,540,poor,2,2,3,2,3,2.352158045049347
+Fis-159586,Elasmobranchs,Squalus crassispinus,1 to 5,More than 10,More than 25,Live birth unattended,3,47.6,poor,2,3,3,2,1,2.0476725110792193
+Fis-160444,Elasmobranchs,Squalus nasutus,1 to 5,More than 10,More than 25,Live birth unattended,3,50,poor,2,3,3,2,1,2.0476725110792193
+Fis-160691,Elasmobranchs,Squalus hemipinnis,1 to 5,More than 10,More than 25,Live birth unattended,3,52,poor,2,3,3,2,1,2.0476725110792193
+Fis-23260,Elasmobranchs,Somniosus rostratus,1 to 5,More than 10,More than 25,Live birth unattended,2,143,poor,2,3,3,2,2,2.352158045049347
+Fis-23044,Elasmobranchs,Carcharhinus albimarginatus,1 to 5,More than 10,More than 25,Live birth unattended,2,200,poor,2,3,3,2,2,2.352158045049347
+Fis-23280,Elasmobranchs,Squalus megalops,1 to 5,More than 10,More than 25,Live birth unattended,3,72,good,2,3,3,2,1,2.0476725110792193
+Fis-29536,Elasmobranchs,Squalus mitsukurii,1 to 5,More than 10,More than 25,Live birth unattended,3,76,good,2,3,3,2,1,2.0476725110792193
+Fis-25905,Elasmobranchs,Triakis megalopterus,1 to 5,More than 10,More than 25,Live birth unattended,2,145,good,2,3,3,2,2,2.352158045049347
+Fis-22768,Elasmobranchs,Lamna nasus,1 to 5,More than 10,More than 25,Live birth unattended,2,175,good,2,3,3,2,2,2.352158045049347
+Fis-29423,Elasmobranchs,Isurus paucus,1 to 5,More than 10,More than 25,Live birth unattended,2,215,good,2,3,3,2,2,2.352158045049347
+Fis-58485,Elasmobranchs,Isurus oxyrinchus,1 to 5,More than 10,More than 25,Live birth unattended,2,277.5,good,2,3,3,2,2,2.352158045049347
+Fis-23071,Elasmobranchs,Carcharodon carcharias,1 to 5,More than 10,More than 25,Live birth unattended,1,600,good,2,3,3,2,3,2.550849001251582
+Fis-29321,Elasmobranchs,Centrophorus moluccensis,Less than 1,More than 10,More than 25,Live birth unattended,3,100,decent,3,3,3,2,1,2.22064303492292
+Fis-23077,Elasmobranchs,Centrophorus uyato,Less than 1,More than 10,More than 25,Live birth unattended,2,110,decent,3,3,3,2,2,2.550849001251582
+Fis-23075,Elasmobranchs,Centrophorus granulosus,Less than 1,More than 10,More than 25,Live birth unattended,2,170,decent,3,3,3,2,2,2.550849001251582
+Fis-29319,Elasmobranchs,Centrophorus harrissoni,Less than 1,More than 10,More than 25,Live birth unattended,2,111,good,3,3,3,2,2,2.550849001251582
+Fis-131127,Elasmobranchs,Centrophorus atromarginatus,Less than 1,More than 10,More than 25,Live birth unattended,3,87,poor,3,3,3,2,1,2.22064303492292
+Fis-29531,Elasmobranchs,Squaliolus laticaudus,More than 5,More than 10,More than 25,Live birth unattended,3,22,poor,1,3,3,2,1,1.7826024579660034
+Fis-23127,Elasmobranchs,Euprotomicrus bispinatus,More than 5,More than 10,More than 25,Live birth unattended,3,23,poor,1,3,3,2,1,1.7826024579660034
+Fis-29421,Elasmobranchs,Isistius plutodus,More than 5,More than 10,More than 25,Live birth unattended,3,42,poor,1,3,3,2,1,1.7826024579660034
+Fis-23149,Elasmobranchs,Heptranchias perlo,More than 5,More than 10,More than 25,Live birth unattended,3,100,poor,1,3,3,2,1,1.7826024579660034
+Fis-23074,Elasmobranchs,Centroscymnus crepidater,More than 5,More than 10,More than 25,Live birth unattended,2,130,poor,1,3,3,2,2,2.0476725110792193
+Fis-161453,Elasmobranchs,Glyphis garricki,More than 5,More than 10,More than 25,Live birth unattended,2,145,poor,1,3,3,2,2,2.0476725110792193
+Fis-23138,Elasmobranchs,Glyphis gangeticus,More than 5,More than 10,More than 25,Live birth unattended,2,204,poor,1,3,3,2,2,2.0476725110792193
+Fis-29367,Elasmobranchs,Echinorhinus cookei,More than 5,More than 10,More than 25,Live birth unattended,2,275,poor,1,3,3,2,2,2.0476725110792193
+Fis-166044,Elasmobranchs,Etmopterus sculptus,More than 5,More than 10,More than 25,Live birth unattended,3,50,decent,1,3,3,2,1,1.7826024579660034
+Fis-29385,Elasmobranchs,Etmopterus sentosus,More than 5,More than 10,More than 25,Live birth unattended,3,27,decent,1,3,3,2,1,1.7826024579660034
+Fis-29380,Elasmobranchs,Etmopterus gracilispinis,More than 5,More than 10,More than 25,Live birth unattended,3,35,decent,1,3,3,2,1,1.7826024579660034
+Fis-23124,Elasmobranchs,Etmopterus spinax,More than 5,More than 10,More than 25,Live birth unattended,3,45,decent,1,3,3,2,1,1.7826024579660034
+Fis-154456,Elasmobranchs,Hemitrygon bennetti,More than 5,More than 10,More than 25,Live birth unattended,3,50,decent,1,3,3,2,1,1.7826024579660034
+Fis-161473,Elasmobranchs,Hemitrygon parvonigra,More than 5,More than 10,More than 25,Live birth unattended,3,51,decent,1,3,3,2,1,1.7826024579660034
+Fis-58162,Elasmobranchs,Etmopterus bigelowi,More than 5,More than 10,More than 25,Live birth unattended,3,56,decent,1,3,3,2,1,1.7826024579660034
+Fis-29459,Elasmobranchs,Orectolobus wardi,More than 5,More than 10,More than 25,Live birth unattended,3,63,decent,1,3,3,2,1,1.7826024579660034
+Fis-160886,Elasmobranchs,Orectolobus floridus,More than 5,More than 10,More than 25,Live birth unattended,3,75,decent,1,3,3,2,1,1.7826024579660034
+Fis-160862,Elasmobranchs,Squatina pseudocellata,More than 5,More than 10,More than 25,Live birth unattended,3,75,decent,1,3,3,2,1,1.7826024579660034
+Fis-29539,Elasmobranchs,Squatina africana,More than 5,More than 10,More than 25,Live birth unattended,3,80,decent,1,3,3,2,1,1.7826024579660034
+Fis-160887,Elasmobranchs,Orectolobus parvimaculatus,More than 5,More than 10,More than 25,Live birth unattended,3,88.5,decent,1,3,3,2,1,1.7826024579660034
+Fis-23292,Elasmobranchs,Sutorectus tentaculatus,More than 5,More than 10,More than 25,Live birth unattended,3,92,decent,1,3,3,2,1,1.7826024579660034
+Fis-23278,Elasmobranchs,Cirrhigaleus asper,More than 5,More than 10,More than 25,Live birth unattended,2,110,decent,1,3,3,2,2,2.0476725110792193
+Fis-159132,Elasmobranchs,Orectolobus hutchinsi,More than 5,More than 10,More than 25,Live birth unattended,2,149,decent,1,3,3,2,2,2.0476725110792193
+Fis-29416,Elasmobranchs,Hexanchus nakamurai,More than 5,More than 10,More than 25,Live birth unattended,2,160,decent,1,3,3,2,2,2.0476725110792193
+Fis-23201,Elasmobranchs,Orectolobus maculatus,More than 5,More than 10,More than 25,Live birth unattended,2,180,decent,1,3,3,2,2,2.0476725110792193
+Fis-23126,Elasmobranchs,Eucrossorhinus dasypogon,More than 5,More than 10,More than 25,Live birth unattended,2,180,decent,1,3,3,2,2,2.0476725110792193
+Fis-23101,Elasmobranchs,Dalatias licha,More than 5,More than 10,More than 25,Live birth unattended,2,182,decent,1,3,3,2,2,2.0476725110792193
+Fis-23193,Elasmobranchs,Negaprion acutidens,More than 5,More than 10,More than 25,Live birth unattended,2,230,decent,1,3,3,2,2,2.0476725110792193
+Fis-23202,Elasmobranchs,Orectolobus ornatus,More than 5,More than 10,More than 25,Live birth unattended,2,290,decent,1,3,3,2,2,2.0476725110792193
+Fis-23157,Elasmobranchs,Hexanchus griseus,More than 5,More than 10,More than 25,Live birth unattended,1,441,decent,1,3,3,2,3,2.22064303492292
+Fis-24153,Elasmobranchs,Notorynchus cepedianus,More than 5,More than 10,More than 25,Live birth unattended,2,150,good,1,3,3,2,2,2.0476725110792193
+Fis-25233,Elasmobranchs,Galeorhinus galeus,More than 5,More than 10,More than 25,Live birth unattended,2,160,good,1,3,3,2,2,2.0476725110792193
+Fis-23048,Elasmobranchs,Carcharhinus amboinensis,More than 5,More than 10,More than 25,Live birth unattended,2,213,good,1,3,3,2,2,2.0476725110792193
+Fis-23050,Elasmobranchs,Carcharhinus brachyurus,More than 5,More than 10,More than 25,Live birth unattended,2,230,good,1,3,3,2,2,2.0476725110792193
+Fis-23064,Elasmobranchs,Carcharhinus obscurus,More than 5,More than 10,More than 25,Live birth unattended,2,235,good,1,3,3,2,2,2.0476725110792193
+Fis-23129,Elasmobranchs,Galeocerdo cuvier,More than 5,More than 10,More than 25,Live birth unattended,1,500,good,1,3,3,2,3,2.22064303492292
+Fis-30583,Elasmobranchs,Rhincodon typus,More than 5,More than 10,More than 25,Live birth unattended,1,1000,good,1,3,3,2,3,2.22064303492292
+Fis-31578,Elasmobranchs,Mitsukurina owstoni,1 to 5,More than 10,More than 25,Live birth unattended,1,410,decent,2,3,3,2,3,2.550849001251582
