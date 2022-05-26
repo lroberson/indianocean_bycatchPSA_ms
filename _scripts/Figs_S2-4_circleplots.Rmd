@@ -1,0 +1,194 @@
+---
+title: "SI_Fig_gear_circles"
+author: "Leslie Roberson"
+date: "16/02/2022"
+output: html_document
+---
+
+This is a supplementary figure with 3 circular bar plots:
+
+- one for each gear
+- Vulnerability score per species arranged in desc order
+- bars colored by tax group
+- species names in BOLD if that species DOES appear in IOTC bycatch reports (will be a minority)
+
+```{r setup, include=FALSE}
+
+library(readxl)
+library(janitor)
+library(pillar)
+library(tidyverse)
+library(ggrepel)
+library(ggsci)
+library(ggpubr)
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Make plot data
+
+combine species results with lit review (empirical data only)
+
+```{r data prep}
+
+## load vulnerability summary 
+V<- read_csv(here("_results/Vulnerability/V_scores.csv"))
+glimpse(V)
+
+## fix any capitalization issues in AM database
+V <- V %>% mutate(scientific_name=stringr::str_to_sentence(scientific_name))
+
+## load bycatch lit review
+gnd.lit <- read_excel("_data/IO_bycatchreports_litreview_copy.xlsx", sheet = 2)
+llt.lit <- read_excel("_data/IO_bycatchreports_litreview_copy.xlsx", sheet = 3)
+pst.lit <- read_excel("_data/IO_bycatchreports_litreview_copy.xlsx", sheet = 4)
+
+##><>< prep data
+
+## combine gears
+gnd.lit$gear <- "GND"
+pst.lit$gear <- "PST"
+llt.lit$gear <- "LLT"
+gears.lit <- bind_rows(gnd.lit, pst.lit, llt.lit) %>%
+  mutate(species_id=stringr::str_replace_all(species_id, "_", "-"))
+glimpse(gears.lit)
+gears.lit$iotc_reports <- "yes"
+
+## match on spp ID
+glimpse(V)
+gears.dat <- V %>%
+  dplyr::select(c(species_id, tax_group, V, V123, gear, scientific_name)) %>%
+  left_join(gears.lit, by = c("scientific_name","species_id","gear")) %>%
+  dplyr::select(-comments)
+glimpse(gears.dat)
+gears.dat %>% tabyl(iotc_reports)
+# iotc_reports   n  percent   valid_percent
+#         yes  67 0.09178082             1
+#        <NA> 663 0.90821918            NA
+## IOTC reports factor
+gears.dat$iotc_reports <- replace_na(gears.dat$iotc_reports, "no")
+
+gears.dat <- gears.dat %>%
+  group_by(gear) %>%
+  mutate(V_rank_gear=dense_rank(desc(V)),
+         V123_rank_gear=dense_rank(desc(V123)))
+
+## save plot data
+write_csv(gears.dat, 
+          here("_results/figures/SI_figs2-4_data.csv"))
+
+```
+
+## Prep plot
+
+```{r prep plot}
+
+gears.dat <- read_csv(here("_results/figures/SI_figs2-4_data.csv"))
+glimpse(gears.dat)
+
+## Make factors
+gears.dat <- gears.dat %>% mutate(tax_group=as_factor(tax_group))
+levels(gears.dat$tax_group)
+#      "Cetaceans"     "Sea turtles"   "Elasmobranchs" 
+pal_taxgrp <- c("navy", "olivedrab4", "slategray4")
+
+## circle theme
+circle_theme <- theme(axis.line=element_blank(),
+                      axis.text.y=element_blank(),
+                      axis.ticks=element_blank(),
+                      axis.title.x=element_blank(),
+                      axis.title.y=element_blank(),
+                      legend.position="none",
+                      panel.background=element_blank(),
+                      panel.border=element_blank(),
+                      panel.grid.major=element_blank(),
+                      panel.grid.minor=element_blank(),
+                      plot.background=element_blank(),
+                      axis.text.x = element_blank())
+
+##<>><> Prepare plot data
+
+## Do one at a time bc they're too big to facet
+glimpse(gears.dat)
+#data <- gears.dat %>% filter(gear=="GND") %>% distinct() %>% filter(V>=2.5)
+  #top_n(150, V123) 
+#data <- gears.dat %>% filter(gear=="PST") %>% distinct() %>% filter(V>=2.5)
+data <- gears.dat %>% filter(gear=="LLT") %>% distinct() %>% filter(V>=2.5)
+summary(data$V)
+
+# Set a number of 'empty bar' to add at the end 
+empty_bar <- 3
+to_add <- data.frame(matrix(NA, empty_bar*nlevels(data$tax_group), ncol(data)) )
+colnames(to_add) <- colnames(data)
+to_add$taxa_group <- rep(levels(data$tax_group), each=empty_bar)
+data <- rbind(data, to_add)
+
+## arrange by V
+data <- data %>% arrange(desc(V))
+data$id <- seq(1, nrow(data))
+
+# Get the name and the y position of each label
+label_data <- data
+number_of_bar <- nrow(label_data)
+angle <- 90-360*(label_data$id-0.5) /number_of_bar  # substract 0.5 because the letter must have the angle of the center of the bars. Not extreme right(1) or extreme left (0)
+label_data$hjust <- ifelse(angle < -90, 1, 0)
+label_data$angle <- ifelse(angle < -90, angle+180, angle)
+
+# prepare a data frame for base lines
+base_data <- data %>% 
+  group_by(taxa_group) %>% 
+  summarize(start=min(id), end=max(id) - empty_bar) %>% 
+  rowwise() %>% 
+  mutate(title=mean(c(start, end)))
+
+# prepare a data frame for grid (scales)
+grid_data <- base_data
+grid_data$end <- grid_data$end[ c(nrow(grid_data), 1:nrow(grid_data)-1)] + 1
+grid_data$start <- grid_data$start - 1
+grid_data <- grid_data[-1,]
+summary(grid_data)
+
+## remove NA species for that gear
+#data <- data %>% filter(!is.na(V))
+# won't appear in top_n anyways
+
+```
+
+## Make Circle plot
+
+```{r make circle plot}
+
+glimpse(data)
+
+p_circle <- data %>%
+  ggplot(aes(x=as.factor(id), y=V, fill=tax_group)) + # NB id is a factor. If x is numeric, there is some space between the first bar
+  geom_bar(aes(x=as.factor(id), y=V, fill=tax_group), stat="identity") +
+  ylim(-2,6) +
+  scale_fill_manual(values = pal_taxgrp) + 
+  coord_polar() +
+  geom_text(data=label_data, aes(x=id, y=V+0.4, label=scientific_name, hjust=hjust,
+                                 fontface = ifelse(iotc_reports == "yes", "bold.italic", "italic")), 
+            color="black", 
+            size=2, angle= label_data$angle, inherit.aes = FALSE ) +
+  circle_theme +
+# Add a val= 1/2/3/4 lines. I do it after the bars to make sure barplots are under it
+  #geom_segment(data=grid_data, aes(x = end, y=4, xend=start, yend=4), colour="grey", alpha=1, size=0.3, inherit.aes=FALSE) +
+  geom_segment(data=grid_data, aes(x = end, y=3, xend=start, yend=3), colour="grey", alpha=1, size=0.3, inherit.aes=FALSE) +
+  geom_segment(data=grid_data, aes(x = end, y=2, xend=start, yend=2), colour="grey", alpha=1, size=0.3, inherit.aes=FALSE) +
+  geom_segment(data=grid_data, aes(x = end, y=1, xend=start, yend=1), colour="grey", alpha=1, size=0.3, inherit.aes=FALSE) +
+  geom_segment(data=grid_data, aes(x = end, y=0, xend=start, yend=0), colour="grey", alpha=1, size=0.3, inherit.aes=FALSE) +
+  annotate("text", x=rep(max(data$id),5), y=c(0,1,2,3,4), label=c("0","1","2","3","4"), color="grey", size=2.5, angle=0, fontface="bold", hjust=1) 
+p_circle
+
+## don't use ggsave, it writes weird outlines on the text annotations
+
+# save eps for illusrtator editing 
+setEPS()
+#postscript(here("_results/figures/figSI2_GND.eps"))
+#postscript(here("_results/figures/figSI3_LLT.eps"))
+postscript(here("_results/figures/figSI4_PST.eps"))
+plot(p_circle)
+dev.off()
+
+```
+
