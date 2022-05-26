@@ -112,7 +112,7 @@ color corresponds to ngears
 
 ```{r scatter}
 
-dat <- read_csv(here("_results/figures/fig5_iucn_dat.csv"))
+dat <- read_csv(here("_results/figures/fig6_iucn_dat.csv"))
 glimpse(dat)
 pdat <- dat %>% 
   group_by(species_id, n_gears, redlist_category) %>%
@@ -190,77 +190,8 @@ iucn.grid
 ggsave(iucn.grid,
        width=6, height=5, units="in",
        dpi=600,
-       filename="_results/figures/fig5_iucngrid.eps",
+       filename="_results/figures/fig6_iucngrid.eps",
        device=cairo_ps)
-
-```
-
-Explore plot variations
-
-```{r plot explore}
-##<>< plot explore
-ptest <- dat %>%
-  ggplot() +
-  geom_density(aes(y=V123, fill=n_gears, color=n_gears), alpha=0.8) +
-  #geom_jitter(aes(x=redlist_category, y=V123, color=n_gears), alpha=0.8) +
-              #colour="black",pch=21) + # dots with outline
-  #stat_chull(aes(x=redlist_category, y=V123, color = n_gears, fill = n_gears), alpha = 0.1, geom = "polygon") + # this would also be cool for just one scatterplot with lots of dots, to show groups
-  labs(x="", y="Vulnerability score", fill="Number of gears", color="") +
-  scale_color_manual(values=pal_ngears) + 
-  scale_fill_manual(values=pal_ngears) + 
-  #scale_fill_grey(start=0.8, end=0.1) +
-  #scale_color_manual(values=pal_taxgrp) +
-  #scale_size_area(max_size=4) + # size of dots makes it too cluttered
-  #scale_x_discrete(limits=rev) + # so CR is on top
-  coord_flip() +
-  facet_wrap(~redlist_category, nrow=2) + # how do I make the density curves on 3 different levels so they're not overlapping?
-  #facet_grid(n_gears~redlist_category) + # nah too many boxes
-  theme_bw() +
-  theme(legend.position="top",
-        panel.grid = element_blank(),
-        axis.text.y=element_blank(),
-        axis.ticks.y=element_blank(),
-        strip.background =element_rect(fill="white"))
-ptest ## hmmm no it's just a mess of huge dots 
-
-ggscatterhist(
-  dat, x="redlist_category", y="V123", color="n_gears", size = 2, alpha = 0.6,
-  palette = c("#00AFBB", "#E7B800", "#FC4E07"),
-  margin.plot = "boxplot",
-  ggtheme = theme_bw()
-  ) # that's cool but it only really works for a normal continuous by continuous scatter
-
-```
-
-## Plot V1
-
-grouped stacked barplot with the IUCN grups and number of species in 1, 2, or 3 fisheries
-
-```{r bar plot}
-
-glimpse(V.dat)
-V.dat$n_gears <- as_factor(V.dat$n_gears)
-V.dat$redlist_category <- as_factor(V.dat$redlist_category)
-V.dat$redlist_category <- fct_relevel(V.dat$redlist_category, levels=c("Critically Endangered", "Endangered", "Vulnerable", "Near Threatened", "Least Concern", "Data Deficient"))
-
-iucn.plot <- V.dat %>%
-  distinct(species_id, n_gears, redlist_category) %>%
-  ggplot(aes(fill=n_gears, x=redlist_category)) +
-  geom_bar(width=0.75, position=position_dodge(0.75), stat="count", color="black", size=0.4) +
-  labs(x="", y="Number of species", fill = "Number of\nfishing gears") +
-  scale_fill_grey(start=0.8, end=0.1) +
-  scale_x_discrete(limits=rev) +
-  scale_y_continuous(limits=c(0,45), breaks=seq(0,40,10)) +
-  coord_flip() +
-  theme_bw() +
-  theme(panel.grid = element_blank(),
-        legend.text=element_text(size=6)) +
-  guides(fill=guide_legend(reverse=TRUE))
-iucn.plot
-
-pdf("_results/figures/fig_IUCN/10feb_grpedbarplot_grey.pdf", width=5, height=2.5, bg="white")
-print(iucn.plot)
-dev.off()
 
 ```
 
