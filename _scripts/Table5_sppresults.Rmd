@@ -1,0 +1,47 @@
+---
+title: "Table_sppresults"
+author: "Leslie Roberson"
+date: "16/02/2022"
+output: html_document
+---
+
+Data for Main text results table with top 10 highest V score species for each gear 
+formatted in excel
+
+```{r setup, include=FALSE}
+
+library(tidyverse)
+library(here)
+library(pillar)
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Main test results table (rev2)
+
+```{r main text results}
+
+## get results data with RL status 
+iucn <- read_csv(here("_results/figures/fig6_iucn_dat.csv"))
+glimpse(iucn)
+
+unique(iucn$grp_name)
+unique(iucn$redlist_category)
+
+top10 <- iucn %>%
+  mutate(scientific_name=stringr::str_to_sentence(scientific_name),
+         grp_name=stringr::str_replace_all(grp_name, "and", "&"),
+         redlist_category=as_factor(redlist_category),
+         redlist_category=fct_recode(redlist_category, EN="Endangered", VU="Vulnerable", LC="Least Concern",CR="Critically Endangered", NT="Near Threatened", DD="Data Deficient")
+         ) %>%
+  distinct(scientific_name, grp_name, gear, V123, V, S, P, redlist_category, ncells_spp, n_gears) %>%
+  group_by(gear) %>%
+  top_n(V, n=10) %>%
+  arrange(gear, desc(V)) %>%
+  ungroup()
+View(top10)
+
+write_csv(top10, here("_results/tables/table5_topVs.csv"))
+
+```
+
