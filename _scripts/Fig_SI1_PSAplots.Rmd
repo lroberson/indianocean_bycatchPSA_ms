@@ -60,7 +60,7 @@ glimpse(psaplot.dat)
 
 SI.tax <- psaplot.dat %>%
   ggplot() + 
-  geom_point(aes(x=S, y=P, size=data_qual123, color=tax_group, alpha=data_qual123)) +
+  geom_point(aes(x=S123, y=P, size=data_qual123, color=tax_group, alpha=data_qual123)) +
   scale_y_continuous(limits=c(1,3.1), breaks=seq(1,3,1), expand=expand_scale(add=c(0.2, 0.2))) +
   scale_x_continuous(limits=c(1,3.1), breaks=seq(1,3,1), expand=expand_scale(add=c(0.1, 0.1))) +
   scale_size_continuous(limits=c(1,3), breaks=seq(1,3,0.5), range=c(2.5, 0.5)) +
@@ -80,7 +80,7 @@ SI.tax
 
 SI.risk <- psaplot.dat %>%
   ggplot() + 
-  geom_point(aes(x=S, y=P, size=data_qual123, color=ncells_spp, alpha=data_qual123)) +
+  geom_point(aes(x=S123, y=P, size=data_qual123, color=ncells_spp, alpha=data_qual123)) +
   scale_y_continuous(limits=c(1,3.1), breaks=seq(1,3,1), expand=expand_scale(add=c(0.2, 0.2))) +
   scale_x_continuous(limits=c(1,3.1), breaks=seq(1,3,1), expand=expand_scale(add=c(0.1, 0.1))) +
   scale_size_continuous(limits=c(1,3), breaks=seq(1,3,0.5), range=c(2.5, 0.5)) +
