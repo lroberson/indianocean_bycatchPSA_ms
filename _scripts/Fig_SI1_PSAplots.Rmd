@@ -37,9 +37,7 @@ psaplot.dat <- read_csv(here("_results/Vulnerability/V_scores.csv")) ## first ne
 glimpse(psaplot.dat)
 
 ##prep
-psaplot.dat <- psaplot.dat %>% mutate(tax_group=as_factor(class))
-levels(psaplot.dat$tax_group)
-psaplot.dat$tax_group <- fct_recode(psaplot.dat$tax_group, "Elasmobranchs"="Elasmobranchii", "Cetaceans"="Mammalia", "Sea turtles"="Reptilia")
+psaplot.dat <- psaplot.dat %>% mutate(tax_group=as_factor(tax_group))
 levels(psaplot.dat$tax_group)
 #      "Cetaceans"     "Sea turtles"   "Elasmobranchs" 
 pal_taxgrp <- c("navy", "springgreen2", "slategray4")
@@ -58,11 +56,11 @@ psaplot.dat <- psaplot.dat %>%
 
 ```{r SI 6facets}
 
-##<><>< prep data
+glimpse(psaplot.dat)
 
-SI.tax <- si.psa %>%
+SI.tax <- psaplot.dat %>%
   ggplot() + 
-  geom_point(aes(x=S, y=productivity, size=data_score_num, color=tax_group, alpha=data_score_num)) +
+  geom_point(aes(x=S, y=P, size=data_qual123, color=tax_group, alpha=data_qual123)) +
   scale_y_continuous(limits=c(1,3.1), breaks=seq(1,3,1), expand=expand_scale(add=c(0.2, 0.2))) +
   scale_x_continuous(limits=c(1,3.1), breaks=seq(1,3,1), expand=expand_scale(add=c(0.1, 0.1))) +
   scale_size_continuous(limits=c(1,3), breaks=seq(1,3,0.5), range=c(2.5, 0.5)) +
@@ -80,9 +78,9 @@ SI.tax <- si.psa %>%
          alpha="none")
 SI.tax
 
-SI.risk <- si.psa %>%
+SI.risk <- psaplot.dat %>%
   ggplot() + 
-  geom_point(aes(x=S, y=productivity, size=data_score_num, color=ncells_spp, alpha=data_score_num)) +
+  geom_point(aes(x=S, y=P, size=data_qual123, color=ncells_spp, alpha=data_qual123)) +
   scale_y_continuous(limits=c(1,3.1), breaks=seq(1,3,1), expand=expand_scale(add=c(0.2, 0.2))) +
   scale_x_continuous(limits=c(1,3.1), breaks=seq(1,3,1), expand=expand_scale(add=c(0.1, 0.1))) +
   scale_size_continuous(limits=c(1,3), breaks=seq(1,3,0.5), range=c(2.5, 0.5)) +
@@ -92,7 +90,7 @@ SI.risk <- si.psa %>%
   labs(y="(   High)   Productivity   (Low    )", x= "(    Low)   Susceptibility   (High    )", color="", size="Data\nquality\nscore") +
   coord_flip() + 
   theme_bw() +
-  theme(legend.position="none",
+  theme(legend.position="top",
         strip.background =element_rect(fill="white"), # background of facet labels
         #strip.text.x = element_blank(), # remove facet labels
         panel.grid = element_blank()) +
@@ -101,49 +99,31 @@ SI.risk <- si.psa %>%
 SI.risk
     
   
-##<>><< make legends
+##<>><< plot grid
 
-legend_tax <- get_legend(
-  SI.tax + 
-    guides(color = guide_legend(nrow = 1)) +
-    theme(legend.position = "right",
-          legend.margin=margin(t=-0.5, r=0, b=0, l=0, unit="cm"))
-)
-legend_tax
-
-legend_risk <- get_legend(
-  SI.risk + 
-    guides(color = guide_legend(nrow = 1)) +
-    theme(legend.position = "right",
-          legend.margin=margin(t=-0.5, r=0, b=0, l=0, unit="cm"))
-)
-legend_risk
-
-#ggarrange(legend_gears, p.density + guides(fill="none"), p.bar + rremove("y.text") + guides(fill="none"),
-#         labels=c("A", "B"),
-#         nrow=2)
-
-SI.grid <- grid.arrange(legend_tax,
-             SI.tax + theme(legend.position="none",
+SI.grid <- grid.arrange(
+             SI.tax + theme(legend.position="top",
+                           legend.margin=margin(c(0.1,0.1,0.1,0.1)), # top, right, bottom, left margins
                            legend.title=element_blank(),
-                           axis.title.y=element_blank(),
+                           axis.title.y=element_blank(), # add in illustrator with font formatting and arrows
                            axis.title.x=element_blank(),
                            axis.text.x=element_blank(),
                            axis.ticks.x=element_blank()),
-             legend_risk,
-             SI.risk + theme(legend.position="none",
+             SI.risk + theme(legend.position="top", 
+                            legend.margin=margin(c(0.1,0.1,0.1,0.1)),
                             legend.title=element_blank(),
+                            legend.text = element_blank(), # replace numbers with "small range" and "large range" in illustrator
                             axis.title.y=element_blank(),
                             axis.title.x=element_blank(),
                             strip.text.x=element_blank()),
-            ncol=1, nrow=4,
-            heights = c(0.3, 3, 0.3, 3))
+            ncol=1, nrow=2,
+            heights = c(3, 3))
 SI.grid
 
 ggsave(SI.grid, 
        width=7, height=6, units="in",
        dpi=600,
-       filename="_results/figures/fig_psaplot/18april_SI_Vpsas_rev2.eps",
+       filename="_results/figures/figS1_psaplot.eps",
        device=cairo_ps)
 
 ```
