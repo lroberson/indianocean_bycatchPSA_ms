@@ -104,7 +104,7 @@ p.risk <- psaplot.dat %>%
          alpha="none")
 p.risk
 
-##<>><< make legends
+##<>><< plot grid
 
 psa.grid <- grid.arrange(
              p.tax + theme(legend.position="top",
